@@ -15,6 +15,8 @@
 
 ![background.png](./images/predator-back.jpg)
 
+[![trophy](https://github-profile-trophy.vercel.app/?username=mdsarfarazalam840&theme=onedark&column=-1&no-bg=true&no-frame=true)](https://github.com/ryo-ma/github-profile-trophy)
+
 <br>
 
 ![---------------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
