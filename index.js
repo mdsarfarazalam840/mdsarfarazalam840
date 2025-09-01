@@ -43,14 +43,14 @@ const messages = [
 const currentMessage = messages[Math.floor((Date.now() / 2000) % messages.length)];
 
 const markdown = `\
-# ┌─[ ☣️ Anonymous Year Progress Tracker ☣️ ]─────────────┐
-# │                                                           │
-# │ ${getHackerTime()}                              │
-# │                                                           │
-# │ Progress: [${generateBrailleProgressBar()}] ${(progress * 100).toFixed(4)}%                  │
-# │                                                           │
-# │ Status: ${currentMessage.padEnd(48)}│
-# └───────────────────────────────────────────────────────────┘
+ ┌─[ ☣️ Anonymous Year Progress Tracker ☣️ ]─────────────┐
+ │                                                           │
+ │ ${getHackerTime()}                              │
+ │                                                           │
+ │ Progress: [${generateBrailleProgressBar()}] ${(progress * 100).toFixed(4)}%                  │
+ │                                                           │
+ │ Status: ${currentMessage.padEnd(48)}│
+ └───────────────────────────────────────────────────────────┘
 
 ---
 
