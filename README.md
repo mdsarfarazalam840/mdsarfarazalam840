@@ -4,24 +4,15 @@
 ### ⏳ Year Progress
 
 <!-- YEAR_PROGRESS_START -->
- ┌─[ ☣️ Anonymous Year Progress Tracker ☣️ ]─────────────┐
- │                                                           │
- │ 2025-09-01 08:29:20.172 ⏳                              │
- │                                                           │
- │ Progress: [⡿⡿⡿⡿⡿⡿⡿⡿⡿⡿⡿⡿⡿⡿⡿⡿⠀⠀⠀⠀⠀⠀⠀⠀] 66.6723%                  │
- │                                                           │
- │ Status: Injecting code...                               │
- └───────────────────────────────────────────────────────────┘
-
----
-
-### Connect with the system:
+```
+[ ☣️ Year Progress | 2025-09-01 08:31:45 ]
+[ ⡿⡿⡿⡿⡿⡿⡿⡿⡿⡿⠷⠀⠀⠀⠀⠀ ] 66.67%
+<Deploying bar...>
+```
 
 [![GitHub](https://img.shields.io/badge/GitHub-151515?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mdsarfarazalam840)
+*⚡ CI monitored; status auto-updates.*
 
----
-
-*⚡ Updated live by your CI sentinel, silently monitoring the chronostream.*
 <!-- YEAR_PROGRESS_END -->
 
 
