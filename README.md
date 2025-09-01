@@ -1,6 +1,14 @@
 ### 👋
 
 
+### ⏳ Year Progress
+
+<!-- YEAR_PROGRESS_START -->
+<!-- YEAR_PROGRESS_END -->
+
+
+
+
 ![background.png](./images/github-front.jpg)
 
 
