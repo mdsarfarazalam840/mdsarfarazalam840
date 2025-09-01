@@ -1,4 +1,4 @@
-name: Hacker-Style Year Progress Bar Update
+name: Year Progress Bar Update
 
 on:
   workflow_dispatch:
