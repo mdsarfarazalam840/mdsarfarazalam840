@@ -164,5 +164,5 @@ PHP                      1 repo              ██░░░░░░░░░�
 <!--END_SECTION:waka-->
 
 
-[![Harlok's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?mdsarfarazalam840&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+[![Saif's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=mdsarfarazalam840&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
