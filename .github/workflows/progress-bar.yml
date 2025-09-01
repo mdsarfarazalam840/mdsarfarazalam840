@@ -1,0 +1,67 @@
+name: Hacker-Style Year Progress Bar Update
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */6 * * *' # Every 6 hours
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    env:
+      GIT_USER_NAME: "github-actions[bot]"
+      GIT_USER_EMAIL: "41898282+github-actions[bot]@users.noreply.github.com"
+      README_FILE: "README.md"
+      PROGRESS_FILE: "progress.md"
+      MARKER_START: "<!-- YEAR_PROGRESS_START -->"
+      MARKER_END: "<!-- YEAR_PROGRESS_END -->"
+
+    steps:
+      - name: Checkout repo (shallow)
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+
+      - name: Set up Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: "14"
+
+      - name: Generate hacker-style progress markdown
+        id: generate
+        run: |
+          node index.js > $PROGRESS_FILE
+          echo "⟩ Generated progress content with $(wc -l < $PROGRESS_FILE) lines."
+
+      - name: Inject hacker progress into README
+        run: |
+          awk -v start="$MARKER_START" -v end="$MARKER_END" -v file="$PROGRESS_FILE" '
+          BEGIN {inside=0}
+          {
+            if ($0 ~ start) {
+              print
+              while ((getline line < file) > 0) print line
+              inside=1
+              next
+            }
+            if ($0 ~ end) {
+              inside=0
+            }
+            if (!inside) print
+          }
+          ' "$README_FILE" > README.tmp && mv README.tmp "$README_FILE"
+          echo "⟩ README updated between markers."
+
+      - name: Commit & push changes stealthily
+        run: |
+          git config user.name "$GIT_USER_NAME"
+          git config user.email "$GIT_USER_EMAIL"
+          git add "$README_FILE"
+          if ! git diff --cached --quiet; then
+            git commit -m "💀 stealthily update year progress bar"
+            git push
+            echo "⟩ Changes committed and pushed."
+          else
+            echo "⟩ No changes detected; skipping commit."
+          fi
