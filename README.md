@@ -4,13 +4,14 @@
 ### ⏳ Year Progress
 
 <!-- YEAR_PROGRESS_START -->
----
-**☣️ Anonymous Year Progress Tracker ☣️**
-
-`2025-09-01 08:15:59.882 ⏳  [⣷⣦⣄⠀⠀⠀⠀⠀] 66.67%`
-
-> Deploying status bar...
----
+# ┌─[ ☣️ Anonymous Year Progress Tracker ☣️ ]─────────────┐
+# │                                                           │
+# │ 2025-09-01 08:21:47.305 ⏳                              │
+# │                                                           │
+# │ Progress: [⡿⡿⡿⡿⡿⡿⡿⡿⡿⡿⡿⡿⡿⡿⡿⡿⠀⠀⠀⠀⠀⠀⠀⠀] 66.6708%                  │
+# │                                                           │
+# │ Status: Syncing with UTC...                             │
+# └───────────────────────────────────────────────────────────┘
 
 ---
 
