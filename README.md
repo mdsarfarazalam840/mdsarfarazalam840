@@ -162,3 +162,7 @@ PHP                      1 repo              ██░░░░░░░░░�
 
  Last Updated on 01/09/2025 18:20:24 UTC
 <!--END_SECTION:waka-->
+
+
+[![Harlok's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?mdsarfarazalam840&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+
