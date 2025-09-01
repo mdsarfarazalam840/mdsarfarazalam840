@@ -90,4 +90,70 @@ Here are some ideas to get you started:
 
 
 <!--START_SECTION:waka-->
+![Code Time](http://img.shields.io/badge/Code%20Time-0%20secs-blue)
+
+![Profile Views](http://img.shields.io/badge/Profile%20Views-61-blue)
+
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-2.7%20million%20lines%20of%20code-blue)
+
+**🐱 My GitHub Data** 
+
+> 📦 37.9 kB Used in GitHub's Storage 
+ > 
+> 🚫 Not Opted to Hire
+ > 
+> 📜 103 Public Repositories 
+ > 
+> 🔑 0 Private Repositories 
+ > 
+**I'm an Early 🐤** 
+
+```text
+🌞 Morning                62 commits          ███████████░░░░░░░░░░░░░░   44.60 % 
+🌆 Daytime                33 commits          ██████░░░░░░░░░░░░░░░░░░░   23.74 % 
+🌃 Evening                41 commits          ███████░░░░░░░░░░░░░░░░░░   29.50 % 
+🌙 Night                  3 commits           █░░░░░░░░░░░░░░░░░░░░░░░░   02.16 % 
+```
+📅 **I'm Most Productive on Monday** 
+
+```text
+Monday                   62 commits          ███████████░░░░░░░░░░░░░░   44.60 % 
+Tuesday                  11 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   07.91 % 
+Wednesday                24 commits          ████░░░░░░░░░░░░░░░░░░░░░   17.27 % 
+Thursday                 5 commits           █░░░░░░░░░░░░░░░░░░░░░░░░   03.60 % 
+Friday                   12 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   08.63 % 
+Saturday                 7 commits           █░░░░░░░░░░░░░░░░░░░░░░░░   05.04 % 
+Sunday                   18 commits          ███░░░░░░░░░░░░░░░░░░░░░░   12.95 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: Asia/Kolkata
+
+💬 Programming Languages: 
+No Activity Tracked This Week
+
+🔥 Editors: 
+No Activity Tracked This Week
+
+💻 Operating System: 
+No Activity Tracked This Week
+```
+
+**I Mostly Code in JavaScript** 
+
+```text
+JavaScript               4 repos             ███████░░░░░░░░░░░░░░░░░░   28.57 % 
+Java                     3 repos             █████░░░░░░░░░░░░░░░░░░░░   21.43 % 
+HTML                     2 repos             ████░░░░░░░░░░░░░░░░░░░░░   14.29 % 
+Groovy                   1 repo              ██░░░░░░░░░░░░░░░░░░░░░░░   07.14 % 
+PHP                      1 repo              ██░░░░░░░░░░░░░░░░░░░░░░░   07.14 % 
+```
+
+
+
+
+ Last Updated on 01/09/2025 18:13:38 UTC
 <!--END_SECTION:waka-->
