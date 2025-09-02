@@ -161,4 +161,9 @@ PHP                      1 repo              ██░░░░░░░░░�
 
 
 
-[![Saif's WakaTime stats](https://github-readme-stats-dun-ten-43.vercel.app/api/wakatime?username=mdsarfarazalam840)](https://github.com/anuraghazra/github-readme-stats)
+<!--START_SECTION:activity-->
+
+<!--END_SECTION:activity-->
+
+
+
