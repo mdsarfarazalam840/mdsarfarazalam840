@@ -166,4 +166,4 @@ PHP                      1 repo              ██░░░░░░░░░�
 <!--END_SECTION:activity-->
 ---
 
-
+![Alt text](https://spotify-recently-played-readme.vercel.app/api?user=oj1xerhb9fby7dckdhp0yw3no&unique={true|1|on|yes})
