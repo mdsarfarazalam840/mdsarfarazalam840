@@ -92,13 +92,15 @@ Here are some ideas to get you started:
 <!--START_SECTION:waka-->
 ![Code Time](http://img.shields.io/badge/Code%20Time-0%20secs-blue)
 
-![Profile Views](http://img.shields.io/badge/Profile%20Views-156-blue)
+![Profile Views](http://img.shields.io/badge/Profile%20Views-159-blue)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-2.7%20million%20lines%20of%20code-blue)
 
 **🐱 My GitHub Data** 
 
 > 📦 38.0 kB Used in GitHub's Storage 
+ > 
+> 🏆 57 Contributions in the Year 2025
  > 
 > 🚫 Not Opted to Hire
  > 
@@ -133,16 +135,18 @@ Sunday                   18 commits          ███░░░░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-No Activity Tracked This Week
+YAML                     57 mins             ████████████████░░░░░░░░░   63.87 % 
+Terraform                32 mins             █████████░░░░░░░░░░░░░░░░   35.92 % 
+Bash                     0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.21 % 
 
 🔥 Editors: 
-No Activity Tracked This Week
+Cursor                   1 hr 29 mins        █████████████████████████   100.00 % 
 
 🐱‍💻 Projects: 
-No Activity Tracked This Week
+Secure Supply Chain CICD 1 hr 29 mins        █████████████████████████   100.00 % 
 
 💻 Operating System: 
-No Activity Tracked This Week
+Windows                  1 hr 29 mins        █████████████████████████   100.00 % 
 ```
 
 **I Mostly Code in JavaScript** 
@@ -158,7 +162,7 @@ PHP                      1 repo              ██░░░░░░░░░�
 
 
 
- Last Updated on 03/09/2025 01:50:13 UTC
+ Last Updated on 04/09/2025 01:50:45 UTC
 <!--END_SECTION:waka-->
 
 ---
