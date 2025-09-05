@@ -90,9 +90,9 @@ Here are some ideas to get you started:
 
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-0%20secs-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-1%20hr%2029%20mins-blue)
 
-![Profile Views](http://img.shields.io/badge/Profile%20Views-159-blue)
+![Profile Views](http://img.shields.io/badge/Profile%20Views-160-blue)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-2.7%20million%20lines%20of%20code-blue)
 
@@ -135,18 +135,18 @@ Sunday                   18 commits          ███░░░░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-YAML                     57 mins             ████████████████░░░░░░░░░   63.87 % 
-Terraform                32 mins             █████████░░░░░░░░░░░░░░░░   35.92 % 
-Bash                     0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.21 % 
+YAML                     1 hr 38 mins        ███████████████░░░░░░░░░░   59.39 % 
+Terraform                59 mins             █████████░░░░░░░░░░░░░░░░   35.75 % 
+Bash                     8 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   04.87 % 
 
 🔥 Editors: 
-Cursor                   1 hr 29 mins        █████████████████████████   100.00 % 
+Cursor                   2 hrs 46 mins       █████████████████████████   100.00 % 
 
 🐱‍💻 Projects: 
-Secure Supply Chain CICD 1 hr 29 mins        █████████████████████████   100.00 % 
+Secure Supply Chain CICD 2 hrs 46 mins       █████████████████████████   100.00 % 
 
 💻 Operating System: 
-Windows                  1 hr 29 mins        █████████████████████████   100.00 % 
+Windows                  2 hrs 46 mins       █████████████████████████   100.00 % 
 ```
 
 **I Mostly Code in JavaScript** 
@@ -162,7 +162,7 @@ PHP                      1 repo              ██░░░░░░░░░�
 
 
 
- Last Updated on 04/09/2025 01:50:45 UTC
+ Last Updated on 05/09/2025 01:53:48 UTC
 <!--END_SECTION:waka-->
 
 ---
