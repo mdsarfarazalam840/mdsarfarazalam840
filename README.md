@@ -102,7 +102,7 @@ Here are some ideas to get you started:
  > 
 > 🏆 57 Contributions in the Year 2025
  > 
-> 🚫 Not Opted to Hire
+> ✅ Opted to Hire
  > 
 > 📜 105 Public Repositories 
  > 
@@ -149,7 +149,7 @@ Secure Supply Chain CICD 2 hrs 46 mins       ███████████�
 Windows                  2 hrs 46 mins       █████████████████████████   100.00 % 
 ```
 
-**I Mostly Code in JavaScript** 
+**I Mostly Code in Python** 
 
 ```text
 JavaScript               4 repos             ███████░░░░░░░░░░░░░░░░░░   26.67 % 
