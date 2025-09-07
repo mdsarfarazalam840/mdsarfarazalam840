@@ -92,7 +92,7 @@ Here are some ideas to get you started:
 <!--START_SECTION:waka-->
 ![Code Time](http://img.shields.io/badge/Code%20Time-2%20hrs%2046%20mins-blue)
 
-![Profile Views](http://img.shields.io/badge/Profile%20Views-162-blue)
+![Profile Views](http://img.shields.io/badge/Profile%20Views-195-blue)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-2.7%20million%20lines%20of%20code-blue)
 
@@ -100,11 +100,11 @@ Here are some ideas to get you started:
 
 > 📦 38.0 kB Used in GitHub's Storage 
  > 
-> 🏆 60 Contributions in the Year 2025
+> 🏆 61 Contributions in the Year 2025
  > 
 > 🚫 Not Opted to Hire
  > 
-> 📜 105 Public Repositories 
+> 📜 106 Public Repositories 
  > 
 > 🔑 0 Private Repositories 
  > 
@@ -152,17 +152,17 @@ Windows                  2 hrs 46 mins       ███████████�
 **I Mostly Code in JavaScript** 
 
 ```text
-JavaScript               4 repos             ███████░░░░░░░░░░░░░░░░░░   26.67 % 
-Java                     3 repos             █████░░░░░░░░░░░░░░░░░░░░   20.00 % 
-HTML                     2 repos             ███░░░░░░░░░░░░░░░░░░░░░░   13.33 % 
-Groovy                   1 repo              ██░░░░░░░░░░░░░░░░░░░░░░░   06.67 % 
-PHP                      1 repo              ██░░░░░░░░░░░░░░░░░░░░░░░   06.67 % 
+JavaScript               5 repos             ████████░░░░░░░░░░░░░░░░░   31.25 % 
+Java                     3 repos             █████░░░░░░░░░░░░░░░░░░░░   18.75 % 
+HTML                     2 repos             ███░░░░░░░░░░░░░░░░░░░░░░   12.50 % 
+Groovy                   1 repo              ██░░░░░░░░░░░░░░░░░░░░░░░   06.25 % 
+PHP                      1 repo              ██░░░░░░░░░░░░░░░░░░░░░░░   06.25 % 
 ```
 
 
 
 
- Last Updated on 06/09/2025 05:18:47 UTC
+ Last Updated on 07/09/2025 01:59:35 UTC
 <!--END_SECTION:waka-->
 
 ---
