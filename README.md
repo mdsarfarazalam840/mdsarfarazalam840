@@ -135,18 +135,16 @@ Sunday                   18 commits          ███░░░░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-Python                   35 mins             █████████████████░░░░░░░░   69.57 % 
-Bash                     14 mins             ███████░░░░░░░░░░░░░░░░░░   28.42 % 
-JSON                     1 min               █░░░░░░░░░░░░░░░░░░░░░░░░   02.01 % 
+No Activity Tracked This Week
 
 🔥 Editors: 
-Cursor                   51 mins             █████████████████████████   100.00 % 
+No Activity Tracked This Week
 
 🐱‍💻 Projects: 
-copying-bot              51 mins             █████████████████████████   100.00 % 
+No Activity Tracked This Week
 
 💻 Operating System: 
-Windows                  51 mins             █████████████████████████   100.00 % 
+No Activity Tracked This Week
 ```
 
 **I Mostly Code in JavaScript** 
@@ -162,7 +160,7 @@ Groovy                   1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 24/09/2025 01:53:40 UTC
+ Last Updated on 25/09/2025 01:54:32 UTC
 <!--END_SECTION:waka-->
 
 ---
