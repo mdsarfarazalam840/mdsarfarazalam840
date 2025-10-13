@@ -5,9 +5,9 @@
 
 <!-- YEAR_PROGRESS_START -->
 ```
-[ ☣️ Year Progress | 2025-10-12 18:20:30 ]
-[ ⡿⡿⡿⡿⡿⡿⡿⡿⡿⡿⡿⡿⠇⠀⠀⠀ ] 78.02%
-<Compiling vector...>
+[ ☣️ Year Progress | 2025-10-13 01:19:43 ]
+[ ⡿⡿⡿⡿⡿⡿⡿⡿⡿⡿⡿⡿⠇⠀⠀⠀ ] 78.10%
+<Decompiling year...>
 ```
 
 [![GitHub](https://img.shields.io/badge/GitHub-151515?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mdsarfarazalam840)
