@@ -92,7 +92,7 @@ Here are some ideas to get you started:
 <!--START_SECTION:waka-->
 ![Code Time](http://img.shields.io/badge/Code%20Time-10%20hrs%2050%20mins-blue)
 
-![Profile Views](http://img.shields.io/badge/Profile%20Views-2-blue)
+![Profile Views](http://img.shields.io/badge/Profile%20Views-5-blue)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-2.7%20million%20lines%20of%20code-blue)
 
@@ -135,20 +135,16 @@ Sunday                   18 commits          ███░░░░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-Python                   35 mins             ████████████████░░░░░░░░░   64.09 % 
-JavaScript               17 mins             ████████░░░░░░░░░░░░░░░░░   32.31 % 
-Bash                     0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.68 % 
-YAML                     0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.82 % 
-Markdown                 0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.70 % 
+No Activity Tracked This Week
 
 🔥 Editors: 
-Cursor                   55 mins             █████████████████████████   100.00 % 
+No Activity Tracked This Week
 
 🐱‍💻 Projects: 
-release-notes-generator  55 mins             █████████████████████████   100.00 % 
+No Activity Tracked This Week
 
 💻 Operating System: 
-Windows                  55 mins             █████████████████████████   100.00 % 
+No Activity Tracked This Week
 ```
 
 **I Mostly Code in Python** 
@@ -164,7 +160,7 @@ Groovy                   1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 10/11/2025 02:07:11 UTC
+ Last Updated on 11/11/2025 02:03:26 UTC
 <!--END_SECTION:waka-->
 
 ---
