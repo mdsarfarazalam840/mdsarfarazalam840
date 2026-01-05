@@ -7,6 +7,12 @@
 
 <h1 align="center">⏳ Year Progress</h1>
 
+<p align="center">
+  <a href="https://github.com/jrohitofficial">
+    <img src="https://github.com/jrohitofficial/jrohitofficial/blob/master/277383089-1632db93-5d88-408c-aa7a-3be102febcd3.gif" alt="Animated footer bars" width="100%"/>
+  </a>
+</p>
+
 <!-- YEAR_PROGRESS_START -->
 ```
 [ ☣️ Year Progress | 2026-01-05 12:41:29 ]
