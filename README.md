@@ -4,7 +4,7 @@
   <img src="https://github.com/jrohitofficial/jrohitofficial/blob/master/code.gif?raw=true" height="50" alt="Code Animation" />
 </p>
 
-### ⏳ Year Progress
+<h1 align="center">⏳ Year Progress</h1>
 
 <!-- YEAR_PROGRESS_START -->
 ```
