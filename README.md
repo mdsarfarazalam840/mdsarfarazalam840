@@ -32,7 +32,7 @@
 
 ![background.png](./images/predator-back.jpg)
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=mdsarfarazalam840&theme=onedark&column=-1&no-bg=true&no-frame=true)](https://github.com/ryo-ma/github-profile-trophy)
+[![trophy](https://github-profile-trophy-ecru-ten.vercel.app/?username=mdsarfarazalam840&theme=onedark&column=-1&no-bg=true&no-frame=true)](https://github.com/ryo-ma/github-profile-trophy)
 
 <br>
 
