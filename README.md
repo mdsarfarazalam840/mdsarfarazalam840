@@ -195,3 +195,9 @@ Groovy                   1 repo              █░░░░░░░░░░�
 ---
 
 ![Alt text](https://spotify-recently-played-readme.vercel.app/api?user=oj1xerhb9fby7dckdhp0yw3no&unique={true|1|on|yes})
+
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mdsarfarazalam840/mdsarfarazalam840/refs/heads/main/thankyou%20RJ.svg" alt="Thanks for Visiting..." width="100%" />
+</p>
+
