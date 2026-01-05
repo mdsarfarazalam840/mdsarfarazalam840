@@ -42,7 +42,13 @@
 
 ![background.png](./images/predator-back.jpg)
 
-[![trophy](https://github-profile-trophy-ecru-ten.vercel.app/api/profile?username=mdsarfarazalam840&theme=onedark&column=-1&no-bg=true&no-frame=true)]
+<p align="center">
+  <img src="https://github-profile-trophy-ecru-ten.vercel.app/api/profile?username=mdsarfarazalam840&theme=onedark&column=-1&no-bg=true&no-frame=true" />
+</p>
+
+<!-- 
+![trophy](https://github-profile-trophy-ecru-ten.vercel.app/api/profile?username=mdsarfarazalam840&theme=onedark&column=-1&no-bg=true&no-frame=true)
+-->
 
 <br>
 
