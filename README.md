@@ -120,7 +120,7 @@ Here are some ideas to get you started:
  > 
 > 🏆 23 Contributions in the Year 2026
  > 
-> 🚫 Not Opted to Hire
+> ✔️ Opted to Hire
  > 
 > 📜 124 Public Repositories 
  > 
