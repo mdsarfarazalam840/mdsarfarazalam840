@@ -120,7 +120,7 @@ Here are some ideas to get you started:
  > 
 > 🏆 24 Contributions in the Year 2026
  > 
-> 🚫 Not Opted to Hire
+> 💼 Opted to Hire
  > 
 > 📜 124 Public Repositories 
  > 
@@ -180,7 +180,7 @@ PowerShell               1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 27/02/2026 10:19:45 UTC
+ Last Updated on 27/02/2026 10:28:41 UTC
 <!--END_SECTION:waka-->
 
 ---
