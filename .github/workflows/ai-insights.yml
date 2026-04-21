@@ -3,21 +3,26 @@ name: AI Insights Updater
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 */6 * * *"  # every 6 hours
+    - cron: "0 */6 * * *"   # every 6 hours
 
 jobs:
-  ai-update:
+  update-readme:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Call AgentRouter API
-        id: ai
+      - name: Wake up server (avoid cold start)
         run: |
-          RESPONSE=$(curl -s -X POST https://your-agentrouter-api.com/analyze \
-          -H "Authorization: Bearer ${{ secrets.AGENT_API_KEY }}")
+          curl -s https://ai-agentrouter.onrender.com > /dev/null
+          sleep 10
+
+      - name: Call AI API
+        run: |
+          RESPONSE=$(curl -s -X POST https://ai-agentrouter.onrender.com/route \
+            -H "Content-Type: application/json" \
+            -d '{"task":"review","username":"mdsarfarazalam840"}')
 
           echo "$RESPONSE" > ai_output.md
 
