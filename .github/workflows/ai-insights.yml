@@ -1,0 +1,52 @@
+name: AI Insights Updater
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *"  # every 6 hours
+
+jobs:
+  ai-update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Call AgentRouter API
+        id: ai
+        run: |
+          RESPONSE=$(curl -s -X POST https://your-agentrouter-api.com/analyze \
+          -H "Authorization: Bearer ${{ secrets.AGENT_API_KEY }}")
+
+          echo "$RESPONSE" > ai_output.md
+
+      - name: Inject AI into README
+        run: |
+          START="<!-- AI_INSIGHTS_START -->"
+          END="<!-- AI_INSIGHTS_END -->"
+
+          awk -v start="$START" -v end="$END" -v file="ai_output.md" '
+          BEGIN {inside=0}
+          {
+            if ($0 ~ start) {
+              print
+              while ((getline line < file) > 0) print line
+              inside=1
+              next
+            }
+            if ($0 ~ end) {
+              inside=0
+            }
+            if (!inside) print
+          }
+          ' README.md > README.tmp && mv README.tmp README.md
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add README.md
+          git commit -m "🤖 Update AI Insights" || echo "No changes"
+          git push
