@@ -195,6 +195,8 @@ PowerShell               1 repo              █░░░░░░░░░░�
 
 ## 🤖 AI Insights
 
+> This section is automatically generated using AI every 6 hours ⚡
+
 <!-- AI_INSIGHTS_START -->
 ### Strengths
 - **High activity**: 136 public repos indicate strong productivity and open-source commitment[1][3].
