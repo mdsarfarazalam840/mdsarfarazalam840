@@ -1,0 +1,31 @@
+name: AI Issue Bot
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  ai-response:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Read issue body
+        run: |
+          echo "BODY=${{ github.event.issue.body }}" >> $GITHUB_ENV
+
+      - name: Call AI if /analyze
+        if: contains(env.BODY, '/analyze')
+        run: |
+          RESPONSE=$(curl -s -X POST https://ai-agentrouter.onrender.com/route \
+            -H "Content-Type: application/json" \
+            -d '{"task":"review","username":"mdsarfarazalam840"}')
+
+          echo "$RESPONSE" > output.md
+
+      - name: Reply to Issue
+        if: contains(env.BODY, '/analyze')
+        run: |
+          gh issue comment ${{ github.event.issue.number }} \
+            --body-file output.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
