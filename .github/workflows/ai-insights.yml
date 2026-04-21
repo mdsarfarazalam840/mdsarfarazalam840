@@ -18,20 +18,27 @@ jobs:
           curl -s https://ai-agentrouter.onrender.com > /dev/null
           sleep 10
 
-      - name: Call AI API
+      - name: Call AI for Suggestions
         run: |
-          RESPONSE=$(curl -s -X POST https://ai-agentrouter.onrender.com/route \
+          curl -s -X POST https://ai-agentrouter.onrender.com/route \
             -H "Content-Type: application/json" \
-            -d '{"task":"review","username":"mdsarfarazalam840"}')
+            -d '{"task":"review","username":"mdsarfarazalam840"}' \
+            > suggestions.md
+
+      - name: Call AI for Improvements
+        run: |
+          curl -s -X POST https://ai-agentrouter.onrender.com/route \
+            -H "Content-Type: application/json" \
+            -d '{"task":"improve","username":"mdsarfarazalam840"}' \
+            > improvements.md
 
           echo "$RESPONSE" > ai_output.md
 
-      - name: Inject AI into README
+      - name: Inject Suggestions
         run: |
-          START="<!-- AI_INSIGHTS_START -->"
-          END="<!-- AI_INSIGHTS_END -->"
-
-          awk -v start="$START" -v end="$END" -v file="ai_output.md" '
+          awk -v start="<!-- AI_SUGGESTIONS_START -->" \
+              -v end="<!-- AI_SUGGESTIONS_END -->" \
+              -v file="suggestions.md" '
           BEGIN {inside=0}
           {
             if ($0 ~ start) {
@@ -45,7 +52,27 @@ jobs:
             }
             if (!inside) print
           }
-          ' README.md > README.tmp && mv README.tmp README.md
+          ' README.md > temp.md && mv temp.md README.md
+
+      - name: Inject Improvements
+        run: |
+          awk -v start="<!-- AI_IMPROVEMENTS_START -->" \
+              -v end="<!-- AI_IMPROVEMENTS_END -->" \
+              -v file="improvements.md" '
+          BEGIN {inside=0}
+          {
+            if ($0 ~ start) {
+              print
+              while ((getline line < file) > 0) print line
+              inside=1
+              next
+            }
+            if ($0 ~ end) {
+              inside=0
+            }
+            if (!inside) print
+          }
+          ' README.md > temp.md && mv temp.md README.md
 
       - name: Commit changes
         run: |
