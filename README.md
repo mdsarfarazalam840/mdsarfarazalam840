@@ -197,23 +197,6 @@ PowerShell               1 repo              █░░░░░░░░░░�
 
 > This section is automatically generated using AI every 6 hours ⚡
 
-<!-- AI_INSIGHTS_START -->
-### Strengths
-- **High activity**: 136 public repos indicate strong productivity and open-source commitment[1][3].
-- **Azure DevOps focus**: Bio highlights expertise in cloud-native automation, aligning with top repos like `ai-agentrouter`, `claude-code`, `VulnFix-AI` (AI/security tools), and `own-drive` (cloud storage)[3].
-- **Diverse portfolio**: Repos span AI (`VulnFix-AI`), developer tools (`developer-portfolios`, `3D-portfolio`), music (`SpotiFLAC`), and personal site, showcasing versatility[1][3].
-
-### Weaknesses
-- **Broad vs. deep**: Many repos (e.g., `acquisitions`, portfolios) suggest scattered focus rather than specialized depth in Azure/DevOps[3][6].
-- **Unclear impact**: No metrics on stars, forks, or commits provided; top repos lack descriptions of popularity or real-world use[1][3].
-- **Generic bio**: Lacks specific achievements, links, or unique hooks beyond enthusiasm[3].
-
-### Suggestions
-- Pin 4-6 high-impact Azure/DevOps repos with strong READMEs to emphasize expertise[3].
-- Add metrics (stars, contributors) and links (blog, LinkedIn) to bio for credibility[3][8].
-- Focus future work: Deepen 1-2 niches (e.g., AI in DevOps) over variety; aim for collaborative forks/stars[6][9].
-<!-- AI_INSIGHTS_END -->
-
 
 ## 🧠 AI Suggestions
 <!-- AI_SUGGESTIONS_START -->
