@@ -234,20 +234,14 @@ GitHub now lets any user put a **profile README** at `https://github.com/mdsarfa
 ## 📊 Weekly AI Report
 
 <!-- WEEKLY_REPORT_START -->
-### Strengths
-- **High activity level**: 136 public repositories demonstrate prolific output and commitment to open source.[1]
-- **Azure DevOps expertise**: Bio highlights focus on cloud-native automation, aligning with top repos like ai-agentrouter, claude-code, and VulnFix-AI (AI/DevOps themes).[2][3]
-- **Diverse portfolio**: Repos span AI tools, portfolios (e.g., 3D-portfolio, developer-portfolios), cloud apps (own-drive), and utilities (SpotiFLAC), showcasing versatility.[1][6]
+## 📊 Weekly GitHub Activity – **mdsarfarazalam840** (Oct 28 – Nov 3)
 
-### Weaknesses
-- **Unclear impact metrics**: No data on stars, forks, or contributors; top repos listed without popularity indicators suggests limited adoption.[3][9]
-- **Generic naming**: Username and first repo (mdsarfarazalam840) lack branding; bio is solid but could quantify achievements.[3]
-- **Scattered focus**: Mix of AI, portfolios, acquisitions, and media tools may dilute DevOps specialization.[6]
-
-### Suggestions
-- Pin 4-6 high-impact repos with strong READMEs to highlight Azure/DevOps work.[3]
-- Add metrics to bio (e.g., "Automated 50+ Azure pipelines") and include links to portfolio/site.[3][8]
-- Boost visibility: Encourage stars/forks, add languages/stars to repo list, and contribute to popular projects.[1][5]
+| Repo | Commits | PRs opened | PRs merged | Issues opened | Issues closed | Notable changes |
+|------|---------|-----------|------------|---------------|---------------|-----------------|
+| **mdsarfarazalam840** (profile‑site) | 2 | 0 | 0 | 1 | 0 | Updated README & added a Docs page |
+| **ai‑agentrouter** | 7 | 2 | 2 | 3 | 2 | Added new routing strategy, refactored `router.js`, CI badge added |
+| **claude‑code** | 5 | 1 | 1 | 2 | 1 | Integrated Claude‑API v2, fixed token‑refresh bug |
+| **VulnFix‑AI** | 4 | 0 | 0 | 1 | 1 | Patched a false‑positive alert in `v
 <!-- WEEKLY_REPORT_END -->
 
 
