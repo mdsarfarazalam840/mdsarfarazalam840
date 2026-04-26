@@ -199,32 +199,12 @@ PowerShell               1 repo              █░░░░░░░░░░�
 
 ## 🧠 AI Suggestions
 <!-- AI_SUGGESTIONS_START -->
-## 📊 Quick Profile Snapshot  
-- **Username:** `mdsarfarazalam840`  
-- **Bio:** Open‑Source Enthusiast & Azure‑focused DevOps Engineer  
-- **Public Repos:** 136  
-- **Top repos:** Mostly JavaScript/TypeScript utilities & AI‑centric tools (e.g., **Claude‑Code**, **VulnFix‑AI**) – very low star counts.
-
----
-
-## ✅ Strengths
-| Area | Why It’s a Plus |
-|------|-----------------|
-| **Volume of work** | 136 public repos shows consistent coding activity and willingness to experiment. |
-| **Tech focus** | Strong leaning on **JavaScript/TypeScript** and **AI‑assisted tooling**—both hot topics. |
-| **Domain expertise** |
+⚠️ OpenRouter API Error
 <!-- AI_SUGGESTIONS_END -->
 
 ## 🚀 AI Improvements
 <!-- AI_IMPROVEMENTS_START -->
-Below is a practical, step‑by‑step play‑book you can start applying **today** to make the `mdsarfarazalam840` GitHub profile look professional, searchable and attractive to recruiters or collaborators.  
-I’ve grouped the advice into three buckets you asked for – **README**, **Projects**, and **Visibility** – and added concrete actions for each of the five repositories you already own.
-
----
-
-## 1️⃣ PROFILE README (the big “landing page” for your account)
-
-A well‑crafted profile
+⚠️ OpenRouter API Error
 <!-- AI_IMPROVEMENTS_END -->
 
 
