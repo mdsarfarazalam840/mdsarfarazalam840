@@ -17,20 +17,37 @@ jobs:
 
       - name: Call AI for Weekly Report
         run: |
-          curl -s -X POST "${{ secrets.APPWRITE_ENDPOINT }}/v1/functions/${{ secrets.APPWRITE_PROFILE_FUNCTION_ID }}/executions" \
+          EXECUTION_ID=$(curl -s -X POST "${{ secrets.APPWRITE_ENDPOINT }}/v1/functions/${{ secrets.APPWRITE_PROFILE_FUNCTION_ID }}/executions" \
             -H "Content-Type: application/json" \
             -H "X-Appwrite-Project: ${{ secrets.APPWRITE_PROJECT_ID }}" \
             -H "X-Appwrite-Key: ${{ secrets.APPWRITE_API_KEY }}" \
             -d '{
-              "body": "{\"task\":\"weekly\",\"username\":\"mdsarfarazalam840\"}"
-            }' \
-            | jq -r '
+              "body": "{\"task\":\"weekly\",\"username\":\"mdsarfarazalam840\"}",
+              "async": true
+            }' | jq -r '.$id')
+      
+          for i in {1..20}; do
+            RESPONSE=$(curl -s "${{ secrets.APPWRITE_ENDPOINT }}/v1/functions/${{ secrets.APPWRITE_PROFILE_FUNCTION_ID }}/executions/$EXECUTION_ID" \
+              -H "X-Appwrite-Project: ${{ secrets.APPWRITE_PROJECT_ID }}" \
+              -H "X-Appwrite-Key: ${{ secrets.APPWRITE_API_KEY }}")
+      
+            STATUS=$(echo "$RESPONSE" | jq -r '.status')
+      
+            if [ "$STATUS" = "completed" ]; then
+              echo "$RESPONSE" | jq -r '
                 if (.responseBody and (.responseBody | type == "string")) then
                   (.responseBody | fromjson | .insights // "No weekly AI report available.")
                 else
                   "No weekly AI report available."
                 end
               ' > weekly.md
+              exit 0
+            fi
+      
+            sleep 5
+          done
+      
+          echo "No weekly AI report available." > weekly.md
 
       - name: Inject Weekly Report
         run: |
