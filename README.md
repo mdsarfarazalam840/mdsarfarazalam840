@@ -200,32 +200,12 @@ PowerShell               1 repo              █░░░░░░░░░░�
 
 ## 🧠 AI Suggestions
 <!-- AI_SUGGESTIONS_START -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Service Suspended</title>
-</head>
-<body>
-This service has been suspended by its owner.
-</body>
-</html>
+null
 <!-- AI_SUGGESTIONS_END -->
 
 ## 🚀 AI Improvements
 <!-- AI_IMPROVEMENTS_START -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Service Suspended</title>
-</head>
-<body>
-This service has been suspended by its owner.
-</body>
-</html>
+null
 <!-- AI_IMPROVEMENTS_END -->
 
 
