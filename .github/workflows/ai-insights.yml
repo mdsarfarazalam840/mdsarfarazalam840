@@ -24,9 +24,7 @@ jobs:
             -d '{
               "body": "{\"task\":\"review\",\"username\":\"mdsarfarazalam840\"}"
             }' \
-            | jq -r '.responseBody' > suggestions.raw.json
-
-          jq -r '.insights // .' suggestions.raw.json > suggestions.md
+            | jq -r '.responseBody | fromjson | .insights // "No AI suggestions available."' > suggestions.md
 
       - name: Call AI for Improvements
         run: |
@@ -37,9 +35,7 @@ jobs:
             -d '{
               "body": "{\"task\":\"improve\",\"username\":\"mdsarfarazalam840\"}"
             }' \
-            | jq -r '.responseBody' > improvements.raw.json
-
-          jq -r '.insights // .' improvements.raw.json > improvements.md
+            | jq -r '.responseBody | fromjson | .insights // "No AI improvements available."' > improvements.md
 
       - name: Inject Suggestions
         run: |
