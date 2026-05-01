@@ -8,31 +8,38 @@ on:
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
-
-      - name: Wake up server (avoid cold start)
-        run: |
-          curl -s https://ai-agentrouter.onrender.com > /dev/null
-          sleep 10
+        uses: actions/checkout@v4
 
       - name: Call AI for Suggestions
         run: |
-          curl -s -X POST https://ai-agentrouter.onrender.com/route \
+          curl -s -X POST "${{ secrets.APPWRITE_ENDPOINT }}/v1/functions/${{ secrets.APPWRITE_PROFILE_FUNCTION_ID }}/executions" \
             -H "Content-Type: application/json" \
-            -d '{"task":"review","username":"mdsarfarazalam840"}' \
-            > suggestions.md
+            -H "X-Appwrite-Project: ${{ secrets.APPWRITE_PROJECT_ID }}" \
+            -H "X-Appwrite-Key: ${{ secrets.APPWRITE_API_KEY }}" \
+            -d '{
+              "body": "{\"task\":\"review\",\"username\":\"mdsarfarazalam840\"}"
+            }' \
+            | jq -r '.responseBody' > suggestions.raw.json
+
+          jq -r '.insights // .' suggestions.raw.json > suggestions.md
 
       - name: Call AI for Improvements
         run: |
-          curl -s -X POST https://ai-agentrouter.onrender.com/route \
+          curl -s -X POST "${{ secrets.APPWRITE_ENDPOINT }}/v1/functions/${{ secrets.APPWRITE_PROFILE_FUNCTION_ID }}/executions" \
             -H "Content-Type: application/json" \
-            -d '{"task":"improve","username":"mdsarfarazalam840"}' \
-            > improvements.md
+            -H "X-Appwrite-Project: ${{ secrets.APPWRITE_PROJECT_ID }}" \
+            -H "X-Appwrite-Key: ${{ secrets.APPWRITE_API_KEY }}" \
+            -d '{
+              "body": "{\"task\":\"improve\",\"username\":\"mdsarfarazalam840\"}"
+            }' \
+            | jq -r '.responseBody' > improvements.raw.json
 
-          echo "$RESPONSE" > ai_output.md
+          jq -r '.insights // .' improvements.raw.json > improvements.md
 
       - name: Inject Suggestions
         run: |
