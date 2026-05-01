@@ -24,7 +24,13 @@ jobs:
             -d '{
               "body": "{\"task\":\"review\",\"username\":\"mdsarfarazalam840\"}"
             }' \
-            | jq -r '.responseBody | fromjson | .insights // "No AI suggestions available."' > suggestions.md
+            | jq -r '
+                if (.responseBody and (.responseBody | type == "string")) then
+                  (.responseBody | fromjson | .insights // "No AI suggestions available.")
+                else
+                  "No AI suggestions available."
+                end
+              ' > suggestions.md
 
       - name: Call AI for Improvements
         run: |
@@ -35,7 +41,13 @@ jobs:
             -d '{
               "body": "{\"task\":\"improve\",\"username\":\"mdsarfarazalam840\"}"
             }' \
-            | jq -r '.responseBody | fromjson | .insights // "No AI improvements available."' > improvements.md
+            | jq -r '
+              if (.responseBody and (.responseBody | type == "string")) then
+                (.responseBody | fromjson | .insights // "No AI improvements available.")
+              else
+                "No AI improvements available."
+              end
+            ' > improvements.md
 
       - name: Inject Suggestions
         run: |
