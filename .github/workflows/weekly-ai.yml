@@ -29,7 +29,7 @@ jobs:
           echo "Raw Appwrite response:"
           echo "$RAW_RESPONSE"
       
-          EXECUTION_ID=$(echo "$RAW_RESPONSE" | jq -r '."$id"')
+          EXECUTION_ID=$(echo "$RAW_RESPONSE" | jq -r '.["$id"]')
       
           if [ -z "$EXECUTION_ID" ] || [ "$EXECUTION_ID" = "null" ]; then
             echo "No weekly AI report available." > weekly.md
