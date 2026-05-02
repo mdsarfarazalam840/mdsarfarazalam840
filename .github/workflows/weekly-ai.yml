@@ -22,36 +22,66 @@ jobs:
 
       - name: Call AI for Weekly Report
         run: |
-          curl -sS -X POST "${{ secrets.APPWRITE_ENDPOINT }}/v1/functions/${{ secrets.APPWRITE_PROFILE_FUNCTION_ID }}/executions" \
+          RAW_RESPONSE=$(curl -sS -X POST "${{ secrets.APPWRITE_ENDPOINT }}/v1/functions/${{ secrets.APPWRITE_PROFILE_FUNCTION_ID }}/executions" \
             -H "Content-Type: application/json" \
             -H "X-Appwrite-Project: ${{ secrets.APPWRITE_PROJECT_ID }}" \
             -H "X-Appwrite-Key: ${{ secrets.APPWRITE_API_KEY }}" \
             -d '{
-              "body": "{\"task\":\"weekly\",\"username\":\"mdsarfarazalam840\",\"repository\":\"'${GITHUB_REPOSITORY}'\"}"
-            }' \
-            | tee /tmp/appwrite-weekly-response.json \
-            | jq -r '
+              "body": "{\"task\":\"weekly\",\"username\":\"mdsarfarazalam840\",\"repository\":\"'${GITHUB_REPOSITORY}'\"}",
+              "async": true
+            }')
+      
+          echo "Raw Appwrite response:"
+          echo "$RAW_RESPONSE"
+      
+          EXECUTION_ID=$(echo "$RAW_RESPONSE" | jq -r '.["$id"]')
+      
+          if [ -z "$EXECUTION_ID" ] || [ "$EXECUTION_ID" = "null" ]; then
+            echo "No weekly AI report available." > weekly.md
+            exit 0
+          fi
+      
+          for i in {1..24}; do
+            RESPONSE=$(curl -sS "${{ secrets.APPWRITE_ENDPOINT }}/v1/functions/${{ secrets.APPWRITE_PROFILE_FUNCTION_ID }}/executions/$EXECUTION_ID" \
+              -H "X-Appwrite-Project: ${{ secrets.APPWRITE_PROJECT_ID }}" \
+              -H "X-Appwrite-Key: ${{ secrets.APPWRITE_API_KEY }}")
+      
+            echo "$RESPONSE" > /tmp/weekly-execution.json
+      
+            STATUS=$(jq -r '.status // "unknown"' /tmp/weekly-execution.json)
+      
+            if [ "$STATUS" = "completed" ]; then
+              jq -r '
                 def payload:
                   if (.responseBody? and (.responseBody|type=="string") and (.responseBody!="")) then
                     (.responseBody | fromjson? // {})
-                  elif (.response? and (.response|type=="string") and (.response!="")) then
-                    (.response | fromjson? // {})
-                  elif (.body? and (.body|type=="string") and (.body!="")) then
-                    (.body | fromjson? // {})
                   else
-                    .
+                    {}
                   end;
-            
+      
                 payload as $body
                 | if ($body.insights? and ($body.insights|type=="string") and ($body.insights!="")) then
                     $body.insights
                   elif ($body.error? and ($body.error|type=="string")) then
                     "No weekly AI report available.\n\nFunction error: \($body.error)"
                   else
-                    "No weekly AI report available.\n\nDebug payload:\n\($body | tojson)"
+                    "No weekly AI report available."
                   end
-              ' > weekly.md
-
+              ' /tmp/weekly-execution.json > weekly.md
+      
+              exit 0
+            fi
+      
+            if [ "$STATUS" = "failed" ]; then
+              echo "No weekly AI report available." > weekly.md
+              exit 0
+            fi
+      
+            sleep 5
+          done
+      
+          echo "No weekly AI report available." > weekly.md
+          
       - name: Inject Weekly Report
         run: |
           awk -v start="<!-- WEEKLY_REPORT_START -->" \
