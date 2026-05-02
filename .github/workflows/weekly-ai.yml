@@ -54,15 +54,24 @@ jobs:
             STATUS=$(echo "$RESPONSE" | jq -r '.status')
       
             if [ "$STATUS" = "completed" ]; then
-              echo "$RESPONSE" | jq -r '
-                if (.responseBody and (.responseBody | type == "string") and (.responseBody != "")) then
-                  (.responseBody | fromjson | .insights // "No weekly AI report available.")
-                else
-                  "No weekly AI report available."
-                end
-              ' > weekly.md
-              exit 0
-            fi
+            echo "$RESPONSE" | jq -r '
+              if (
+                .responseBody and
+                (.responseBody | type == "string") and
+                (.responseBody != "")
+              ) then
+                (.responseBody | fromjson) as $body
+                | if ($body.ok == true and $body.ai == true and $body.insights) then
+                    $body.insights
+                  else
+                    "No weekly AI report available."
+                  end
+              else
+                "No weekly AI report available."
+              end
+            ' > weekly.md
+            exit 0
+          fi
       
             sleep 5
           done
