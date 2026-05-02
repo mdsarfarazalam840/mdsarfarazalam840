@@ -22,13 +22,12 @@ jobs:
 
       - name: Call AI for Weekly Report
         run: |
-          RAW_RESPONSE=$(curl -sS -X POST "${{ secrets.APPWRITE_ENDPOINT }}/v1/functions/${{ secrets.APPWRITE_PROFILE_FUNCTION_ID }}/executions" \
+          RAW_RESPONSE=$(curl -sS -X POST "${{ secrets.APPWRITE_ENDPOINT }}/v1/functions/${{ secrets.APPWRITE_PROFILE_FUNCTION_ID }}/executions?async=true" \
             -H "Content-Type: application/json" \
             -H "X-Appwrite-Project: ${{ secrets.APPWRITE_PROJECT_ID }}" \
             -H "X-Appwrite-Key: ${{ secrets.APPWRITE_API_KEY }}" \
             -d '{
-              "body": "{\"task\":\"weekly\",\"username\":\"mdsarfarazalam840\",\"repository\":\"'${GITHUB_REPOSITORY}'\"}",
-              "async": true
+              "body": "{\"task\":\"weekly\",\"username\":\"mdsarfarazalam840\",\"repository\":\"'${GITHUB_REPOSITORY}'\"}"
             }')
       
           echo "Raw Appwrite response:"
