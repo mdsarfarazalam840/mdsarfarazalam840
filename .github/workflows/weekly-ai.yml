@@ -24,23 +24,26 @@ jobs:
             -d '{
               "body": "{\"task\":\"weekly\",\"username\":\"mdsarfarazalam840\",\"repository\":\"'${GITHUB_REPOSITORY}'\"}"
             }' \
+            | tee /tmp/appwrite-weekly-response.json \
             | jq -r '
-                def parse_body:
-                  if .responseBody and (.responseBody | type == "string") and (.responseBody != "") then
+                def payload:
+                  if (.responseBody? and (.responseBody|type=="string") and (.responseBody!="")) then
                     (.responseBody | fromjson? // {})
-                  elif .response and (.response | type == "string") and (.response != "") then
+                  elif (.response? and (.response|type=="string") and (.response!="")) then
                     (.response | fromjson? // {})
+                  elif (.body? and (.body|type=="string") and (.body!="")) then
+                    (.body | fromjson? // {})
                   else
-                    {}
+                    .
                   end;
-
-                parse_body as $body
-                | if ($body.insights and ($body.insights | type == "string") and ($body.insights != "")) then
+            
+                payload as $body
+                | if ($body.insights? and ($body.insights|type=="string") and ($body.insights!="")) then
                     $body.insights
-                  elif ($body.error and ($body.error | type == "string")) then
+                  elif ($body.error? and ($body.error|type=="string")) then
                     "No weekly AI report available.\n\nFunction error: \($body.error)"
                   else
-                    "No weekly AI report available."
+                    "No weekly AI report available.\n\nDebug payload:\n\($body | tojson)"
                   end
               ' > weekly.md
 
