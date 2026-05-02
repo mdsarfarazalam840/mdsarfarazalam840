@@ -41,11 +41,21 @@ jobs:
               -H "X-Appwrite-Project: ${{ secrets.APPWRITE_PROJECT_ID }}" \
               -H "X-Appwrite-Key: ${{ secrets.APPWRITE_API_KEY }}")
       
+            if [ -z "$RESPONSE" ]; then
+              sleep 5
+              continue
+            fi
+      
+            if ! echo "$RESPONSE" | jq empty >/dev/null 2>&1; then
+              sleep 5
+              continue
+            fi
+      
             STATUS=$(echo "$RESPONSE" | jq -r '.status')
       
             if [ "$STATUS" = "completed" ]; then
               echo "$RESPONSE" | jq -r '
-                if (.responseBody and (.responseBody | type == "string")) then
+                if (.responseBody and (.responseBody | type == "string") and (.responseBody != "")) then
                   (.responseBody | fromjson | .insights // "No weekly AI report available.")
                 else
                   "No weekly AI report available."
