@@ -234,9 +234,6 @@ PowerShell               1 repo              █░░░░░░░░░░�
 
 <!-- WEEKLY_REPORT_START -->
 No weekly AI report available.
-
-Debug payload:
-{"message":"Synchronous function execution timed out. Use asynchronous execution instead, or ensure the execution duration doesn't exceed 30 seconds.","code":408,"type":"function_synchronous_timeout","version":"1.9.3"}
 <!-- WEEKLY_REPORT_END -->
 
 
