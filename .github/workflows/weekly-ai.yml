@@ -17,66 +17,29 @@ jobs:
 
       - name: Call AI for Weekly Report
         run: |
-          RAW_RESPONSE=$(curl -s -X POST "${{ secrets.APPWRITE_ENDPOINT }}/v1/functions/${{ secrets.APPWRITE_PROFILE_FUNCTION_ID }}/executions" \
+          curl -s -X POST "${{ secrets.APPWRITE_ENDPOINT }}/v1/functions/${{ secrets.APPWRITE_PROFILE_FUNCTION_ID }}/executions" \
             -H "Content-Type: application/json" \
             -H "X-Appwrite-Project: ${{ secrets.APPWRITE_PROJECT_ID }}" \
             -H "X-Appwrite-Key: ${{ secrets.APPWRITE_API_KEY }}" \
             -d '{
-              "body": "{\"task\":\"weekly\",\"username\":\"mdsarfarazalam840\"}",
-              "async": true
-            }')
-      
-          echo "Raw Appwrite response:"
-          echo "$RAW_RESPONSE"
-      
-          EXECUTION_ID=$(echo "$RAW_RESPONSE" | jq -r '.["$id"]')
-      
-          if [ -z "$EXECUTION_ID" ] || [ "$EXECUTION_ID" = "null" ]; then
-            echo "No weekly AI report available." > weekly.md
-            exit 0
-          fi
-      
-          for i in {1..20}; do
-            RESPONSE=$(curl -s "${{ secrets.APPWRITE_ENDPOINT }}/v1/functions/${{ secrets.APPWRITE_PROFILE_FUNCTION_ID }}/executions/$EXECUTION_ID" \
-              -H "X-Appwrite-Project: ${{ secrets.APPWRITE_PROJECT_ID }}" \
-              -H "X-Appwrite-Key: ${{ secrets.APPWRITE_API_KEY }}")
-      
-            if [ -z "$RESPONSE" ]; then
-              sleep 5
-              continue
-            fi
-      
-            if ! echo "$RESPONSE" | jq empty >/dev/null 2>&1; then
-              sleep 5
-              continue
-            fi
-      
-            STATUS=$(echo "$RESPONSE" | jq -r '.status')
-      
-            if [ "$STATUS" = "completed" ]; then
-            echo "$RESPONSE" | jq -r '
-              if (
-                .responseBody and
-                (.responseBody | type == "string") and
-                (.responseBody != "")
-              ) then
-                (.responseBody | fromjson) as $body
-                | if ($body.ok == true and $body.ai == true and $body.insights) then
-                    $body.insights
-                  else
-                    "No weekly AI report available."
-                  end
-              else
-                "No weekly AI report available."
-              end
-            ' > weekly.md
-            exit 0
-          fi
-      
-            sleep 5
-          done
-      
-          echo "No weekly AI report available." > weekly.md
+              "body": "{\"task\":\"weekly\",\"username\":\"mdsarfarazalam840\"}"
+            }' \
+            | jq -r '
+                if (
+                  .responseBody and
+                  (.responseBody | type == "string") and
+                  (.responseBody != "")
+                ) then
+                  (.responseBody | fromjson) as $body
+                  | if ($body.ok == true and $body.ai == true and $body.insights and $body.insights != "null") then
+                      $body.insights
+                    else
+                      "No weekly AI report available."
+                    end
+                else
+                  "No weekly AI report available."
+                end
+              ' > weekly.md
 
       - name: Inject Weekly Report
         run: |
@@ -102,6 +65,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git fetch origin main
+          git pull --rebase origin main
 
           git add README.md
           git commit -m "📊 Weekly AI report" || echo "No changes"
