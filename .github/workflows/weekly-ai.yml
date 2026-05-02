@@ -2,7 +2,7 @@ name: Weekly AI Report
 
 on:
   schedule:
-    - cron: "0 0 * * 0"   # every Sunday
+    - cron: "0 0 * * 0"
   workflow_dispatch:
 
 jobs:
@@ -17,28 +17,31 @@ jobs:
 
       - name: Call AI for Weekly Report
         run: |
-          curl -s -X POST "${{ secrets.APPWRITE_ENDPOINT }}/v1/functions/${{ secrets.APPWRITE_PROFILE_FUNCTION_ID }}/executions" \
+          curl -sS -X POST "${{ secrets.APPWRITE_ENDPOINT }}/v1/functions/${{ secrets.APPWRITE_PROFILE_FUNCTION_ID }}/executions" \
             -H "Content-Type: application/json" \
             -H "X-Appwrite-Project: ${{ secrets.APPWRITE_PROJECT_ID }}" \
             -H "X-Appwrite-Key: ${{ secrets.APPWRITE_API_KEY }}" \
             -d '{
-              "body": "{\"task\":\"weekly\",\"username\":\"mdsarfarazalam840\"}"
+              "body": "{\"task\":\"weekly\",\"username\":\"mdsarfarazalam840\",\"repository\":\"'${GITHUB_REPOSITORY}'\"}"
             }' \
             | jq -r '
-                if (
-                  .responseBody and
-                  (.responseBody | type == "string") and
-                  (.responseBody != "")
-                ) then
-                  (.responseBody | fromjson) as $body
-                  | if ($body.ok == true and $body.ai == true and $body.insights and $body.insights != "null") then
-                      $body.insights
-                    else
-                      "No weekly AI report available."
-                    end
-                else
-                  "No weekly AI report available."
-                end
+                def parse_body:
+                  if .responseBody and (.responseBody | type == "string") and (.responseBody != "") then
+                    (.responseBody | fromjson? // {})
+                  elif .response and (.response | type == "string") and (.response != "") then
+                    (.response | fromjson? // {})
+                  else
+                    {}
+                  end;
+
+                parse_body as $body
+                | if ($body.insights and ($body.insights | type == "string") and ($body.insights != "")) then
+                    $body.insights
+                  elif ($body.error and ($body.error | type == "string")) then
+                    "No weekly AI report available.\n\nFunction error: \($body.error)"
+                  else
+                    "No weekly AI report available."
+                  end
               ' > weekly.md
 
       - name: Inject Weekly Report
