@@ -7,12 +7,10 @@ on:
 jobs:
   ai-response:
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
 
     steps:
-
-      - name: Checkout repo
-        uses: actions/checkout@v3
-
       - name: Read issue body
         run: |
           echo "BODY=${{ github.event.issue.body }}" >> $GITHUB_ENV
@@ -20,16 +18,29 @@ jobs:
       - name: Call AI if /analyze
         if: contains(env.BODY, '/analyze')
         run: |
-          RESPONSE=$(curl -s -X POST https://ai-agentrouter.onrender.com/route \
+          RAW_RESPONSE=$(curl -sS -X POST "https://cloud.appwrite.io/v1/functions/69f2dd1d00316fc85ab7/executions" \
             -H "Content-Type: application/json" \
-            -d '{"task":"review","username":"mdsarfarazalam840"}')
+            -H "X-Appwrite-Project: ${{ secrets.APPWRITE_PROJECT_ID }}" \
+            -H "X-Appwrite-Key: ${{ secrets.APPWRITE_API_KEY }}" \
+            -d '{
+              "body": "{\"task\":\"review\",\"username\":\"mdsarfarazalam840\"}"
+            }')
 
-          echo "$RESPONSE" > output.md
+          echo "===== RAW ISSUE RESPONSE ====="
+          echo "$RAW_RESPONSE"
+
+          echo "$RAW_RESPONSE" | jq -r '
+            (.responseBody | fromjson? // {}) as $body
+            | if ($body.ok == true and $body.insights and ($body.insights | type == "string") and ($body.insights != "")) then
+                $body.insights
+              else
+                "AI analysis unavailable."
+              end
+          ' > output.md
 
       - name: Reply to Issue
         if: contains(env.BODY, '/analyze')
         run: |
-          gh issue comment ${{ github.event.issue.number }} \
-            --body-file output.md
+          gh issue comment ${{ github.event.issue.number }} --body-file output.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
