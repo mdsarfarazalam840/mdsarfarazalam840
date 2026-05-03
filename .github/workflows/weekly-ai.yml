@@ -33,11 +33,6 @@ jobs:
       
           EXECUTION_ID=$(echo "$RAW_RESPONSE" | jq -r '.["$id"]')
       
-          if [ -z "$EXECUTION_ID" ] || [ "$EXECUTION_ID" = "null" ]; then
-            echo "No weekly AI report available." > weekly.md
-            exit 0
-          fi
-      
           for i in {1..24}; do
             RESPONSE=$(curl -sS "${{ secrets.APPWRITE_ENDPOINT }}/v1/functions/${{ secrets.APPWRITE_PROFILE_FUNCTION_ID }}/executions/$EXECUTION_ID" \
               -H "X-Appwrite-Project: ${{ secrets.APPWRITE_PROJECT_ID }}" \
@@ -48,17 +43,12 @@ jobs:
             if [ "$STATUS" = "completed" ]; then
               echo "$RESPONSE" | jq -r '
                 (.responseBody | fromjson? // {}) as $body
-                | if ($body.ok == true and $body.insights) then
+                | if ($body.ok == true and $body.insights and ($body.insights != "")) then
                     $body.insights
                   else
                     "No weekly AI report available."
                   end
               ' > weekly.md
-              break
-            fi
-      
-            if [ "$STATUS" = "failed" ]; then
-              echo "No weekly AI report available." > weekly.md
               break
             fi
       
@@ -68,9 +58,6 @@ jobs:
           if [ ! -s weekly.md ]; then
             echo "No weekly AI report available." > weekly.md
           fi
-      
-          echo "===== weekly.md ====="
-          cat weekly.md
           
       - name: Inject Weekly Report
         run: |
