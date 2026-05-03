@@ -27,60 +27,20 @@ jobs:
             -H "X-Appwrite-Project: ${{ secrets.APPWRITE_PROJECT_ID }}" \
             -H "X-Appwrite-Key: ${{ secrets.APPWRITE_API_KEY }}" \
             -d '{
-              "body": "{\"task\":\"weekly\",\"username\":\"mdsarfarazalam840\",\"repository\":\"'${GITHUB_REPOSITORY}'\"}",
-              "async": true
+              "body": "{\"task\":\"weekly\",\"username\":\"mdsarfarazalam840\",\"repository\":\"'${GITHUB_REPOSITORY}'\"}"
             }')
       
-          EXECUTION_ID=$(echo "$RAW_RESPONSE" | jq -r '.["$id"]')
+          echo "===== RAW RESPONSE ====="
+          echo "$RAW_RESPONSE"
       
-          for i in {1..24}; do
-            RESPONSE=$(curl -sS "${{ secrets.APPWRITE_ENDPOINT }}/v1/functions/${{ secrets.APPWRITE_PROFILE_FUNCTION_ID }}/executions/$EXECUTION_ID" \
-              -H "X-Appwrite-Project: ${{ secrets.APPWRITE_PROJECT_ID }}" \
-              -H "X-Appwrite-Key: ${{ secrets.APPWRITE_API_KEY }}")
-
-            echo "===== RAW POLL RESPONSE ====="
-            echo "$RESPONSE"
-      
-            STATUS=$(echo "$RESPONSE" | jq -r '.status // "unknown"')
-      
-            BODY_READY=$(echo "$RESPONSE" | jq -r '
-              if (
-                (.responseBody and (.responseBody | type == "string") and (.responseBody != "")) or
-                (.response and (.response | type == "string") and (.response != ""))
-              ) then
-                "yes"
+          echo "$RAW_RESPONSE" | jq -r '
+            (.responseBody | fromjson? // {}) as $body
+            | if ($body.ok == true and $body.insights and ($body.insights | type == "string") and ($body.insights != "")) then
+                $body.insights
               else
-                "no"
+                "No weekly AI report available."
               end
-            ')
-            
-            if [ "$STATUS" = "completed" ] && [ "$BODY_READY" = "yes" ]; then
-              echo "$RESPONSE" | jq -r '
-                def parsed:
-                  if (.responseBody and (.responseBody | type == "string") and (.responseBody != "")) then
-                    (.responseBody | fromjson? // {})
-                  elif (.response and (.response | type == "string") and (.response != "")) then
-                    (.response | fromjson? // {})
-                  else
-                    {}
-                  end;
-      
-                parsed as $body
-                | if ($body.ok == true and $body.insights and ($body.insights | type == "string") and ($body.insights != "")) then
-                    $body.insights
-                  else
-                    empty
-                  end
-              ' > weekly.md
-              break
-            fi
-      
-            sleep 5
-          done
-      
-          if [ ! -s weekly.md ]; then
-            echo "No weekly AI report available." > weekly.md
-          fi
+          ' > weekly.md
 
       - name: Debug Weekly Output
         run: |
