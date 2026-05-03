@@ -22,38 +22,21 @@ jobs:
             -H "X-Appwrite-Project: ${{ secrets.APPWRITE_PROJECT_ID }}" \
             -H "X-Appwrite-Key: ${{ secrets.APPWRITE_API_KEY }}" \
             -d '{
-              "body": "{\"task\":\"review\",\"username\":\"mdsarfarazalam840\"}",
-              "async": true
+              "body": "{\"task\":\"review\",\"username\":\"mdsarfarazalam840\"}"
             }')
       
-          EXECUTION_ID=$(echo "$RAW_RESPONSE" | jq -r '.["$id"]')
+          echo "===== RAW SUGGESTIONS RESPONSE ====="
+          echo "$RAW_RESPONSE"
       
-          for i in {1..24}; do
-            RESPONSE=$(curl -sS "${{ secrets.APPWRITE_ENDPOINT }}/v1/functions/${{ secrets.APPWRITE_PROFILE_FUNCTION_ID }}/executions/$EXECUTION_ID" \
-              -H "X-Appwrite-Project: ${{ secrets.APPWRITE_PROJECT_ID }}" \
-              -H "X-Appwrite-Key: ${{ secrets.APPWRITE_API_KEY }}")
-      
-            STATUS=$(echo "$RESPONSE" | jq -r '.status // "unknown"')
-      
-            if [ "$STATUS" = "completed" ]; then
-              echo "$RESPONSE" | jq -r '
-                (.responseBody | fromjson? // {}) as $body
-                | if ($body.ok == true and $body.insights and ($body.insights != "")) then
-                    $body.insights
-                  else
-                    "No AI suggestions available."
-                  end
-              ' > suggestions.md
-              break
-            fi
-      
-            sleep 5
-          done
-      
-          if [ ! -s suggestions.md ]; then
-            echo "No AI suggestions available." > suggestions.md
-          fi
-
+          echo "$RAW_RESPONSE" | jq -r '
+            (.responseBody | fromjson? // {}) as $body
+            | if ($body.ok == true and $body.insights and ($body.insights | type == "string") and ($body.insights != "")) then
+                $body.insights
+              else
+                "No AI suggestions available."
+              end
+          ' > suggestions.md
+          
       - name: Call AI for Improvements
         run: |
           RAW_RESPONSE=$(curl -sS -X POST "${{ secrets.APPWRITE_ENDPOINT }}/v1/functions/${{ secrets.APPWRITE_PROFILE_FUNCTION_ID }}/executions" \
@@ -61,37 +44,20 @@ jobs:
             -H "X-Appwrite-Project: ${{ secrets.APPWRITE_PROJECT_ID }}" \
             -H "X-Appwrite-Key: ${{ secrets.APPWRITE_API_KEY }}" \
             -d '{
-              "body": "{\"task\":\"improve\",\"username\":\"mdsarfarazalam840\"}",
-              "async": true
+              "body": "{\"task\":\"improve\",\"username\":\"mdsarfarazalam840\"}"
             }')
       
-          EXECUTION_ID=$(echo "$RAW_RESPONSE" | jq -r '.["$id"]')
+          echo "===== RAW IMPROVEMENTS RESPONSE ====="
+          echo "$RAW_RESPONSE"
       
-          for i in {1..24}; do
-            RESPONSE=$(curl -sS "${{ secrets.APPWRITE_ENDPOINT }}/v1/functions/${{ secrets.APPWRITE_PROFILE_FUNCTION_ID }}/executions/$EXECUTION_ID" \
-              -H "X-Appwrite-Project: ${{ secrets.APPWRITE_PROJECT_ID }}" \
-              -H "X-Appwrite-Key: ${{ secrets.APPWRITE_API_KEY }}")
-      
-            STATUS=$(echo "$RESPONSE" | jq -r '.status // "unknown"')
-      
-            if [ "$STATUS" = "completed" ]; then
-              echo "$RESPONSE" | jq -r '
-                (.responseBody | fromjson? // {}) as $body
-                | if ($body.ok == true and $body.insights and ($body.insights != "")) then
-                    $body.insights
-                  else
-                    "No AI improvements available."
-                  end
-              ' > improvements.md
-              break
-            fi
-      
-            sleep 5
-          done
-      
-          if [ ! -s improvements.md ]; then
-            echo "No AI improvements available." > improvements.md
-          fi
+          echo "$RAW_RESPONSE" | jq -r '
+            (.responseBody | fromjson? // {}) as $body
+            | if ($body.ok == true and $body.insights and ($body.insights | type == "string") and ($body.insights != "")) then
+                $body.insights
+              else
+                "No AI improvements available."
+              end
+          ' > improvements.md
 
       - name: Debug Suggestions Output
         run: |
