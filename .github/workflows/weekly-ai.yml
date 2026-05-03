@@ -22,16 +22,14 @@ jobs:
 
       - name: Call AI for Weekly Report
         run: |
-          RAW_RESPONSE=$(curl -sS -X POST "${{ secrets.APPWRITE_ENDPOINT }}/v1/functions/${{ secrets.APPWRITE_PROFILE_FUNCTION_ID }}/executions?async=true" \
+          RAW_RESPONSE=$(curl -sS -X POST "${{ secrets.APPWRITE_ENDPOINT }}/v1/functions/${{ secrets.APPWRITE_PROFILE_FUNCTION_ID }}/executions" \
             -H "Content-Type: application/json" \
             -H "X-Appwrite-Project: ${{ secrets.APPWRITE_PROJECT_ID }}" \
             -H "X-Appwrite-Key: ${{ secrets.APPWRITE_API_KEY }}" \
             -d '{
-              "body": "{\"task\":\"weekly\",\"username\":\"mdsarfarazalam840\",\"repository\":\"'${GITHUB_REPOSITORY}'\"}"
+              "body": "{\"task\":\"weekly\",\"username\":\"mdsarfarazalam840\",\"repository\":\"'${GITHUB_REPOSITORY}'\"}",
+              "async": true
             }')
-      
-          echo "Raw Appwrite response:"
-          echo "$RAW_RESPONSE"
       
           EXECUTION_ID=$(echo "$RAW_RESPONSE" | jq -r '.["$id"]')
       
@@ -45,41 +43,34 @@ jobs:
               -H "X-Appwrite-Project: ${{ secrets.APPWRITE_PROJECT_ID }}" \
               -H "X-Appwrite-Key: ${{ secrets.APPWRITE_API_KEY }}")
       
-            echo "$RESPONSE" > /tmp/weekly-execution.json
-      
-            STATUS=$(jq -r '.status // "unknown"' /tmp/weekly-execution.json)
+            STATUS=$(echo "$RESPONSE" | jq -r '.status // "unknown"')
       
             if [ "$STATUS" = "completed" ]; then
-              jq -r '
-                def payload:
-                  if (.responseBody? and (.responseBody|type=="string") and (.responseBody!="")) then
-                    (.responseBody | fromjson? // {})
-                  else
-                    {}
-                  end;
-      
-                payload as $body
-                | if ($body.insights? and ($body.insights|type=="string") and ($body.insights!="")) then
+              echo "$RESPONSE" | jq -r '
+                (.responseBody | fromjson? // {}) as $body
+                | if ($body.ok == true and $body.insights) then
                     $body.insights
-                  elif ($body.error? and ($body.error|type=="string")) then
-                    "No weekly AI report available.\n\nFunction error: \($body.error)"
                   else
                     "No weekly AI report available."
                   end
-              ' /tmp/weekly-execution.json > weekly.md
-      
-              exit 0
+              ' > weekly.md
+              break
             fi
       
             if [ "$STATUS" = "failed" ]; then
               echo "No weekly AI report available." > weekly.md
-              exit 0
+              break
             fi
       
             sleep 5
           done
       
-          echo "No weekly AI report available." > weekly.md
+          if [ ! -s weekly.md ]; then
+            echo "No weekly AI report available." > weekly.md
+          fi
+      
+          echo "===== weekly.md ====="
+          cat weekly.md
           
       - name: Inject Weekly Report
         run: |
