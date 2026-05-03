@@ -40,7 +40,18 @@ jobs:
       
             STATUS=$(echo "$RESPONSE" | jq -r '.status // "unknown"')
       
-            if [ "$STATUS" = "completed" ]; then
+            BODY_READY=$(echo "$RESPONSE" | jq -r '
+              if (
+                (.responseBody and (.responseBody | type == "string") and (.responseBody != "")) or
+                (.response and (.response | type == "string") and (.response != ""))
+              ) then
+                "yes"
+              else
+                "no"
+              end
+            ')
+            
+            if [ "$STATUS" = "completed" ] && [ "$BODY_READY" = "yes" ]; then
               echo "$RESPONSE" | jq -r '
                 def parsed:
                   if (.responseBody and (.responseBody | type == "string") and (.responseBody != "")) then
