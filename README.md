@@ -232,8 +232,16 @@ PowerShell               1 repo              █░░░░░░░░░░�
 
 | Repository | Commits (7d) | PRs | Issues | Stars | Language | Last Push |
 |------------|--------------|-----|--------|-------|----------|-----------|
+| ai-agentrouter | 2 | 11 | 0 | 0 | JavaScript | 2026-05-03 |
 | mdsarfarazalam840 | 30 | 0 | 1 | 1 | JavaScript | 2026-05-03 |
-| 3D-portfolio | 0 | 15 | 0 | 0 | TypeScript | 202
+| 3D-portfolio | 0 | 15 | 0 | 0 | TypeScript | 2026-04-20 |
+| mdsarfarazalam840.github.io | 0 | 0 | 0 | 0 | TypeScript | 2026-04-07 |
+| VulnFix-AI | 0 | 0 | 0 | 0 | TypeScript | 2026-04-19 |
+| own-drive | 0 | 0 | 0 | 0 | TypeScript | 2026-04-16 |
+| developer-portfolios | 0 | 0 | 0 | 0 | N/A | 2026-04-15 |
+| acquisitions | 0 | 0 | 0 | 0 | JavaScript | 2026-04-12 |
+| SpotiFLAC | 0 | 0 | 0 | 0 | N/A | 2026-03-15 |
+| claude-code | 0 | 0 | 0 | 0 |
 <!-- WEEKLY_REPORT_END -->
 
 
