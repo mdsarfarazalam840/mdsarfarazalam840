@@ -236,12 +236,14 @@ PowerShell               1 repo              █░░░░░░░░░░�
 | mdsarfarazalam840 | 30 | 0 | 1 | 1 | JavaScript | 2026-05-03 |
 | 3D-portfolio | 0 | 15 | 0 | 0 | TypeScript | 2026-04-20 |
 | mdsarfarazalam840.github.io | 0 | 0 | 0 | 0 | TypeScript | 2026-04-07 |
-| VulnFix-AI | 0 | 0 | 0 | 0 | TypeScript | 2026-04-19 |
 | own-drive | 0 | 0 | 0 | 0 | TypeScript | 2026-04-16 |
-| developer-portfolios | 0 | 0 | 0 | 0 | N/A | 2026-04-15 |
+| VulnFix-AI | 0 | 0 | 0 | 0 | TypeScript | 2026-04-19 |
 | acquisitions | 0 | 0 | 0 | 0 | JavaScript | 2026-04-12 |
-| SpotiFLAC | 0 | 0 | 0 | 0 | N/A | 2026-03-15 |
-| claude-code | 0 | 0 | 0 | 0 |
+| claude-code | 0 | 0 | 0 | 0 | N/A | 2026-03-31 |
+
+## Key Insights
+- High commit activity in `mdsarfarazalam840` repository with 30 commits in the last 7 days.
+- Low commit activity in `ai-agentrouter` repository with 2 commits in the
 <!-- WEEKLY_REPORT_END -->
 
 
