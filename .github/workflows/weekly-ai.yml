@@ -37,6 +37,9 @@ jobs:
             RESPONSE=$(curl -sS "${{ secrets.APPWRITE_ENDPOINT }}/v1/functions/${{ secrets.APPWRITE_PROFILE_FUNCTION_ID }}/executions/$EXECUTION_ID" \
               -H "X-Appwrite-Project: ${{ secrets.APPWRITE_PROJECT_ID }}" \
               -H "X-Appwrite-Key: ${{ secrets.APPWRITE_API_KEY }}")
+
+            echo "===== RAW POLL RESPONSE ====="
+            echo "$RESPONSE"
       
             STATUS=$(echo "$RESPONSE" | jq -r '.status // "unknown"')
       
