@@ -58,6 +58,11 @@ jobs:
           if [ ! -s weekly.md ]; then
             echo "No weekly AI report available." > weekly.md
           fi
+
+      - name: Debug Weekly Output
+        run: |
+          echo "===== weekly.md ====="
+          cat weekly.md
           
       - name: Inject Weekly Report
         run: |
