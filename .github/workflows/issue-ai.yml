@@ -41,6 +41,8 @@ jobs:
       - name: Reply to Issue
         if: contains(env.BODY, '/analyze')
         run: |
-          gh issue comment ${{ github.event.issue.number }} --body-file output.md
+          gh issue comment ${{ github.event.issue.number }} \
+            --repo ${{ github.repository }} \
+            --body-file output.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
