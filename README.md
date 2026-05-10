@@ -224,18 +224,18 @@ No AI suggestions available.
 
 | Repository | Commits (7d) | PRs | Issues | Stars | Language | Last Push |
 |------------|--------------|-----|--------|-------|----------|-----------|
-| ai-agentrouter | 2 | 11 | 0 | 0 | JavaScript | 2026-05-03 |
-| mdsarfarazalam840 | 30 | 0 | 1 | 1 | JavaScript | 2026-05-03 |
-| 3D-portfolio | 0 | 15 | 0 | 0 | TypeScript | 2026-04-20 |
-| mdsarfarazalam840.github.io | 0 | 0 | 0 | 0 | TypeScript | 2026-04-07 |
-| own-drive | 0 | 0 | 0 | 0 | TypeScript | 2026-04-16 |
-| VulnFix-AI | 0 | 0 | 0 | 0 | TypeScript | 2026-04-19 |
-| acquisitions | 0 | 0 | 0 | 0 | JavaScript | 2026-04-12 |
-| claude-code | 0 | 0 | 0 | 0 | N/A | 2026-03-31 |
+| ai-agentrouter | 30 | 26 | 1 | 0 | JavaScript | 2026-05-08 |
+| mdsarfarazalam840 | 30 | 0 | 11 | 1 | JavaScript | 2026-05-09 |
+| 3D-portfolio | 0 | 15 | 0 | 0 | TypeScript | 2026-05-09 |
+| claw-code | 11 | 0 | 0 | 0 | N/A | 2026-05-04 |
 
 ## Key Insights
-- High commit activity in `mdsarfarazalam840` repository with 30 commits in the last 7 days.
-- Low commit activity in `ai-agentrouter` repository with 2 commits in the
+- The top repository, `ai-agentrouter`, has 26 PRs and 1 issue.
+- `mdsarfarazalam840` has 30 commits and 11 issues.
+
+## Next Focus
+- Review and optimize the `ai-agentrouter` repository for better performance.
+- Improve the commit message and issue tracking for `mdsarfarazalam840`.
 <!-- WEEKLY_REPORT_END -->
 
 
