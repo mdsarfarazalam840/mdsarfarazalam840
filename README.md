@@ -245,18 +245,18 @@ PowerShell               1 repo              █░░░░░░░░░░�
 
 | Repository | Commits (7d) | PRs | Issues | Stars | Language | Last Push |
 |------------|--------------|-----|--------|-------|----------|-----------|
-| ai-agentrouter | 30 | 26 | 1 | 0 | JavaScript | 2026-05-08 |
-| mdsarfarazalam840 | 30 | 0 | 11 | 1 | JavaScript | 2026-05-09 |
+| ai-agentrouter | 2 | 27 | 0 | 0 | JavaScript | 2026-05-15 |
+| Aura-Shopping | 1 | 0 | 0 | 0 | TypeScript | 2026-05-10 |
+| mdsarfarazalam840 | 30 | 0 | 0 | 1 | JavaScript | 2026-05-16 |
 | 3D-portfolio | 0 | 15 | 0 | 0 | TypeScript | 2026-05-09 |
-| claw-code | 11 | 0 | 0 | 0 | N/A | 2026-05-04 |
+| telegram_copier | 0 | 10 | 0 | 0 | Python | 2026-04-21 |
+| claw-code | 0 | 0 | 0 | 0 | N/A | 2026-05-04 |
+| claude-code | 0 | 0 | 0 | 0 | N/A | 2026-03-31 |
+| VulnFix-AI | 0 | 0 | 0 | 0 | TypeScript | 2026-04-19 |
+| own-drive | 0 | 0 | 0 | 0 | TypeScript | 2026-04-16 |
 
 ## Key Insights
-- The top repository, `ai-agentrouter`, has 26 PRs and 1 issue.
-- `mdsarfarazalam840` has 30 commits and 11 issues.
-
-## Next Focus
-- Review and optimize the `ai-agentrouter` repository for better performance.
-- Improve the commit message and issue tracking for `mdsarfarazalam840`.
+- mdsarfarazalam840 made significant progress with 30 commits in the last
 <!-- WEEKLY_REPORT_END -->
 
 
