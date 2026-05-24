@@ -235,18 +235,17 @@ PowerShell               1 repo              █░░░░░░░░░░�
 
 | Repository | Commits (7d) | PRs | Issues | Stars | Language | Last Push |
 |------------|--------------|-----|--------|-------|----------|-----------|
-| ai-agentrouter | 2 | 27 | 0 | 0 | JavaScript | 2026-05-15 |
-| Aura-Shopping | 1 | 0 | 0 | 0 | TypeScript | 2026-05-10 |
-| mdsarfarazalam840 | 30 | 0 | 0 | 1 | JavaScript | 2026-05-16 |
-| 3D-portfolio | 0 | 15 | 0 | 0 | TypeScript | 2026-05-09 |
+| mdsarfarazalam840 | 30 | 1 | 0 | 1 | JavaScript | 2026-05-23 |
+| ai-agentrouter | 0 | 27 | 0 | 0 | JavaScript | 2026-05-15 |
 | telegram_copier | 0 | 10 | 0 | 0 | Python | 2026-04-21 |
-| claw-code | 0 | 0 | 0 | 0 | N/A | 2026-05-04 |
-| claude-code | 0 | 0 | 0 | 0 | N/A | 2026-03-31 |
-| VulnFix-AI | 0 | 0 | 0 | 0 | TypeScript | 2026-04-19 |
-| own-drive | 0 | 0 | 0 | 0 | TypeScript | 2026-04-16 |
 
 ## Key Insights
-- mdsarfarazalam840 made significant progress with 30 commits in the last
+- High commit activity in mdsarfarazalam840 repository.
+- Low commit activity in other repositories.
+
+## Next Focus
+- Review and optimize mdsarfarazalam840 repository for better performance.
+- Explore opportunities to increase commit activity in other repositories.
 <!-- WEEKLY_REPORT_END -->
 
 
