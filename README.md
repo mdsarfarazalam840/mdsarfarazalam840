@@ -163,21 +163,7 @@ No AI improvements available.
 ## 📊 Weekly AI Report
 
 <!-- WEEKLY_REPORT_START -->
-## 📊 Weekly GitHub Engineering Report
-
-| Repository | Commits (7d) | PRs | Issues | Stars | Language | Last Push |
-|------------|--------------|-----|--------|-------|----------|-----------|
-| mdsarfarazalam840 | 30 | 1 | 0 | 1 | JavaScript | 2026-05-23 |
-| ai-agentrouter | 0 | 27 | 0 | 0 | JavaScript | 2026-05-15 |
-| telegram_copier | 0 | 10 | 0 | 0 | Python | 2026-04-21 |
-
-## Key Insights
-- High commit activity in mdsarfarazalam840 repository.
-- Low commit activity in other repositories.
-
-## Next Focus
-- Review and optimize mdsarfarazalam840 repository for better performance.
-- Explore opportunities to increase commit activity in other repositories.
+No weekly AI report available.
 <!-- WEEKLY_REPORT_END -->
 
 
