@@ -237,7 +237,25 @@ CSS                      1 repo              █░░░░░░░░░░�
 ## 📊 Weekly AI Report
 
 <!-- WEEKLY_REPORT_START -->
-No weekly AI report available.
+## 📊 Weekly GitHub Engineering Report
+
+| Repository | Commits (7d) | PRs | Issues | Stars | Language | Last Push |
+|------------|--------------|-----|--------|-------|----------|-----------|
+| freemoviesuggestion | 10 | 5 | 0 | 0 | Astro | 2026-06-07 |
+| ai-agentrouter | 0 | 27 | 0 | 0 | JavaScript | 2026-05-15 |
+| telegram_copier | 0 | 10 | 0 | 0 | Python | 2026-04-21 |
+| mdsarfarazalam840 | 30 | 1 | 0 | 1 | JavaScript | 2026-06-13 |
+| Neural_cloud | 0 | 1 | 0 | 0 | JavaScript | 2026-05-27 |
+| EcomWithAI | 0 | 0 | 0 | 0 | JavaScript | 2026-05-31 |
+| keepalive | 0 | 0 | 0 | 0 | JavaScript | 2026-05-23 |
+| hacktoberfestfineanmol | 0 | 0 | 0 | 0 | HTML | 2026-06-05 |
+
+## Key Insights
+- mdsarfarazalam840 made 30 commits in the last week.
+- freemoviesuggestion received 5 PRs in the last week.
+
+## Next Focus
+- Improve commit frequency for ai-agentrouter and telegram
 <!-- WEEKLY_REPORT_END -->
 
 
