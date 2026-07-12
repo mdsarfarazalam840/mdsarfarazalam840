@@ -240,7 +240,23 @@ Astro                    1 repo              █░░░░░░░░░░�
 ## 📊 Weekly AI Report
 
 <!-- WEEKLY_REPORT_START -->
-No weekly AI report available.
+## 📊 Weekly GitHub Engineering Report
+
+| Repository | Commits (7d) | PRs | Issues | Stars | Language | Last Push |
+|------------|--------------|-----|--------|-------|----------|-----------|
+| freemoviesuggestion | 16 | 12 | 0 | 0 | Astro | 2026-07-11 |
+| mdsarfarazalam840 | 30 | 0 | 0 | 1 | JavaScript | 2026-07-11 |
+| 3D-portfolio | 4 | 22 | 0 | 0 | HTML | 2026-07-06 |
+| ai-agentrouter | 0 | 27 | 0 | 0 | JavaScript | 2026-05-15 |
+| Aura-Shopping | 0 | 0 | 0 | 0 | TypeScript | 2026-05-10 |
+| Neural_cloud | 0 | 1 | 0 | 0 | JavaScript | 2026-05-27 |
+| keepalive | 0 | 0 | 0 | 0 | JavaScript | 2026-05-23 |
+| EcomWithAI | 0 | 0 | 0 | 0 | JavaScript | 2026-05-31 |
+| StreamHub | 0 | 1 | 0 | 0 | TypeScript | 2026-06-27 |
+
+## Key Insights
+- mdsarfarazalam840 made the most commits this week with 30.
+- freemovies
 <!-- WEEKLY_REPORT_END -->
 
 
