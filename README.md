@@ -243,19 +243,19 @@ Astro                    1 repo              █░░░░░░░░░░�
 
 | Repository | Commits (7d) | PRs | Issues | Stars | Language | Last Push |
 |------------|--------------|-----|--------|-------|----------|-----------|
-| freemoviesuggestion | 16 | 12 | 0 | 0 | Astro | 2026-07-11 |
-| mdsarfarazalam840 | 30 | 0 | 0 | 1 | JavaScript | 2026-07-11 |
-| 3D-portfolio | 4 | 22 | 0 | 0 | HTML | 2026-07-06 |
-| ai-agentrouter | 0 | 27 | 0 | 0 | JavaScript | 2026-05-15 |
-| Aura-Shopping | 0 | 0 | 0 | 0 | TypeScript | 2026-05-10 |
-| Neural_cloud | 0 | 1 | 0 | 0 | JavaScript | 2026-05-27 |
-| keepalive | 0 | 0 | 0 | 0 | JavaScript | 2026-05-23 |
-| EcomWithAI | 0 | 0 | 0 | 0 | JavaScript | 2026-05-31 |
+| Islamic-website | 11 | 0 | 0 | 0 | TypeScript | 2026-07-18 |
+| freemoviesuggestion | 9 | 15 | 0 | 0 | Astro | 2026-07-15 |
+| 3D-portfolio | 0 | 22 | 0 | 0 | HTML | 2026-07-06 |
 | StreamHub | 0 | 1 | 0 | 0 | TypeScript | 2026-06-27 |
+| hacktoberfestfineanmol | 0 | 0 | 0 | 0 | HTML | 2026-06-05 |
+| EcomWithAI | 0 | 0 | 0 | 0 | JavaScript | 2026-05-31 |
+| Neural_cloud | 0 | 1 | 0 | 0 | JavaScript | 2026-05-27 |
+| ai-agentrouter | 0 | 27 | 0 | 0 | JavaScript | 2026-05-15 |
+| mdsarfarazalam840 | 30 | 0 | 0 | 1 | JavaScript | 2026-07-18 |
 
 ## Key Insights
-- mdsarfarazalam840 made the most commits this week with 30.
-- freemovies
+- mdsarfarazalam840 made 30 commits in the last week.
+-
 <!-- WEEKLY_REPORT_END -->
 
 
