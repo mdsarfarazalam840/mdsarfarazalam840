@@ -110,13 +110,13 @@ Here are some ideas to get you started:
 
 
 <!--START_SECTION:waka-->
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-2.12%20million%20lines%20of%20code-blue?style=flat)
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-2.13%20million%20lines%20of%20code-blue?style=flat)
 
 **🐱 My GitHub Data** 
 
-> 📦 135.8 kB Used in GitHub's Storage 
+> 📦 135.9 kB Used in GitHub's Storage 
  > 
-> 🏆 351 Contributions in the Year 2026
+> 🏆 353 Contributions in the Year 2026
  > 
 > 💼 Opted to Hire
  > 
@@ -127,21 +127,21 @@ Here are some ideas to get you started:
 **I'm an Early 🐤** 
 
 ```text
-🌞 Morning                252 commits         ███████░░░░░░░░░░░░░░░░░░   26.30 % 
-🌆 Daytime                275 commits         ███████░░░░░░░░░░░░░░░░░░   28.71 % 
-🌃 Evening                351 commits         █████████░░░░░░░░░░░░░░░░   36.64 % 
-🌙 Night                  80 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   08.35 % 
+🌞 Morning                252 commits         ███████░░░░░░░░░░░░░░░░░░   26.28 % 
+🌆 Daytime                275 commits         ███████░░░░░░░░░░░░░░░░░░   28.68 % 
+🌃 Evening                352 commits         █████████░░░░░░░░░░░░░░░░   36.70 % 
+🌙 Night                  80 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   08.34 % 
 ```
 📅 **I'm Most Productive on Sunday** 
 
 ```text
-Monday                   129 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.47 % 
-Tuesday                  155 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.18 % 
-Wednesday                175 commits         █████░░░░░░░░░░░░░░░░░░░░   18.27 % 
+Monday                   129 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.45 % 
+Tuesday                  155 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.16 % 
+Wednesday                175 commits         █████░░░░░░░░░░░░░░░░░░░░   18.25 % 
 Thursday                 25 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   02.61 % 
-Friday                   117 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.21 % 
-Saturday                 120 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.53 % 
-Sunday                   237 commits         ██████░░░░░░░░░░░░░░░░░░░   24.74 % 
+Friday                   118 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.30 % 
+Saturday                 120 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.51 % 
+Sunday                   237 commits         ██████░░░░░░░░░░░░░░░░░░░   24.71 % 
 ```
 
 
@@ -151,21 +151,21 @@ Sunday                   237 commits         ██████░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-TypeScript               8 hrs 31 mins       ██████████████░░░░░░░░░░░   56.89 % 
-YAML                     1 hr 33 mins        ███░░░░░░░░░░░░░░░░░░░░░░   10.42 % 
-Other                    1 hr 18 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   08.68 % 
-Markdown                 1 hr 6 mins         ██░░░░░░░░░░░░░░░░░░░░░░░   07.35 % 
-Git Config               38 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   04.30 % 
+TypeScript               5 hrs 58 mins       ████████████░░░░░░░░░░░░░   49.06 % 
+YAML                     1 hr 43 mins        ████░░░░░░░░░░░░░░░░░░░░░   14.16 % 
+Other                    1 hr 28 mins        ███░░░░░░░░░░░░░░░░░░░░░░   12.11 % 
+Markdown                 56 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   07.80 % 
+JSON                     39 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.43 % 
 
 🔥 Editors: 
-VS Code                  7 hrs 58 mins       █████████████░░░░░░░░░░░░   53.22 % 
-Claude Code              7 hrs               ████████████░░░░░░░░░░░░░   46.78 % 
+Claude Code              8 hrs 2 mins        █████████████████░░░░░░░░   66.11 % 
+VS Code                  4 hrs 7 mins        ████████░░░░░░░░░░░░░░░░░   33.89 % 
 
 🐱‍💻 Projects: 
-Quran-website            14 hrs 59 mins      █████████████████████████   100.00 % 
+Quran-website            12 hrs 9 mins       █████████████████████████   100.00 % 
 
 💻 Operating System: 
-Windows                  14 hrs 59 mins      █████████████████████████   100.00 % 
+Windows                  12 hrs 9 mins       █████████████████████████   100.00 % 
 ```
 
 **I Mostly Code in JavaScript** 
@@ -181,7 +181,7 @@ Astro                    1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 24/07/2026 03:29:20 UTC
+ Last Updated on 25/07/2026 03:27:11 UTC
 <!--END_SECTION:waka-->
 
 
