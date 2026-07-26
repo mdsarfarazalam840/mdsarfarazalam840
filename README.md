@@ -110,11 +110,13 @@ Here are some ideas to get you started:
 
 
 <!--START_SECTION:waka-->
+![Code Time](http://img.shields.io/badge/Code%20Time-179%20hrs%2021%20mins-blue?style=flat)
+
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-2.13%20million%20lines%20of%20code-blue?style=flat)
 
 **🐱 My GitHub Data** 
 
-> 📦 135.9 kB Used in GitHub's Storage 
+> 📦 135.8 kB Used in GitHub's Storage 
  > 
 > 🏆 353 Contributions in the Year 2026
  > 
@@ -151,21 +153,21 @@ Sunday                   237 commits         ██████░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-TypeScript               5 hrs 58 mins       ████████████░░░░░░░░░░░░░   49.06 % 
-YAML                     1 hr 43 mins        ████░░░░░░░░░░░░░░░░░░░░░   14.16 % 
-Other                    1 hr 28 mins        ███░░░░░░░░░░░░░░░░░░░░░░   12.11 % 
-Markdown                 56 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   07.80 % 
-JSON                     39 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.43 % 
+TypeScript               4 hrs 58 mins       ███████████░░░░░░░░░░░░░░   44.11 % 
+YAML                     1 hr 42 mins        ████░░░░░░░░░░░░░░░░░░░░░   15.16 % 
+Other                    1 hr 21 mins        ███░░░░░░░░░░░░░░░░░░░░░░   12.04 % 
+Python                   42 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   06.28 % 
+JSON                     40 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.94 % 
 
 🔥 Editors: 
-Claude Code              8 hrs 2 mins        █████████████████░░░░░░░░   66.11 % 
-VS Code                  4 hrs 7 mins        ████████░░░░░░░░░░░░░░░░░   33.89 % 
+Claude Code              9 hrs 11 mins       ████████████████████░░░░░   81.66 % 
+VS Code                  2 hrs 3 mins        █████░░░░░░░░░░░░░░░░░░░░   18.34 % 
 
 🐱‍💻 Projects: 
-Quran-website            12 hrs 9 mins       █████████████████████████   100.00 % 
+Quran-website            11 hrs 15 mins      █████████████████████████   100.00 % 
 
 💻 Operating System: 
-Windows                  12 hrs 9 mins       █████████████████████████   100.00 % 
+Windows                  11 hrs 15 mins      █████████████████████████   100.00 % 
 ```
 
 **I Mostly Code in JavaScript** 
@@ -181,7 +183,7 @@ Astro                    1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 25/07/2026 03:27:11 UTC
+ Last Updated on 26/07/2026 03:40:07 UTC
 <!--END_SECTION:waka-->
 
 
