@@ -110,7 +110,7 @@ Here are some ideas to get you started:
 
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-179%20hrs%2021%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-181%20hrs%2026%20mins-blue?style=flat)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-2.13%20million%20lines%20of%20code-blue?style=flat)
 
@@ -118,7 +118,7 @@ Here are some ideas to get you started:
 
 > 📦 135.8 kB Used in GitHub's Storage 
  > 
-> 🏆 353 Contributions in the Year 2026
+> 🏆 357 Contributions in the Year 2026
  > 
 > 💼 Opted to Hire
  > 
@@ -129,21 +129,21 @@ Here are some ideas to get you started:
 **I'm an Early 🐤** 
 
 ```text
-🌞 Morning                252 commits         ███████░░░░░░░░░░░░░░░░░░   26.28 % 
-🌆 Daytime                275 commits         ███████░░░░░░░░░░░░░░░░░░   28.68 % 
-🌃 Evening                352 commits         █████████░░░░░░░░░░░░░░░░   36.70 % 
-🌙 Night                  80 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   08.34 % 
+🌞 Morning                252 commits         ███████░░░░░░░░░░░░░░░░░░   26.22 % 
+🌆 Daytime                275 commits         ███████░░░░░░░░░░░░░░░░░░   28.62 % 
+🌃 Evening                354 commits         █████████░░░░░░░░░░░░░░░░   36.84 % 
+🌙 Night                  80 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   08.32 % 
 ```
 📅 **I'm Most Productive on Sunday** 
 
 ```text
-Monday                   129 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.45 % 
-Tuesday                  155 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.16 % 
-Wednesday                175 commits         █████░░░░░░░░░░░░░░░░░░░░   18.25 % 
-Thursday                 25 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   02.61 % 
-Friday                   118 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.30 % 
-Saturday                 120 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.51 % 
-Sunday                   237 commits         ██████░░░░░░░░░░░░░░░░░░░   24.71 % 
+Monday                   129 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.42 % 
+Tuesday                  155 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.13 % 
+Wednesday                175 commits         █████░░░░░░░░░░░░░░░░░░░░   18.21 % 
+Thursday                 25 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   02.60 % 
+Friday                   118 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.28 % 
+Saturday                 120 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.49 % 
+Sunday                   239 commits         ██████░░░░░░░░░░░░░░░░░░░   24.87 % 
 ```
 
 
@@ -153,21 +153,21 @@ Sunday                   237 commits         ██████░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-TypeScript               4 hrs 58 mins       ███████████░░░░░░░░░░░░░░   44.11 % 
-YAML                     1 hr 42 mins        ████░░░░░░░░░░░░░░░░░░░░░   15.16 % 
-Other                    1 hr 21 mins        ███░░░░░░░░░░░░░░░░░░░░░░   12.04 % 
-Python                   42 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   06.28 % 
-JSON                     40 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.94 % 
+TypeScript               5 hrs 14 mins       ██████████░░░░░░░░░░░░░░░   40.34 % 
+YAML                     2 hrs 18 mins       ████░░░░░░░░░░░░░░░░░░░░░   17.76 % 
+Markdown                 1 hr 25 mins        ███░░░░░░░░░░░░░░░░░░░░░░   10.93 % 
+Other                    1 hr 21 mins        ███░░░░░░░░░░░░░░░░░░░░░░   10.45 % 
+Python                   42 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.45 % 
 
 🔥 Editors: 
-Claude Code              9 hrs 11 mins       ████████████████████░░░░░   81.66 % 
-VS Code                  2 hrs 3 mins        █████░░░░░░░░░░░░░░░░░░░░   18.34 % 
+Claude Code              9 hrs 44 mins       ███████████████████░░░░░░   75.15 % 
+VS Code                  3 hrs 13 mins       ██████░░░░░░░░░░░░░░░░░░░   24.85 % 
 
 🐱‍💻 Projects: 
-Quran-website            11 hrs 15 mins      █████████████████████████   100.00 % 
+Quran-website            12 hrs 58 mins      █████████████████████████   100.00 % 
 
 💻 Operating System: 
-Windows                  11 hrs 15 mins      █████████████████████████   100.00 % 
+Windows                  12 hrs 58 mins      █████████████████████████   100.00 % 
 ```
 
 **I Mostly Code in JavaScript** 
@@ -183,7 +183,7 @@ Astro                    1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 26/07/2026 03:40:07 UTC
+ Last Updated on 27/07/2026 03:50:09 UTC
 <!--END_SECTION:waka-->
 
 
