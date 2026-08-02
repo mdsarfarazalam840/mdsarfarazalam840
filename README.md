@@ -237,20 +237,7 @@ No AI improvements available.
 ## 📊 Weekly AI Report
 
 <!-- WEEKLY_REPORT_START -->
-## 📊 Weekly GitHub Engineering Report
-
-| Repository | Commits (7d) | PRs | Issues | Stars | Language | Last Push |
-|------------|--------------|-----|--------|-------|----------|-----------|
-| Islamic-website | 15 | 6 | 0 | 0 | TypeScript | 2026-07-25 |
-| ai-agentrouter | 0 | 27 | 0 | 0 | JavaScript | 2026-05-15 |
-| 3D-portfolio | 0 | 22 | 0 | 0 | HTML | 2026-07-06 |
-| freemoviesuggestion | 0 | 15 | 0 | 0 | Astro | 2026-07-15 |
-| Neural_cloud | 0 | 1 | 0 | 0 | JavaScript | 2026-05-27 |
-| StreamHub | 0 | 1 | 0 | 0 | TypeScript | 2026-06-27 |
-| mdsarfarazalam840 | 30 | 1 | 0 | 1 | JavaScript | 2026-07-25 |
-| hacktoberfestfineanmol | 0 | 0 | 0 | 0 | HTML | 2026-06-05 |
-| EcomWithAI | 0 | 0 | 0 | 0 | JavaScript | 2026-05-31 |
-| keepalive | 0 | 0 | 0 | 0 | JavaScript | 2026-
+No weekly AI report available.
 <!-- WEEKLY_REPORT_END -->
 
 
