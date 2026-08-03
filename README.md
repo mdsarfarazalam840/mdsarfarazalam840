@@ -110,15 +110,15 @@ Here are some ideas to get you started:
 
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-196%20hrs%2031%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-198%20hrs%2010%20mins-blue?style=flat)
 
-![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-124%20hrs%2052%20mins-blue?style=flat)
+![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-126%20hrs%2030%20mins-blue?style=flat)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-2.77%20million%20lines%20of%20code-blue?style=flat)
 
 **🐱 My GitHub Data** 
 
-> 📦 124.5 kB Used in GitHub's Storage 
+> 📦 124.6 kB Used in GitHub's Storage 
  > 
 > 🏆 386 Contributions in the Year 2026
  > 
@@ -155,50 +155,51 @@ Sunday                   243 commits         ██████░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-TypeScript               13 hrs 54 mins      ███████████████░░░░░░░░░░   58.34 % 
-Markdown                 3 hrs 4 mins        ███░░░░░░░░░░░░░░░░░░░░░░   12.87 % 
-JSON                     2 hrs 17 mins       ██░░░░░░░░░░░░░░░░░░░░░░░   09.60 % 
-YAML                     2 hrs 12 mins       ██░░░░░░░░░░░░░░░░░░░░░░░   09.24 % 
-JavaScript               49 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.49 % 
+TypeScript               15 hrs 24 mins      ███████████████░░░░░░░░░░   60.74 % 
+Markdown                 2 hrs 34 mins       ███░░░░░░░░░░░░░░░░░░░░░░   10.15 % 
+JSON                     2 hrs 13 mins       ██░░░░░░░░░░░░░░░░░░░░░░░   08.77 % 
+YAML                     2 hrs 9 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   08.50 % 
+JavaScript               56 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.70 % 
 
 🔥 Editors: 
-Claude Code              17 hrs 50 mins      ███████████████████░░░░░░   74.84 % 
-VS Code                  3 hrs 51 mins       ████░░░░░░░░░░░░░░░░░░░░░   16.17 % 
-Opencode Cli             2 hrs 8 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   08.99 % 
+Claude Code              19 hrs 49 mins      ████████████████████░░░░░   78.18 % 
+VS Code                  3 hrs 17 mins       ███░░░░░░░░░░░░░░░░░░░░░░   12.98 % 
+Opencode Cli             2 hrs 8 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   08.45 % 
+Codex CLI                5 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.39 % 
 
 🐱‍💻 Projects: 
-Quran-website            14 hrs 19 mins      ███████████████░░░░░░░░░░   60.13 % 
-gd-index                 9 hrs 26 mins       ██████████░░░░░░░░░░░░░░░   39.60 % 
-scripts                  3 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.28 % 
+Quran-website            13 hrs 38 mins      █████████████░░░░░░░░░░░░   53.80 % 
+gd-index                 11 hrs 38 mins      ███████████░░░░░░░░░░░░░░   45.92 % 
+scripts                  4 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.28 % 
 
 💻 Operating System: 
-Windows                  23 hrs 50 mins      █████████████████████████   100.00 % 
+Windows                  25 hrs 21 mins      █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 23 hrs 6 mins (96.97%)
+⏱ AI Coding Time: 24 hrs 28 mins (96.52%)
 
-✍️ 5,558 lines written by AI, 29 lines written by hand (99.48% AI-written)
+✍️ 6,768 lines written by AI, 29 lines written by hand (99.57% AI-written)
 
-🔤 57,994,303 Input Tokens, 582,483 Output Tokens
+🔤 75,366,609 Input Tokens, 712,303 Output Tokens
 
-💵 $302.09 Estimated AI Cost This Week
+💵 $391.72 Estimated AI Cost This Week
 
-🧠 46 AI Sessions, 194 AI Prompts
+🧠 46 AI Sessions, 176 AI Prompts
 
-Opus                     4,757 lines         ███████████████████░░░░░░   75.66 % 
-Qwen                     1,499 lines         ██████░░░░░░░░░░░░░░░░░░░   23.84 % 
-Mimo                     26 lines            ░░░░░░░░░░░░░░░░░░░░░░░░░   00.41 % 
-Deepseek                 5 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.08 % 
+Opus                     6,137 lines         ████████████████████░░░░░   79.97 % 
+Qwen                     1,499 lines         █████░░░░░░░░░░░░░░░░░░░░   19.53 % 
+GPT                      38 lines            ░░░░░░░░░░░░░░░░░░░░░░░░░   00.50 % 
 Opencode-Cli             0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
+Claude-Code              0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 
 🔎 AI Coding Insights:
-🤖 AI-Driven — 99.48% of written lines came from AI
-📚 Verbose Prompter — average 2,369 characters per prompt
+🤖 AI-Driven — 99.57% of written lines came from AI
+📚 Verbose Prompter — average 2,580 characters per prompt
 🔁 Iterative Prompter — average 4 prompts per session
-🚀 High AI Trust — 0.51% of changed lines were hand-edited
+🚀 High AI Trust — 0.43% of changed lines were hand-edited
 ```
 
 **I Mostly Code in JavaScript** 
@@ -214,7 +215,7 @@ Astro                    1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 02/08/2026 03:38:12 UTC
+ Last Updated on 03/08/2026 03:39:55 UTC
 <!--END_SECTION:waka-->
 
 
