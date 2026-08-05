@@ -110,23 +110,23 @@ Here are some ideas to get you started:
 
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-199%20hrs%2048%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-204%20hrs%2054%20mins-blue?style=flat)
 
-![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-128%20hrs%2012%20mins-blue?style=flat)
+![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-133%20hrs%2042%20mins-blue?style=flat)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-2.77%20million%20lines%20of%20code-blue?style=flat)
 
 **🐱 My GitHub Data** 
 
-> 📦 124.6 kB Used in GitHub's Storage 
+> 📦 124.7 kB Used in GitHub's Storage 
  > 
-> 🏆 386 Contributions in the Year 2026
+> 🏆 387 Contributions in the Year 2026
  > 
 > 💼 Opted to Hire
  > 
 > 📜 145 Public Repositories 
  > 
-> 🔑 0 Private Repositories 
+> 🔑 1 Private Repositories 
  > 
 **I'm an Early 🐤** 
 
@@ -155,69 +155,69 @@ Sunday                   243 commits         ██████░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-TypeScript               13 hrs 50 mins      ██████████████░░░░░░░░░░░   55.31 % 
-Markdown                 4 hrs 47 mins       █████░░░░░░░░░░░░░░░░░░░░   19.13 % 
-JSON                     2 hrs 17 mins       ██░░░░░░░░░░░░░░░░░░░░░░░   09.14 % 
-YAML                     1 hr 27 mins        █░░░░░░░░░░░░░░░░░░░░░░░░   05.84 % 
-Other                    42 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.81 % 
+TypeScript               12 hrs              █████████████░░░░░░░░░░░░   53.89 % 
+Markdown                 4 hrs 45 mins       █████░░░░░░░░░░░░░░░░░░░░   21.33 % 
+JSON                     1 hr 33 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   06.99 % 
+YAML                     1 hr 14 mins        █░░░░░░░░░░░░░░░░░░░░░░░░   05.58 % 
+Other                    49 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.74 % 
 
 🔥 Editors: 
-Claude Code              17 hrs 8 mins       █████████████████░░░░░░░░   68.53 % 
-VS Code                  5 hrs 37 mins       ██████░░░░░░░░░░░░░░░░░░░   22.51 % 
-Opencode Cli             2 hrs 8 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   08.56 % 
-Codex CLI                5 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.40 % 
+Claude Code              14 hrs 34 mins      ████████████████░░░░░░░░░   65.47 % 
+VS Code                  5 hrs 26 mins       ██████░░░░░░░░░░░░░░░░░░░   24.47 % 
+Opencode Cli             2 hrs 8 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   09.62 % 
+Codex CLI                5 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.45 % 
 
 🐱‍💻 Projects: 
-gd-index                 11 hrs 38 mins      ████████████░░░░░░░░░░░░░   46.55 % 
-Quran-website            7 hrs 48 mins       ████████░░░░░░░░░░░░░░░░░   31.22 % 
-Watch_online_everything  5 hrs 27 mins       █████░░░░░░░░░░░░░░░░░░░░   21.83 % 
-scripts                  4 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.29 % 
-Unknown Project          1 min               ░░░░░░░░░░░░░░░░░░░░░░░░░   00.11 % 
+gd-index                 11 hrs 38 mins      █████████████░░░░░░░░░░░░   52.29 % 
+Watch_online_everything  5 hrs 52 mins       ███████░░░░░░░░░░░░░░░░░░   26.34 % 
+Quran-website            4 hrs 39 mins       █████░░░░░░░░░░░░░░░░░░░░   20.92 % 
+scripts                  4 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.32 % 
+Unknown Project          1 min               ░░░░░░░░░░░░░░░░░░░░░░░░░   00.13 % 
 
 💻 Operating System: 
-Windows                  25 hrs 1 min        █████████████████████████   100.00 % 
+Windows                  22 hrs 16 mins      █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 24 hrs 27 mins (97.74%)
+⏱ AI Coding Time: 21 hrs 30 mins (96.56%)
 
-✍️ 14,021 lines written by AI, 28 lines written by hand (99.8% AI-written)
+✍️ 13,887 lines written by AI, 37 lines written by hand (99.73% AI-written)
 
-🔤 71,011,835 Input Tokens, 733,051 Output Tokens
+🔤 66,228,598 Input Tokens, 678,273 Output Tokens
 
-💵 $367.05 Estimated AI Cost This Week
+💵 $341.60 Estimated AI Cost This Week
 
-🧠 57 AI Sessions, 197 AI Prompts
+🧠 56 AI Sessions, 185 AI Prompts
 
-Opus                     9,951 lines         █████████████████░░░░░░░░   67.08 % 
-Deepseek                 3,346 lines         ██████░░░░░░░░░░░░░░░░░░░   22.56 % 
-Qwen                     1,499 lines         ███░░░░░░░░░░░░░░░░░░░░░░   10.11 % 
+Opus                     9,767 lines         █████████████████░░░░░░░░   66.67 % 
+Deepseek                 3,346 lines         ██████░░░░░░░░░░░░░░░░░░░   22.84 % 
+Qwen                     1,499 lines         ███░░░░░░░░░░░░░░░░░░░░░░   10.23 % 
 GPT                      38 lines            ░░░░░░░░░░░░░░░░░░░░░░░░░   00.26 % 
 Opencode-Cli             0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 
 🔎 AI Coding Insights:
-🤖 AI-Driven — 99.8% of written lines came from AI
-📚 Verbose Prompter — average 2,236 characters per prompt
+🤖 AI-Driven — 99.73% of written lines came from AI
+📚 Verbose Prompter — average 2,354 characters per prompt
 🔁 Iterative Prompter — average 3 prompts per session
-🚀 High AI Trust — 0.22% of changed lines were hand-edited
+🚀 High AI Trust — 0.28% of changed lines were hand-edited
 ```
 
 **I Mostly Code in JavaScript** 
 
 ```text
-JavaScript               16 repos            █████████░░░░░░░░░░░░░░░░   34.78 % 
-Python                   11 repos            ██████░░░░░░░░░░░░░░░░░░░   23.91 % 
-TypeScript               7 repos             ████░░░░░░░░░░░░░░░░░░░░░   15.22 % 
-HTML                     3 repos             ██░░░░░░░░░░░░░░░░░░░░░░░   06.52 % 
-Astro                    1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   02.17 % 
+JavaScript               16 repos            █████████░░░░░░░░░░░░░░░░   34.04 % 
+Python                   11 repos            ██████░░░░░░░░░░░░░░░░░░░   23.40 % 
+TypeScript               8 repos             ████░░░░░░░░░░░░░░░░░░░░░   17.02 % 
+HTML                     3 repos             ██░░░░░░░░░░░░░░░░░░░░░░░   06.38 % 
+Astro                    1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   02.13 % 
 ```
 
 
 
 
- Last Updated on 04/08/2026 03:23:47 UTC
+ Last Updated on 05/08/2026 03:19:09 UTC
 <!--END_SECTION:waka-->
 
 
