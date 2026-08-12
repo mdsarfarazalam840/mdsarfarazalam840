@@ -110,9 +110,9 @@ Here are some ideas to get you started:
 
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-211%20hrs%2048%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-213%20hrs%2052%20mins-blue?style=flat)
 
-![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-140%20hrs%2042%20mins-blue?style=flat)
+![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-142%20hrs%2045%20mins-blue?style=flat)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-2.96%20million%20lines%20of%20code-blue?style=flat)
 
@@ -155,48 +155,48 @@ Sunday                   251 commits         ██████░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-TypeScript               4 hrs 39 mins       ███████████░░░░░░░░░░░░░░   45.64 % 
-Markdown                 2 hrs 28 mins       ██████░░░░░░░░░░░░░░░░░░░   24.16 % 
-JSON                     1 hr 25 mins        ████░░░░░░░░░░░░░░░░░░░░░   14.02 % 
-Python                   43 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   07.10 % 
-Git Config               19 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.22 % 
+TypeScript               4 hrs 30 mins       ██████████░░░░░░░░░░░░░░░   38.66 % 
+JSON                     2 hrs 58 mins       ██████░░░░░░░░░░░░░░░░░░░   25.45 % 
+Markdown                 2 hrs 27 mins       █████░░░░░░░░░░░░░░░░░░░░   21.15 % 
+Python                   43 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   06.22 % 
+PowerShell               16 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.38 % 
 
 🔥 Editors: 
-VS Code                  8 hrs               ████████████████████░░░░░   78.42 % 
-Claude Code              2 hrs 12 mins       █████░░░░░░░░░░░░░░░░░░░░   21.58 % 
+VS Code                  9 hrs 51 mins       █████████████████████░░░░   84.60 % 
+Claude Code              1 hr 47 mins        ████░░░░░░░░░░░░░░░░░░░░░   15.40 % 
 
 🐱‍💻 Projects: 
-Watch_online_everything  9 hrs 9 mins        ██████████████████████░░░   89.65 % 
-Quran-website            51 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.37 % 
-3d-portfolio             12 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.98 % 
+Watch_online_everything  10 hrs 36 mins      ███████████████████████░░   90.93 % 
+Quran-website            51 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   07.34 % 
+3d-portfolio             12 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.74 % 
 
 💻 Operating System: 
-Windows                  10 hrs 13 mins      █████████████████████████   100.00 % 
+Windows                  11 hrs 39 mins      █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 9 hrs 52 mins (96.53%)
+⏱ AI Coding Time: 11 hrs 29 mins (98.48%)
 
-✍️ 13,083 lines written by AI, 1,259 lines written by hand (91.22% AI-written)
+✍️ 13,131 lines written by AI, 1,277 lines written by hand (91.14% AI-written)
 
-🔤 18,357,446 Input Tokens, 398,255 Output Tokens
+🔤 17,075,309 Input Tokens, 488,085 Output Tokens
 
-💵 $141.90 Estimated AI Cost This Week
+💵 $161.08 Estimated AI Cost This Week
 
-🧠 30 AI Sessions, 86 AI Prompts
+🧠 30 AI Sessions, 94 AI Prompts
 
-Deepseek                 11,171 lines        █████████████████████░░░░   82.80 % 
-Opus                     2,320 lines         ████░░░░░░░░░░░░░░░░░░░░░   17.20 % 
+Deepseek                 11,579 lines        █████████████████████░░░░   85.45 % 
+Opus                     1,972 lines         ████░░░░░░░░░░░░░░░░░░░░░   14.55 % 
 Opencode-Cli             0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 Claude-Code              0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 
 🔎 AI Coding Insights:
-🤖 AI-Driven — 91.22% of written lines came from AI
-📚 Verbose Prompter — average 1,784 characters per prompt
+🤖 AI-Driven — 91.14% of written lines came from AI
+📚 Verbose Prompter — average 1,693 characters per prompt
 🔁 Iterative Prompter — average 3 prompts per session
-🚀 High AI Trust — 8.65% of changed lines were hand-edited
+🚀 High AI Trust — 8.73% of changed lines were hand-edited
 ```
 
 **I Mostly Code in JavaScript** 
@@ -212,7 +212,7 @@ Astro                    1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 11/08/2026 02:13:20 UTC
+ Last Updated on 12/08/2026 02:31:59 UTC
 <!--END_SECTION:waka-->
 
 
