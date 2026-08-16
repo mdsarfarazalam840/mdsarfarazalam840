@@ -110,9 +110,9 @@ Here are some ideas to get you started:
 
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-218%20hrs%2059%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-221%20hrs%2034%20mins-blue?style=flat)
 
-![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-147%20hrs%2022%20mins-blue?style=flat)
+![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-149%20hrs%2057%20mins-blue?style=flat)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-2.96%20million%20lines%20of%20code-blue?style=flat)
 
@@ -155,51 +155,50 @@ Sunday                   251 commits         ██████░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-TypeScript               5 hrs 26 mins       ██████████░░░░░░░░░░░░░░░   39.32 % 
-JSON                     4 hrs 31 mins       ████████░░░░░░░░░░░░░░░░░   32.79 % 
-Markdown                 2 hrs 12 mins       ████░░░░░░░░░░░░░░░░░░░░░   16.02 % 
-PowerShell               33 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   04.03 % 
-Bash                     17 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.12 % 
+JSON                     4 hrs 25 mins       ██████████░░░░░░░░░░░░░░░   41.19 % 
+TypeScript               3 hrs 41 mins       █████████░░░░░░░░░░░░░░░░   34.28 % 
+Markdown                 1 hr 37 mins        ████░░░░░░░░░░░░░░░░░░░░░   15.16 % 
+PowerShell               33 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.18 % 
+Bash                     17 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.73 % 
 
 🔥 Editors: 
-VS Code                  10 hrs 32 mins      ███████████████████░░░░░░   76.26 % 
-Opencode Cli             2 hrs 10 mins       ████░░░░░░░░░░░░░░░░░░░░░   15.76 % 
-Claude Code              1 hr 6 mins         ██░░░░░░░░░░░░░░░░░░░░░░░   07.97 % 
+VS Code                  8 hrs 6 mins        ███████████████████░░░░░░   75.48 % 
+Opencode Cli             2 hrs 10 mins       █████░░░░░░░░░░░░░░░░░░░░   20.27 % 
+Claude Code              27 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   04.26 % 
 
 🐱‍💻 Projects: 
-Watch_online_everything  9 hrs 30 mins       █████████████████░░░░░░░░   68.85 % 
-Quran-website            3 hrs 51 mins       ███████░░░░░░░░░░░░░░░░░░   27.86 % 
-arproxy                  15 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.82 % 
-3d-portfolio             12 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.47 % 
+Watch_online_everything  7 hrs 13 mins       █████████████████░░░░░░░░   67.21 % 
+Quran-website            3 hrs 16 mins       ████████░░░░░░░░░░░░░░░░░   30.45 % 
+arproxy                  15 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.34 % 
 
 💻 Operating System: 
-Windows                  13 hrs 49 mins      █████████████████████████   100.00 % 
+Windows                  10 hrs 45 mins      █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 13 hrs 11 mins (95.43%)
+⏱ AI Coding Time: 10 hrs 7 mins (94.21%)
 
-✍️ 9,605 lines written by AI, 163 lines written by hand (98.33% AI-written)
+✍️ 5,387 lines written by AI, 162 lines written by hand (97.08% AI-written)
 
-🔤 11,022,117 Input Tokens, 615,256 Output Tokens
+🔤 7,833,260 Input Tokens, 520,425 Output Tokens
 
-💵 $169.60 Estimated AI Cost This Week
+💵 $148.24 Estimated AI Cost This Week
 
-🧠 35 AI Sessions, 125 AI Prompts
+🧠 31 AI Sessions, 107 AI Prompts
 
-Deepseek                 7,725 lines         ███████████████████░░░░░░   77.10 % 
-GPT                      1,341 lines         ███░░░░░░░░░░░░░░░░░░░░░░   13.38 % 
-Opus                     940 lines           ██░░░░░░░░░░░░░░░░░░░░░░░   09.38 % 
-Mimo                     14 lines            ░░░░░░░░░░░░░░░░░░░░░░░░░   00.14 % 
+Deepseek                 4,258 lines         ███████████████████░░░░░░   75.04 % 
+GPT                      1,341 lines         ██████░░░░░░░░░░░░░░░░░░░   23.63 % 
+Opus                     61 lines            ░░░░░░░░░░░░░░░░░░░░░░░░░   01.08 % 
+Mimo                     14 lines            ░░░░░░░░░░░░░░░░░░░░░░░░░   00.25 % 
 Opencode-Cli             0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 
 🔎 AI Coding Insights:
-🤖 AI-Driven — 98.33% of written lines came from AI
-📄 Detailed Prompter — average 758 characters per prompt
-🔁 Iterative Prompter — average 4 prompts per session
-🚀 High AI Trust — 2.32% of changed lines were hand-edited
+🤖 AI-Driven — 97.08% of written lines came from AI
+📄 Detailed Prompter — average 554 characters per prompt
+🔁 Iterative Prompter — average 3 prompts per session
+🚀 High AI Trust — 4.01% of changed lines were hand-edited
 ```
 
 **I Mostly Code in JavaScript** 
@@ -215,7 +214,7 @@ Astro                    1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 15/08/2026 01:42:13 UTC
+ Last Updated on 16/08/2026 01:48:51 UTC
 <!--END_SECTION:waka-->
 
 
