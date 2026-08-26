@@ -225,24 +225,12 @@ Astro                    1 repo              █░░░░░░░░░░�
 
 ## 🧠 AI Suggestions
 <!-- AI_SUGGESTIONS_START -->
-## GitHub profile snapshot
-
-- Username: mdsarfarazalam840
-- Public repos: 145
-- Recent repos: Islamic-website, freemoviesuggestion, mdsarfarazalam840, 3D-portfolio, gd-mi-index
-
-AI provider did not respond in time. Basic health of this function is OK, and GitHub profile fetch worked.
+No AI suggestions available.
 <!-- AI_SUGGESTIONS_END -->
 
 ## 🚀 AI Improvements
 <!-- AI_IMPROVEMENTS_START -->
-## GitHub profile snapshot
-
-- Username: mdsarfarazalam840
-- Public repos: 145
-- Recent repos: Islamic-website, freemoviesuggestion, mdsarfarazalam840, 3D-portfolio, gd-mi-index
-
-AI provider did not respond in time. Basic health of this function is OK, and GitHub profile fetch worked.
+No AI improvements available.
 <!-- AI_IMPROVEMENTS_END -->
 
 
