@@ -1,0 +1,229 @@
+name: Appwrite Keepalive
+
+# Keeps the Appwrite profile function in an always-working state.
+#
+# Why this exists:
+#   * Appwrite Cloud's free plan pauses a project after 1 week of inactivity, and
+#     freezes it (Console goes read-only) when a monthly quota is exhausted:
+#     5 GB bandwidth, 100 GB-hour compute, 750K executions.
+#   * A function can also be flipped to enabled=false on its own.
+#
+# What it does, every 3 hours:
+#   1. Makes an authenticated project API call, which resets the inactivity clock.
+#   2. Reads the function state and re-enables it automatically if it went disabled,
+#      preserving the rest of the configuration.
+#   3. Fails loudly (and files an issue) if the *project* is paused/frozen, since that
+#      cannot be fixed from the API and needs a Console visit.
+
+on:
+  schedule:
+    - cron: "17 */3 * * *"
+  workflow_dispatch:
+    inputs:
+      set_timeout:
+        description: "Force function timeout in seconds (e.g. 60). Leave blank to keep as-is."
+        required: false
+        default: ""
+
+concurrency:
+  group: appwrite-keepalive
+  cancel-in-progress: false
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+
+    env:
+      APPWRITE_ENDPOINT: ${{ secrets.APPWRITE_ENDPOINT }}
+      APPWRITE_PROJECT_ID: ${{ secrets.APPWRITE_PROJECT_ID }}
+      APPWRITE_API_KEY: ${{ secrets.APPWRITE_API_KEY }}
+      FUNCTION_ID: ${{ secrets.APPWRITE_PROFILE_FUNCTION_ID }}
+      # This job does not check out the repo, so gh needs the repo named explicitly.
+      GH_REPO: ${{ github.repository }}
+
+    steps:
+      - name: Verify secrets are present
+        run: |
+          missing=0
+          for v in APPWRITE_ENDPOINT APPWRITE_PROJECT_ID APPWRITE_API_KEY FUNCTION_ID; do
+            if [ -z "${!v}" ]; then
+              echo "::error::Secret $v is empty or not set."
+              missing=1
+            fi
+          done
+          [ "$missing" -eq 0 ] || exit 1
+
+      - name: Read function state (also counts as project activity)
+        id: probe
+        run: |
+          # Tolerate the endpoint secret being stored with or without a trailing /v1
+          BASE="${APPWRITE_ENDPOINT%/}"
+          BASE="${BASE%/v1}"
+          echo "base=$BASE" >> "$GITHUB_OUTPUT"
+
+          HTTP=$(curl -sS -o func.json -w '%{http_code}' \
+            --connect-timeout 15 --max-time 60 \
+            --retry 3 --retry-delay 5 --retry-all-errors \
+            -X GET "$BASE/v1/functions/$FUNCTION_ID" \
+            -H "X-Appwrite-Project: $APPWRITE_PROJECT_ID" \
+            -H "X-Appwrite-Key: $APPWRITE_API_KEY" || echo "000")
+
+          echo "http=$HTTP" >> "$GITHUB_OUTPUT"
+          echo "HTTP $HTTP"
+          echo "----- response -----"
+          cat func.json; echo
+
+          if [ "$HTTP" != "200" ]; then
+            # Anything non-200 here is project-level: paused, frozen, or bad credentials.
+            REASON=$(jq -r '.message // "no message"' func.json 2>/dev/null || echo "unparseable response")
+            TYPE=$(jq -r '.type // "unknown"' func.json 2>/dev/null || echo "unknown")
+            echo "reason=$REASON" >> "$GITHUB_OUTPUT"
+            echo "type=$TYPE" >> "$GITHUB_OUTPUT"
+            echo "healthy=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "healthy=true" >> "$GITHUB_OUTPUT"
+          {
+            echo "enabled=$(jq -r '.enabled'          func.json)"
+            echo "timeout=$(jq -r '.timeout // 0'     func.json)"
+            echo "name=$(jq -r '.name // ""'          func.json)"
+            echo "next=$(jq -r '.scheduleNext // ""'  func.json)"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Re-enable function if it went disabled
+        id: heal
+        if: steps.probe.outputs.healthy == 'true' && steps.probe.outputs.enabled == 'false'
+        run: |
+          echo "::warning::Function was disabled — restoring it."
+
+          # PUT replaces the function config, so rebuild the body from the current
+          # state and only override `enabled`. Dropping nulls/empties avoids sending
+          # fields the API rejects.
+          OVERRIDE_TIMEOUT='${{ github.event.inputs.set_timeout }}'
+          PUT_BODY=$(jq -c \
+            --arg t "$OVERRIDE_TIMEOUT" '
+            {
+              name, runtime, execute, events, schedule, timeout, logging,
+              entrypoint, commands, scopes, installationId,
+              providerRepositoryId, providerBranch, providerSilentMode,
+              providerRootDirectory
+            }
+            | with_entries(select(.value != null and .value != ""))
+            | .enabled = true
+            | if ($t | length) > 0 then .timeout = ($t | tonumber) else . end
+          ' func.json)
+
+          echo "PUT body: $PUT_BODY"
+
+          HTTP=$(curl -sS -o put.json -w '%{http_code}' \
+            --connect-timeout 15 --max-time 60 \
+            --retry 2 --retry-delay 5 --retry-all-errors \
+            -X PUT "${{ steps.probe.outputs.base }}/v1/functions/$FUNCTION_ID" \
+            -H "Content-Type: application/json" \
+            -H "X-Appwrite-Project: $APPWRITE_PROJECT_ID" \
+            -H "X-Appwrite-Key: $APPWRITE_API_KEY" \
+            -d "$PUT_BODY" || echo "000")
+
+          echo "HTTP $HTTP"
+          cat put.json; echo
+
+          if [ "$HTTP" != "200" ]; then
+            echo "restored=false" >> "$GITHUB_OUTPUT"
+            echo "::error::Could not re-enable the function (HTTP $HTTP)."
+            exit 0
+          fi
+
+          NOW=$(jq -r '.enabled' put.json)
+          echo "restored=$NOW" >> "$GITHUB_OUTPUT"
+          [ "$NOW" = "true" ] && echo "Function re-enabled." || echo "::error::Still disabled after PUT."
+
+      - name: Apply timeout override (function already enabled)
+        if: steps.probe.outputs.healthy == 'true' && steps.probe.outputs.enabled == 'true' && github.event_name == 'workflow_dispatch' && github.event.inputs.set_timeout != ''
+        run: |
+          PUT_BODY=$(jq -c --arg t '${{ github.event.inputs.set_timeout }}' '
+            {
+              name, runtime, execute, events, schedule, timeout, logging,
+              entrypoint, commands, scopes, installationId,
+              providerRepositoryId, providerBranch, providerSilentMode,
+              providerRootDirectory
+            }
+            | with_entries(select(.value != null and .value != ""))
+            | .enabled = true
+            | .timeout = ($t | tonumber)
+          ' func.json)
+
+          curl -sS --connect-timeout 15 --max-time 60 \
+            -X PUT "${{ steps.probe.outputs.base }}/v1/functions/$FUNCTION_ID" \
+            -H "Content-Type: application/json" \
+            -H "X-Appwrite-Project: $APPWRITE_PROJECT_ID" \
+            -H "X-Appwrite-Key: $APPWRITE_API_KEY" \
+            -d "$PUT_BODY" | jq -r '"timeout is now \(.timeout)s"'
+
+      - name: Write run summary
+        run: |
+          {
+            echo "## Appwrite keepalive"
+            echo
+            if [ "${{ steps.probe.outputs.healthy }}" != "true" ]; then
+              echo "**Project unreachable** — HTTP \`${{ steps.probe.outputs.http }}\`"
+              echo
+              echo "- type: \`${{ steps.probe.outputs.type }}\`"
+              echo "- message: ${{ steps.probe.outputs.reason }}"
+              echo
+              echo "This is project-level, so the API cannot fix it. Open the Appwrite Console."
+            else
+              echo "| field | value |"
+              echo "|---|---|"
+              echo "| function | \`${{ steps.probe.outputs.name }}\` |"
+              echo "| enabled (before) | \`${{ steps.probe.outputs.enabled }}\` |"
+              echo "| timeout | \`${{ steps.probe.outputs.timeout }}s\` |"
+              echo "| next scheduled run | \`${{ steps.probe.outputs.next }}\` |"
+              if [ "${{ steps.heal.outputs.restored }}" = "true" ]; then
+                echo
+                echo "Function had been disabled and was **automatically re-enabled**."
+              fi
+              T='${{ steps.probe.outputs.timeout }}'
+              if [ -n "$T" ] && [ "$T" -gt 120 ] 2>/dev/null; then
+                echo
+                echo "> Timeout is ${T}s. Executions that hang on a slow AI provider bill the"
+                echo "> full timeout against the 100 GB-hour monthly compute quota. Consider 60-90s."
+              fi
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Open an issue if the project needs manual attention
+        if: steps.probe.outputs.healthy != 'true' || steps.heal.outputs.restored == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TITLE="Appwrite function needs attention"
+          EXISTING=$(gh issue list --state open --search "$TITLE in:title" --json number --jq '.[0].number' || echo "")
+
+          BODY=$(cat <<EOF
+          The keepalive workflow could not confirm a working Appwrite function.
+
+          - HTTP status: \`${{ steps.probe.outputs.http }}\`
+          - Error type: \`${{ steps.probe.outputs.type }}\`
+          - Message: ${{ steps.probe.outputs.reason }}
+
+          A disabled *function* is auto-healed by this workflow. A paused or frozen
+          *project* is not fixable over the API — check the Appwrite Console for a
+          quota banner (5 GB bandwidth / 100 GB-hour compute / 750K executions per month).
+
+          Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          EOF
+          )
+
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "$BODY"
+          else
+            gh issue create --title "$TITLE" --body "$BODY" --label bug || \
+              gh issue create --title "$TITLE" --body "$BODY"
+          fi
+
+      - name: Fail the run when unhealthy
+        if: steps.probe.outputs.healthy != 'true' || steps.heal.outputs.restored == 'false'
+        run: exit 1

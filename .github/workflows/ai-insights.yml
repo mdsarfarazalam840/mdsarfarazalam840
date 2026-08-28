@@ -3,7 +3,14 @@ name: AI Insights Updater
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 */6 * * *"   # every 6 hours
+    # Offset from :00 — top-of-hour cron is the most congested slot on shared runners.
+    - cron: "23 */6 * * *"   # every 6 hours
+
+# Five workflows push to main in this repo; serialising the README writers
+# avoids non-fast-forward push failures.
+concurrency:
+  group: readme-writes
+  cancel-in-progress: false
 
 jobs:
   update-readme:
@@ -11,60 +18,63 @@ jobs:
     permissions:
       contents: write
 
+    env:
+      APPWRITE_ENDPOINT: ${{ secrets.APPWRITE_ENDPOINT }}
+      APPWRITE_PROJECT_ID: ${{ secrets.APPWRITE_PROJECT_ID }}
+      APPWRITE_API_KEY: ${{ secrets.APPWRITE_API_KEY }}
+      FUNCTION_ID: ${{ secrets.APPWRITE_PROFILE_FUNCTION_ID }}
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
 
       - name: Call AI for Suggestions
+        id: suggestions
         run: |
-          RAW_RESPONSE=$(curl -sS -X POST "${{ secrets.APPWRITE_ENDPOINT }}/v1/functions/${{ secrets.APPWRITE_PROFILE_FUNCTION_ID }}/executions" \
+          # NOTE: --max-time only gives up on *our* side. The Appwrite execution keeps
+          # running and keeps billing compute until the function's own timeout expires,
+          # so also keep that timeout low (Appwrite Keepalive has a set_timeout input).
+          HTTP=$(curl -sS -o raw.json -w '%{http_code}' \
+            --connect-timeout 15 --max-time 180 \
+            --retry 2 --retry-delay 10 --retry-all-errors \
+            -X POST "${APPWRITE_ENDPOINT%/}/v1/functions/$FUNCTION_ID/executions" \
             -H "Content-Type: application/json" \
-            -H "X-Appwrite-Project: ${{ secrets.APPWRITE_PROJECT_ID }}" \
-            -H "X-Appwrite-Key: ${{ secrets.APPWRITE_API_KEY }}" \
-            -d '{
-              "body": "{\"task\":\"review\",\"username\":\"mdsarfarazalam840\"}"
-            }')
-      
-          echo "===== RAW SUGGESTIONS RESPONSE ====="
-          echo "$RAW_RESPONSE"
-      
-          echo "$RAW_RESPONSE" | jq -r '
-            (.responseBody | fromjson? // {}) as $body
-            | if ($body.ok == true and $body.insights and ($body.insights | type == "string") and ($body.insights != "")) then
-                $body.insights
-              else
-                "No AI suggestions available."
-              end
-          ' > suggestions.md
-          
-      - name: Call AI for Improvements
-        run: |
-          RAW_RESPONSE=$(curl -sS -X POST "${{ secrets.APPWRITE_ENDPOINT }}/v1/functions/${{ secrets.APPWRITE_PROFILE_FUNCTION_ID }}/executions" \
-            -H "Content-Type: application/json" \
-            -H "X-Appwrite-Project: ${{ secrets.APPWRITE_PROJECT_ID }}" \
-            -H "X-Appwrite-Key: ${{ secrets.APPWRITE_API_KEY }}" \
-            -d '{
-              "body": "{\"task\":\"improve\",\"username\":\"mdsarfarazalam840\"}"
-            }')
-      
-          echo "===== RAW IMPROVEMENTS RESPONSE ====="
-          echo "$RAW_RESPONSE"
-      
-          echo "$RAW_RESPONSE" | jq -r '
-            (.responseBody | fromjson? // {}) as $body
-            | if ($body.ok == true and $body.insights and ($body.insights | type == "string") and ($body.insights != "")) then
-                $body.insights
-              else
-                "No AI improvements available."
-              end
-          ' > improvements.md
+            -H "X-Appwrite-Project: $APPWRITE_PROJECT_ID" \
+            -H "X-Appwrite-Key: $APPWRITE_API_KEY" \
+            -d '{"body":"{\"task\":\"review\",\"username\":\"mdsarfarazalam840\"}"}' || echo "000")
+
+          echo "===== RAW SUGGESTIONS RESPONSE (HTTP $HTTP) ====="
+          cat raw.json; echo
+
+          if [ "$HTTP" != "200" ] && [ "$HTTP" != "201" ]; then
+            echo "::warning::Appwrite returned HTTP $HTTP — leaving the existing README section untouched."
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          jq -r '
+            (.responseBody | fromjson? // {}) as $b
+            | if ($b.ok == true and ($b.insights | type) == "string" and $b.insights != "")
+              then $b.insights else "" end
+          ' raw.json > suggestions.md
+
+          # An empty or degraded payload must NOT overwrite good content that is
+          # already in the README — that is how the section got clobbered before.
+          if [ ! -s suggestions.md ]; then
+            echo "::warning::No usable insights in the response — keeping the current README section."
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Debug Suggestions Output
+        if: steps.suggestions.outputs.ok == 'true'
         run: |
           echo "===== suggestions.md ====="
           cat suggestions.md
 
       - name: Inject Suggestions
+        if: steps.suggestions.outputs.ok == 'true'
         run: |
           awk -v start="<!-- AI_SUGGESTIONS_START -->" \
               -v end="<!-- AI_SUGGESTIONS_END -->" \
@@ -84,12 +94,48 @@ jobs:
           }
           ' README.md > temp.md && mv temp.md README.md
 
+      - name: Call AI for Improvements
+        id: improvements
+        run: |
+          HTTP=$(curl -sS -o raw2.json -w '%{http_code}' \
+            --connect-timeout 15 --max-time 180 \
+            --retry 2 --retry-delay 10 --retry-all-errors \
+            -X POST "${APPWRITE_ENDPOINT%/}/v1/functions/$FUNCTION_ID/executions" \
+            -H "Content-Type: application/json" \
+            -H "X-Appwrite-Project: $APPWRITE_PROJECT_ID" \
+            -H "X-Appwrite-Key: $APPWRITE_API_KEY" \
+            -d '{"body":"{\"task\":\"improve\",\"username\":\"mdsarfarazalam840\"}"}' || echo "000")
+
+          echo "===== RAW IMPROVEMENTS RESPONSE (HTTP $HTTP) ====="
+          cat raw2.json; echo
+
+          if [ "$HTTP" != "200" ] && [ "$HTTP" != "201" ]; then
+            echo "::warning::Appwrite returned HTTP $HTTP — leaving the existing README section untouched."
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          jq -r '
+            (.responseBody | fromjson? // {}) as $b
+            | if ($b.ok == true and ($b.insights | type) == "string" and $b.insights != "")
+              then $b.insights else "" end
+          ' raw2.json > improvements.md
+
+          if [ ! -s improvements.md ]; then
+            echo "::warning::No usable insights in the response — keeping the current README section."
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Debug Improvements Output
+        if: steps.improvements.outputs.ok == 'true'
         run: |
           echo "===== improvements.md ====="
           cat improvements.md
 
       - name: Inject Improvements
+        if: steps.improvements.outputs.ok == 'true'
         run: |
           awk -v start="<!-- AI_IMPROVEMENTS_START -->" \
               -v end="<!-- AI_IMPROVEMENTS_END -->" \
@@ -110,10 +156,29 @@ jobs:
           ' README.md > temp.md && mv temp.md README.md
 
       - name: Commit changes
+        if: steps.suggestions.outputs.ok == 'true' || steps.improvements.outputs.ok == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+          if git diff --quiet -- README.md; then
+            echo "README unchanged — nothing to commit."
+            exit 0
+          fi
+
           git add README.md
-          git commit -m "🤖 Update AI Insights" || echo "No changes"
-          git push
+          git commit -m "🤖 Update AI Insights"
+
+          # Rebase-and-retry: other scheduled workflows also push to main.
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              echo "Pushed on attempt $attempt."
+              exit 0
+            fi
+            echo "Push rejected — rebasing onto origin/main (attempt $attempt)."
+            git pull --rebase --autostash origin main || exit 1
+            sleep $((attempt * 5))
+          done
+
+          echo "::error::Could not push after 5 attempts."
+          exit 1

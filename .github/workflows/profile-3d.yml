@@ -1,0 +1,70 @@
+name: 3D Contribution Calendar
+
+# Generates the 3D contribution calendar as SVGs committed into this repo.
+# Unlike a hosted card service, there is no third-party host that can go down —
+# which is exactly how github-readme-activity-graph, the old Heroku streak host
+# and cyclic.sh all broke this README before.
+
+on:
+  schedule:
+    # 03:07 IST (Asia/Kolkata, UTC+5:30). Offset from :00 — top-of-hour cron is
+    # the most congested slot on GitHub's shared runners.
+    - cron: "37 21 * * *"
+  workflow_dispatch:
+
+# Own group: this job writes SVGs, not README.md, so it does not need to queue
+# behind the README writers. Push races are handled by the retry loop below.
+concurrency:
+  group: profile-3d
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-3d-contrib
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      # Pinned to a release tag rather than @latest, so an upstream change cannot
+      # silently alter the profile image. Bump this tag to update.
+      - name: Generate calendar
+        uses: yoshi389111/github-profile-3d-contrib@v0.9.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+          # Default is 100; this account has ~146 public repos.
+          MAX_REPOS: "200"
+
+      - name: Commit & push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Scoped to the generated directory, so a concurrent README update from
+          # another workflow can never be swept into this commit.
+          git add profile-3d-contrib
+
+          if git diff --cached --quiet; then
+            echo "Calendar unchanged — nothing to commit."
+            exit 0
+          fi
+
+          git commit -m "🧊 Update 3D contribution calendar"
+
+          # Rebase-and-retry: several scheduled workflows push to main here.
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              echo "Pushed on attempt $attempt."
+              exit 0
+            fi
+            echo "Push rejected — rebasing onto origin/main (attempt $attempt)."
+            git pull --rebase --autostash origin main || exit 1
+            sleep $((attempt * 5))
+          done
+
+          echo "::error::Could not push after 5 attempts."
+          exit 1

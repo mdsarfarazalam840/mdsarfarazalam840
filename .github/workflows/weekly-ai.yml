@@ -2,14 +2,24 @@ name: Weekly AI Report
 
 on:
   schedule:
-    - cron: "0 0 * * 0"
+    - cron: "41 0 * * 0"
   workflow_dispatch:
+
+concurrency:
+  group: readme-writes
+  cancel-in-progress: false
 
 jobs:
   weekly-report:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
+    env:
+      APPWRITE_ENDPOINT: ${{ secrets.APPWRITE_ENDPOINT }}
+      APPWRITE_PROJECT_ID: ${{ secrets.APPWRITE_PROJECT_ID }}
+      APPWRITE_API_KEY: ${{ secrets.APPWRITE_API_KEY }}
+      FUNCTION_ID: ${{ secrets.APPWRITE_PROFILE_FUNCTION_ID }}
 
     steps:
       - name: Checkout repo
@@ -18,36 +28,56 @@ jobs:
       - name: Sync latest main
         run: |
           git fetch origin main
-          git pull --rebase origin main
+          git pull --rebase --autostash origin main
 
       - name: Call AI for Weekly Report
+        id: weekly
         run: |
-          RAW_RESPONSE=$(curl -sS -X POST "${{ secrets.APPWRITE_ENDPOINT }}/v1/functions/${{ secrets.APPWRITE_PROFILE_FUNCTION_ID }}/executions" \
+          # Build the payload with jq so the repository name cannot break the JSON quoting.
+          PAYLOAD=$(jq -nc \
+            --arg repo "$GITHUB_REPOSITORY" \
+            '{body: ({task:"weekly", username:"mdsarfarazalam840", repository:$repo} | tostring)}')
+
+          HTTP=$(curl -sS -o raw.json -w '%{http_code}' \
+            --connect-timeout 15 --max-time 180 \
+            --retry 2 --retry-delay 10 --retry-all-errors \
+            -X POST "${APPWRITE_ENDPOINT%/}/v1/functions/$FUNCTION_ID/executions" \
             -H "Content-Type: application/json" \
-            -H "X-Appwrite-Project: ${{ secrets.APPWRITE_PROJECT_ID }}" \
-            -H "X-Appwrite-Key: ${{ secrets.APPWRITE_API_KEY }}" \
-            -d '{
-              "body": "{\"task\":\"weekly\",\"username\":\"mdsarfarazalam840\",\"repository\":\"'${GITHUB_REPOSITORY}'\"}"
-            }')
-      
-          echo "===== RAW RESPONSE ====="
-          echo "$RAW_RESPONSE"
-      
-          echo "$RAW_RESPONSE" | jq -r '
-            (.responseBody | fromjson? // {}) as $body
-            | if ($body.ok == true and $body.insights and ($body.insights | type == "string") and ($body.insights != "")) then
-                $body.insights
-              else
-                "No weekly AI report available."
-              end
-          ' > weekly.md
+            -H "X-Appwrite-Project: $APPWRITE_PROJECT_ID" \
+            -H "X-Appwrite-Key: $APPWRITE_API_KEY" \
+            -d "$PAYLOAD" || echo "000")
+
+          echo "===== RAW RESPONSE (HTTP $HTTP) ====="
+          cat raw.json; echo
+
+          if [ "$HTTP" != "200" ] && [ "$HTTP" != "201" ]; then
+            echo "::warning::Appwrite returned HTTP $HTTP — leaving the existing report in place."
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          jq -r '
+            (.responseBody | fromjson? // {}) as $b
+            | if ($b.ok == true and ($b.insights | type) == "string" and $b.insights != "")
+              then $b.insights else "" end
+          ' raw.json > weekly.md
+
+          # Never let a failed/degraded call overwrite the report already in the README.
+          if [ ! -s weekly.md ]; then
+            echo "::warning::No usable report in the response — keeping the current README section."
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Debug Weekly Output
+        if: steps.weekly.outputs.ok == 'true'
         run: |
           echo "===== weekly.md ====="
           cat weekly.md
-          
+
       - name: Inject Weekly Report
+        if: steps.weekly.outputs.ok == 'true'
         run: |
           awk -v start="<!-- WEEKLY_REPORT_START -->" \
               -v end="<!-- WEEKLY_REPORT_END -->" \
@@ -68,11 +98,29 @@ jobs:
           ' README.md > temp.md && mv temp.md README.md
 
       - name: Commit changes
+        if: steps.weekly.outputs.ok == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+          if git diff --quiet -- README.md; then
+            echo "README unchanged — nothing to commit."
+            exit 0
+          fi
 
           git add README.md
-          git commit -m "📊 Weekly AI report" || echo "No changes"
-          git push
+          git commit -m "📊 Weekly AI report"
+
+          # Rebase-and-retry: other scheduled workflows also push to main.
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              echo "Pushed on attempt $attempt."
+              exit 0
+            fi
+            echo "Push rejected — rebasing onto origin/main (attempt $attempt)."
+            git pull --rebase --autostash origin main || exit 1
+            sleep $((attempt * 5))
+          done
+
+          echo "::error::Could not push after 5 attempts."
+          exit 1

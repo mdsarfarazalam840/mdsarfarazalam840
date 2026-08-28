@@ -65,14 +65,38 @@
 ![-------------------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 
-<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api?username=mdsarfarazalam840&show_icons=true&count_private=true&theme=radical" />
+<!-- Self-hosted instance, because the public github-readme-stats.vercel.app is
+     permanently 503 DEPLOYMENT_PAUSED. This instance needs a PAT_1 env var
+     (GitHub PAT, no scopes required) in its Vercel project settings. -->
+<p align="center"><img align="center" src="https://github-readme-stats-dun-ten-43.vercel.app/api?username=mdsarfarazalam840&show_icons=true&count_private=true&theme=radical" />
 
 
-<p align="center"><img align="center" src="http://github-readme-streak-stats.herokuapp.com?user=mdsarfarazalam840&theme=radical&date_format=M%20j%5B%2C%20Y%5D" />
+<!-- streak-stats.demolab.com is the maintained home; the old herokuapp host died with Heroku's free tier. -->
+<p align="center"><img align="center" src="https://streak-stats.demolab.com?user=mdsarfarazalam840&theme=radical&date_format=M%20j%5B%2C%20Y%5D" />
 
 
-<!--[![Ashutosh's github activity graph](https://activity-graph.herokuapp.com/graph?username=mdsarfarazalam840&theme=react-dark)](https://github.com/ashutosh00710/github-readme-activity-graph)-->
-[![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=mdsarfarazalam840&theme=react-dark)](https://github.com/ashutosh00710/github-readme-activity-graph)
+<!-- Activity graph. The upstream host github-readme-activity-graph.vercel.app now returns
+     402 DEPLOYMENT_DISABLED, and the old herokuapp / cyclic.sh hosts are gone.
+     activity-graph.vercel.app runs the same service and is live.
+     Instant fallbacks if this one ever dies, in order of preference:
+       1. https://github-activity-graph.vercel.app/graph?username=...   (identical output)
+       2. https://ghchart.rshah.org/mdsarfarazalam840                   (year heatmap, different look)
+       3. Deploy your own: github.com/Ashutosh00710/github-readme-activity-graph (env var: TOKEN) -->
+[![Md Sarfaraz Alam's GitHub activity graph](https://activity-graph.vercel.app/graph?username=mdsarfarazalam840&theme=react-dark)](https://github.com/Ashutosh00710/github-readme-activity-graph)
+
+<h3 align="center">🧊 3D Contribution Calendar</h3>
+
+<!-- Generated in-repo by .github/workflows/profile-3d.yml, so there is no third-party
+     host that can go down. Swap the filename for a different style:
+       profile-night-rainbow  profile-night-view   profile-night-green
+       profile-gitblock       profile-green        profile-green-animate
+       profile-season         profile-season-animate
+       profile-south-season   profile-south-season-animate
+     Run the workflow once (Actions -> 3D Contribution Calendar -> Run workflow)
+     to create the file before this image will render. -->
+<p align="center">
+  <img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="Md Sarfaraz Alam's 3D contribution calendar" width="100%" />
+</p>
 
 ![---------------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
   
@@ -272,7 +296,7 @@ AI provider did not respond in time. Basic health of this function is OK, and Gi
 
 ---
 ### :zap: Recent Activity
-[![Saif's WakaTime stats](https://github-readme-stats-dun-ten-43.vercel.app/api/wakatime?username=@mdsarfarazalam840&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+[![Saif's WakaTime stats](https://github-readme-stats-dun-ten-43.vercel.app/api/wakatime?username=mdsarfarazalam840&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
 <!--START_SECTION:activity-->
 
