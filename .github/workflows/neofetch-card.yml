@@ -1,0 +1,66 @@
+name: Neofetch Card Update
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'neofetch_stats.py'
+      - 'tools/build_neofetch_svg.py'
+      - '.github/workflows/neofetch-card.yml'
+  schedule:
+    - cron: '17 4 * * *' # Once a day, off the hour to dodge the Actions rush
+
+# The job commits the refreshed SVGs and the lines-of-code cache back to main.
+permissions:
+  contents: write
+
+jobs:
+  build-card:
+    runs-on: ubuntu-latest
+
+    env:
+      GIT_USER_NAME: "github-actions[bot]"
+      GIT_USER_EMAIL: "41898282+github-actions[bot]@users.noreply.github.com"
+
+    steps:
+      - name: Checkout repo (shallow)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: cache/requirements.txt
+
+      - name: Install dependencies
+        run: python -m pip install -r cache/requirements.txt
+
+      - name: Refresh stats in both SVGs
+        env:
+          # GH_TOKEN needs read access to Followers, Starring, Commit statuses,
+          # Contents and Metadata. The default GITHUB_TOKEN works for public
+          # repos only, and cannot read followers.
+          ACCESS_TOKEN: ${{ secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
+          USER_NAME: mdsarfarazalam840
+          # Optional: set a BIRTHDAY repo variable (YYYY-MM-DD) and Uptime counts
+          # from your birthday instead of from your GitHub account creation date.
+          BIRTHDAY: ${{ vars.BIRTHDAY }}
+        run: python neofetch_stats.py
+
+      - name: Commit & push changes
+        run: |
+          git config user.name "$GIT_USER_NAME"
+          git config user.email "$GIT_USER_EMAIL"
+          git add dark_mode.svg light_mode.svg cache/
+          if ! git diff --cached --quiet; then
+            git commit -m "🖥️ refresh neofetch profile card"
+            git push
+            echo "⟩ Card updated and pushed."
+          else
+            echo "⟩ No changes detected; skipping commit."
+          fi

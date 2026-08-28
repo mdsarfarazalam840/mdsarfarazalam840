@@ -25,7 +25,17 @@
 
 <!-- YEAR_PROGRESS_END -->
 
-
+<!-- Neofetch-style card. Numbers are refreshed daily in-repo by
+     .github/workflows/neofetch-card.yml, so nothing here depends on a
+     third-party host that can go down. To change what the card says, edit the
+     LINES list in tools/build_neofetch_svg.py and re-run it. Raw URLs (not
+     relative paths) are required for the dark/light swap to work. -->
+<a href="https://github.com/mdsarfarazalam840/mdsarfarazalam840">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mdsarfarazalam840/mdsarfarazalam840/main/dark_mode.svg">
+    <img alt="Md Sarfaraz Alam's GitHub profile card" src="https://raw.githubusercontent.com/mdsarfarazalam840/mdsarfarazalam840/main/light_mode.svg" width="100%">
+  </picture>
+</a>
 
 
 ![background.png](./images/github-front.jpg)
