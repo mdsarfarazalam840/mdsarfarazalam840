@@ -189,68 +189,64 @@ Sunday                   252 commits         ██████░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-TypeScript               6 hrs 8 mins        ████████░░░░░░░░░░░░░░░░░   31.96 % 
-MDX                      2 hrs 58 mins       ████░░░░░░░░░░░░░░░░░░░░░   15.46 % 
-Markdown                 2 hrs 55 mins       ████░░░░░░░░░░░░░░░░░░░░░   15.20 % 
-JSON                     2 hrs 20 mins       ███░░░░░░░░░░░░░░░░░░░░░░   12.19 % 
-Python                   1 hr 34 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   08.18 % 
+TypeScript               4 hrs 55 mins       ███████░░░░░░░░░░░░░░░░░░   28.40 % 
+MDX                      3 hrs 1 min         ████░░░░░░░░░░░░░░░░░░░░░   17.43 % 
+Markdown                 2 hrs 38 mins       ████░░░░░░░░░░░░░░░░░░░░░   15.21 % 
+JSON                     2 hrs 4 mins        ███░░░░░░░░░░░░░░░░░░░░░░   11.98 % 
+Python                   1 hr 42 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   09.86 % 
 
 🔥 Editors: 
-Claude Code              17 hrs 30 mins      ███████████████████████░░   91.00 % 
-VS Code                  1 hr 30 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   07.86 % 
-Opencode Cli             13 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.14 % 
+Claude Code              16 hrs 14 mins      ███████████████████████░░   93.68 % 
+VS Code                  1 hr 5 mins         ██░░░░░░░░░░░░░░░░░░░░░░░   06.32 % 
 
 🐱‍💻 Projects: 
-Quran-website            10 hrs 32 mins      ██████████████░░░░░░░░░░░   54.81 % 
-Azure_GCP_AWS_Knowledge  5 hrs 11 mins       ███████░░░░░░░░░░░░░░░░░░   27.02 % 
-mdsarfarazalam840        2 hrs 50 mins       ████░░░░░░░░░░░░░░░░░░░░░   14.79 % 
-freemoviesuggestion      38 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.33 % 
+Quran-website            8 hrs 35 mins       ████████████░░░░░░░░░░░░░   49.58 % 
+Azure_GCP_AWS_Knowledge  5 hrs 6 mins        ███████░░░░░░░░░░░░░░░░░░   29.48 % 
+mdsarfarazalam840        2 hrs 58 mins       ████░░░░░░░░░░░░░░░░░░░░░   17.20 % 
+freemoviesuggestion      38 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.69 % 
 andrew6rant              0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.05 % 
 
 💻 Operating System: 
-Windows                  19 hrs 14 mins      █████████████████████████   100.00 % 
+Windows                  17 hrs 19 mins      █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 18 hrs 40 mins (97.11%)
+⏱ AI Coding Time: 16 hrs 46 mins (96.79%)
 
-✍️ 40,821 lines written by AI, 73 lines written by hand (99.82% AI-written)
+✍️ 41,292 lines written by AI, 58 lines written by hand (99.86% AI-written)
 
-🔤 24,848,263 Input Tokens, 906,718 Output Tokens
+🔤 19,951,402 Input Tokens, 909,480 Output Tokens
 
-💵 $188.24 Estimated AI Cost This Week
+💵 $168.74 Estimated AI Cost This Week
 
-🧠 28 AI Sessions, 85 AI Prompts
+🧠 19 AI Sessions, 69 AI Prompts
 
-Opus                     40,934 lines        █████████████████████████   99.93 % 
-Qwen                     30 lines            ░░░░░░░░░░░░░░░░░░░░░░░░░   00.07 % 
-Opencode-Cli             0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
+Opus                     41,433 lines        █████████████████████████   100.00 % 
 Claude-Code              0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
-Nemotron                 0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 
 🔎 AI Coding Insights:
-🤖 AI-Driven — 99.82% of written lines came from AI
-📚 Verbose Prompter — average 7,023 characters per prompt
-🔁 Iterative Prompter — average 3 prompts per session
-🚀 High AI Trust — 0.18% of changed lines were hand-edited
+🤖 AI-Driven — 99.86% of written lines came from AI
+📚 Verbose Prompter — average 5,871 characters per prompt
+🔁 Iterative Prompter — average 4 prompts per session
+🚀 High AI Trust — 0.14% of changed lines were hand-edited
 ```
 
 **I Mostly Code in JavaScript** 
 
 ```text
-JavaScript               15 repos            ████████░░░░░░░░░░░░░░░░░   31.25 % 
-TypeScript               8 repos             ████░░░░░░░░░░░░░░░░░░░░░   16.67 % 
-HTML                     3 repos             ██░░░░░░░░░░░░░░░░░░░░░░░   06.25 % 
-MDX                      1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   02.08 % 
-Astro                    1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   02.08 % 
+JavaScript               15 repos            ████████░░░░░░░░░░░░░░░░░   32.61 % 
+TypeScript               7 repos             ████░░░░░░░░░░░░░░░░░░░░░   15.22 % 
+HTML                     4 repos             ██░░░░░░░░░░░░░░░░░░░░░░░   08.70 % 
+MDX                      1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   02.17 % 
+Astro                    1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   02.17 % 
 ```
 
 
 
 
- Last Updated on 01/09/2026 04:46:35 UTC
+ Last Updated on 02/09/2026 04:08:08 UTC
 <!--END_SECTION:waka-->
 
 
