@@ -144,9 +144,9 @@ Here are some ideas to get you started:
 
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-253%20hrs%2034%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-254%20hrs%2053%20mins-blue?style=flat)
 
-![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-181%20hrs%2017%20mins-blue?style=flat)
+![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-182%20hrs%2036%20mins-blue?style=flat)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-3.13%20million%20lines%20of%20code-blue?style=flat)
 
@@ -189,48 +189,48 @@ Sunday                   252 commits         ██████░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-TypeScript               4 hrs 55 mins       ███████░░░░░░░░░░░░░░░░░░   28.40 % 
-MDX                      3 hrs 1 min         ████░░░░░░░░░░░░░░░░░░░░░   17.43 % 
-Markdown                 2 hrs 38 mins       ████░░░░░░░░░░░░░░░░░░░░░   15.21 % 
-JSON                     2 hrs 4 mins        ███░░░░░░░░░░░░░░░░░░░░░░   11.98 % 
-Python                   1 hr 42 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   09.86 % 
+TypeScript               2 hrs 2 mins        ██████░░░░░░░░░░░░░░░░░░░   23.38 % 
+Markdown                 1 hr 52 mins        █████░░░░░░░░░░░░░░░░░░░░   21.59 % 
+JSON                     1 hr 46 mins        █████░░░░░░░░░░░░░░░░░░░░   20.42 % 
+Python                   1 hr 42 mins        █████░░░░░░░░░░░░░░░░░░░░   19.64 % 
+YAML                     31 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.95 % 
 
 🔥 Editors: 
-Claude Code              16 hrs 14 mins      ███████████████████████░░   93.68 % 
-VS Code                  1 hr 5 mins         ██░░░░░░░░░░░░░░░░░░░░░░░   06.32 % 
+Claude Code              7 hrs 58 mins       ███████████████████████░░   91.67 % 
+VS Code                  43 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.33 % 
 
 🐱‍💻 Projects: 
-Quran-website            8 hrs 35 mins       ████████████░░░░░░░░░░░░░   49.58 % 
-Azure_GCP_AWS_Knowledge  5 hrs 6 mins        ███████░░░░░░░░░░░░░░░░░░   29.48 % 
-mdsarfarazalam840        2 hrs 58 mins       ████░░░░░░░░░░░░░░░░░░░░░   17.20 % 
-freemoviesuggestion      38 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.69 % 
-andrew6rant              0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.05 % 
+Quran-website            4 hrs 22 mins       █████████████░░░░░░░░░░░░   50.31 % 
+mdsarfarazalam840        2 hrs 58 mins       █████████░░░░░░░░░░░░░░░░   34.24 % 
+Azure_GCP_AWS_Knowledge  41 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.01 % 
+freemoviesuggestion      38 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   07.33 % 
+andrew6rant              0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.11 % 
 
 💻 Operating System: 
-Windows                  17 hrs 19 mins      █████████████████████████   100.00 % 
+Windows                  8 hrs 42 mins       █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 16 hrs 46 mins (96.79%)
+⏱ AI Coding Time: 8 hrs 11 mins (94.04%)
 
-✍️ 41,292 lines written by AI, 58 lines written by hand (99.86% AI-written)
+✍️ 7,279 lines written by AI, 53 lines written by hand (99.28% AI-written)
 
-🔤 19,951,402 Input Tokens, 909,480 Output Tokens
+🔤 9,237,220 Input Tokens, 484,227 Output Tokens
 
-💵 $168.74 Estimated AI Cost This Week
+💵 $87.18 Estimated AI Cost This Week
 
-🧠 19 AI Sessions, 69 AI Prompts
+🧠 14 AI Sessions, 47 AI Prompts
 
-Opus                     41,433 lines        █████████████████████████   100.00 % 
+Opus                     7,320 lines         █████████████████████████   100.00 % 
 Claude-Code              0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 
 🔎 AI Coding Insights:
-🤖 AI-Driven — 99.86% of written lines came from AI
-📚 Verbose Prompter — average 5,871 characters per prompt
-🔁 Iterative Prompter — average 4 prompts per session
-🚀 High AI Trust — 0.14% of changed lines were hand-edited
+🤖 AI-Driven — 99.28% of written lines came from AI
+📚 Verbose Prompter — average 4,117 characters per prompt
+🔁 Iterative Prompter — average 3 prompts per session
+🚀 High AI Trust — 0.72% of changed lines were hand-edited
 ```
 
 **I Mostly Code in JavaScript** 
@@ -246,7 +246,7 @@ Astro                    1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 02/09/2026 04:08:08 UTC
+ Last Updated on 03/09/2026 04:05:53 UTC
 <!--END_SECTION:waka-->
 
 
