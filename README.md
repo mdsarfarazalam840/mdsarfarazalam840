@@ -148,11 +148,11 @@ Here are some ideas to get you started:
 
 ![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-182%20hrs%2036%20mins-blue?style=flat)
 
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-3.13%20million%20lines%20of%20code-blue?style=flat)
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-3.18%20million%20lines%20of%20code-blue?style=flat)
 
 **🐱 My GitHub Data** 
 
-> 📦 128.1 kB Used in GitHub's Storage 
+> 📦 128.2 kB Used in GitHub's Storage 
  > 
 > 🏆 413 Contributions in the Year 2026
  > 
@@ -165,21 +165,21 @@ Here are some ideas to get you started:
 **I'm an Early 🐤** 
 
 ```text
-🌞 Morning                292 commits         ███████░░░░░░░░░░░░░░░░░░   26.24 % 
-🌆 Daytime                344 commits         ████████░░░░░░░░░░░░░░░░░   30.91 % 
-🌃 Evening                402 commits         █████████░░░░░░░░░░░░░░░░   36.12 % 
-🌙 Night                  75 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   06.74 % 
+🌞 Morning                295 commits         ██████░░░░░░░░░░░░░░░░░░░   25.54 % 
+🌆 Daytime                360 commits         ████████░░░░░░░░░░░░░░░░░   31.17 % 
+🌃 Evening                420 commits         █████████░░░░░░░░░░░░░░░░   36.36 % 
+🌙 Night                  80 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   06.93 % 
 ```
 📅 **I'm Most Productive on Sunday** 
 
 ```text
-Monday                   137 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.31 % 
-Tuesday                  180 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.17 % 
-Wednesday                204 commits         █████░░░░░░░░░░░░░░░░░░░░   18.33 % 
-Thursday                 50 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   04.49 % 
-Friday                   122 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.96 % 
-Saturday                 168 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.09 % 
-Sunday                   252 commits         ██████░░░░░░░░░░░░░░░░░░░   22.64 % 
+Monday                   140 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.12 % 
+Tuesday                  190 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.45 % 
+Wednesday                212 commits         █████░░░░░░░░░░░░░░░░░░░░   18.35 % 
+Thursday                 50 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   04.33 % 
+Friday                   124 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.74 % 
+Saturday                 179 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.50 % 
+Sunday                   260 commits         ██████░░░░░░░░░░░░░░░░░░░   22.51 % 
 ```
 
 
@@ -189,48 +189,47 @@ Sunday                   252 commits         ██████░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-TypeScript               2 hrs 2 mins        ██████░░░░░░░░░░░░░░░░░░░   23.38 % 
-Markdown                 1 hr 52 mins        █████░░░░░░░░░░░░░░░░░░░░   21.59 % 
-JSON                     1 hr 46 mins        █████░░░░░░░░░░░░░░░░░░░░   20.42 % 
-Python                   1 hr 42 mins        █████░░░░░░░░░░░░░░░░░░░░   19.64 % 
-YAML                     31 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.95 % 
+TypeScript               2 hrs 25 mins       ██████░░░░░░░░░░░░░░░░░░░   25.59 % 
+Markdown                 2 hrs 13 mins       ██████░░░░░░░░░░░░░░░░░░░   23.46 % 
+JSON                     2 hrs 2 mins        █████░░░░░░░░░░░░░░░░░░░░   21.60 % 
+Python                   1 hr 42 mins        █████░░░░░░░░░░░░░░░░░░░░   18.06 % 
+YAML                     33 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.92 % 
 
 🔥 Editors: 
-Claude Code              7 hrs 58 mins       ███████████████████████░░   91.67 % 
-VS Code                  43 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.33 % 
+Claude Code              8 hrs 42 mins       ███████████████████████░░   91.93 % 
+VS Code                  45 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.07 % 
 
 🐱‍💻 Projects: 
-Quran-website            4 hrs 22 mins       █████████████░░░░░░░░░░░░   50.31 % 
-mdsarfarazalam840        2 hrs 58 mins       █████████░░░░░░░░░░░░░░░░   34.24 % 
-Azure_GCP_AWS_Knowledge  41 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.01 % 
-freemoviesuggestion      38 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   07.33 % 
-andrew6rant              0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.11 % 
+Quran-website            5 hrs 50 mins       ███████████████░░░░░░░░░░   61.69 % 
+mdsarfarazalam840        2 hrs 58 mins       ████████░░░░░░░░░░░░░░░░░   31.48 % 
+freemoviesuggestion      38 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   06.74 % 
+andrew6rant              0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.10 % 
 
 💻 Operating System: 
-Windows                  8 hrs 42 mins       █████████████████████████   100.00 % 
+Windows                  9 hrs 28 mins       █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 8 hrs 11 mins (94.04%)
+⏱ AI Coding Time: 8 hrs 57 mins (94.67%)
 
-✍️ 7,279 lines written by AI, 53 lines written by hand (99.28% AI-written)
+✍️ 7,310 lines written by AI, 5 lines written by hand (99.93% AI-written)
 
-🔤 9,237,220 Input Tokens, 484,227 Output Tokens
+🔤 9,275,969 Input Tokens, 489,257 Output Tokens
 
-💵 $87.18 Estimated AI Cost This Week
+💵 $87.63 Estimated AI Cost This Week
 
-🧠 14 AI Sessions, 47 AI Prompts
+🧠 12 AI Sessions, 47 AI Prompts
 
-Opus                     7,320 lines         █████████████████████████   100.00 % 
+Opus                     7,354 lines         █████████████████████████   100.00 % 
 Claude-Code              0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 
 🔎 AI Coding Insights:
-🤖 AI-Driven — 99.28% of written lines came from AI
-📚 Verbose Prompter — average 4,117 characters per prompt
-🔁 Iterative Prompter — average 3 prompts per session
-🚀 High AI Trust — 0.72% of changed lines were hand-edited
+🤖 AI-Driven — 99.93% of written lines came from AI
+📚 Verbose Prompter — average 17,112 characters per prompt
+🔁 Iterative Prompter — average 4 prompts per session
+🚀 High AI Trust — 0.07% of changed lines were hand-edited
 ```
 
 **I Mostly Code in JavaScript** 
@@ -246,7 +245,7 @@ Astro                    1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 03/09/2026 04:05:53 UTC
+ Last Updated on 04/09/2026 04:09:53 UTC
 <!--END_SECTION:waka-->
 
 
