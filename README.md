@@ -144,15 +144,15 @@ Here are some ideas to get you started:
 
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-254%20hrs%2053%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-256%20hrs%2020%20mins-blue?style=flat)
 
-![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-182%20hrs%2036%20mins-blue?style=flat)
+![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-184%20hrs%201%20min-blue?style=flat)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-3.18%20million%20lines%20of%20code-blue?style=flat)
 
 **🐱 My GitHub Data** 
 
-> 📦 128.2 kB Used in GitHub's Storage 
+> 📦 128.1 kB Used in GitHub's Storage 
  > 
 > 🏆 413 Contributions in the Year 2026
  > 
@@ -189,47 +189,44 @@ Sunday                   260 commits         ██████░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-TypeScript               2 hrs 25 mins       ██████░░░░░░░░░░░░░░░░░░░   25.59 % 
-Markdown                 2 hrs 13 mins       ██████░░░░░░░░░░░░░░░░░░░   23.46 % 
-JSON                     2 hrs 2 mins        █████░░░░░░░░░░░░░░░░░░░░   21.60 % 
-Python                   1 hr 42 mins        █████░░░░░░░░░░░░░░░░░░░░   18.06 % 
-YAML                     33 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.92 % 
+TypeScript               1 hr 46 mins        ██████████░░░░░░░░░░░░░░░   41.60 % 
+Python                   1 hr 28 mins        █████████░░░░░░░░░░░░░░░░   34.55 % 
+Markdown                 30 mins             ███░░░░░░░░░░░░░░░░░░░░░░   11.86 % 
+JSON                     24 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   09.49 % 
+Git Config               2 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.10 % 
 
 🔥 Editors: 
-Claude Code              8 hrs 42 mins       ███████████████████████░░   91.93 % 
-VS Code                  45 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.07 % 
+Claude Code              4 hrs 7 mins        ████████████████████████░   97.05 % 
+VS Code                  7 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   02.95 % 
 
 🐱‍💻 Projects: 
-Quran-website            5 hrs 50 mins       ███████████████░░░░░░░░░░   61.69 % 
-mdsarfarazalam840        2 hrs 58 mins       ████████░░░░░░░░░░░░░░░░░   31.48 % 
-freemoviesuggestion      38 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   06.74 % 
-andrew6rant              0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.10 % 
+Quran-website            2 hrs 46 mins       ████████████████░░░░░░░░░   65.29 % 
+mdsarfarazalam840        1 hr 28 mins        █████████░░░░░░░░░░░░░░░░   34.71 % 
 
 💻 Operating System: 
-Windows                  9 hrs 28 mins       █████████████████████████   100.00 % 
+Windows                  4 hrs 15 mins       █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 8 hrs 57 mins (94.67%)
+⏱ AI Coding Time: 4 hrs 12 mins (98.72%)
 
-✍️ 7,310 lines written by AI, 5 lines written by hand (99.93% AI-written)
+✍️ 3,084 lines written by AI, 0 lines written by hand (100.0% AI-written)
 
-🔤 9,275,969 Input Tokens, 489,257 Output Tokens
+🔤 2,304,841 Input Tokens, 199,367 Output Tokens
 
-💵 $87.63 Estimated AI Cost This Week
+💵 $31.74 Estimated AI Cost This Week
 
-🧠 12 AI Sessions, 47 AI Prompts
+🧠 4 AI Sessions, 19 AI Prompts
 
-Opus                     7,354 lines         █████████████████████████   100.00 % 
-Claude-Code              0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
+Opus                     3,117 lines         █████████████████████████   100.00 % 
 
 🔎 AI Coding Insights:
-🤖 AI-Driven — 99.93% of written lines came from AI
-📚 Verbose Prompter — average 17,112 characters per prompt
-🔁 Iterative Prompter — average 4 prompts per session
-🚀 High AI Trust — 0.07% of changed lines were hand-edited
+🤖 AI-Driven — 100.0% of written lines came from AI
+📚 Verbose Prompter — average 37,844 characters per prompt
+🔁 Iterative Prompter — average 5 prompts per session
+🚀 High AI Trust — 0.0% of changed lines were hand-edited
 ```
 
 **I Mostly Code in JavaScript** 
@@ -245,7 +242,7 @@ Astro                    1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 04/09/2026 04:09:53 UTC
+ Last Updated on 05/09/2026 04:05:48 UTC
 <!--END_SECTION:waka-->
 
 
