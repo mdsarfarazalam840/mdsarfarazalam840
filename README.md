@@ -148,7 +148,7 @@ Here are some ideas to get you started:
 
 ![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-184%20hrs%201%20min-blue?style=flat)
 
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-3.24%20million%20lines%20of%20code-blue?style=flat)
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-3.29%20million%20lines%20of%20code-blue?style=flat)
 
 **🐱 My GitHub Data** 
 
@@ -165,21 +165,21 @@ Here are some ideas to get you started:
 **I'm an Early 🐤** 
 
 ```text
-🌞 Morning                298 commits         ██████░░░░░░░░░░░░░░░░░░░   24.87 % 
-🌆 Daytime                376 commits         ████████░░░░░░░░░░░░░░░░░   31.39 % 
-🌃 Evening                439 commits         █████████░░░░░░░░░░░░░░░░   36.64 % 
-🌙 Night                  85 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   07.10 % 
+🌞 Morning                301 commits         ██████░░░░░░░░░░░░░░░░░░░   24.27 % 
+🌆 Daytime                392 commits         ████████░░░░░░░░░░░░░░░░░   31.61 % 
+🌃 Evening                457 commits         █████████░░░░░░░░░░░░░░░░   36.85 % 
+🌙 Night                  90 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   07.26 % 
 ```
 📅 **I'm Most Productive on Sunday** 
 
 ```text
-Monday                   143 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.94 % 
-Tuesday                  200 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.69 % 
-Wednesday                221 commits         █████░░░░░░░░░░░░░░░░░░░░   18.45 % 
-Thursday                 50 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   04.17 % 
-Friday                   126 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.52 % 
-Saturday                 190 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.86 % 
-Sunday                   268 commits         ██████░░░░░░░░░░░░░░░░░░░   22.37 % 
+Monday                   146 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.77 % 
+Tuesday                  210 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.94 % 
+Wednesday                229 commits         █████░░░░░░░░░░░░░░░░░░░░   18.47 % 
+Thursday                 50 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   04.03 % 
+Friday                   128 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.32 % 
+Saturday                 201 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.21 % 
+Sunday                   276 commits         ██████░░░░░░░░░░░░░░░░░░░   22.26 % 
 ```
 
 
@@ -189,42 +189,22 @@ Sunday                   268 commits         ██████░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-TypeScript               37 mins             ███████████░░░░░░░░░░░░░░   42.84 % 
-Markdown                 28 mins             ████████░░░░░░░░░░░░░░░░░   32.80 % 
-JSON                     18 mins             █████░░░░░░░░░░░░░░░░░░░░   21.40 % 
-YAML                     2 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   02.96 % 
+No Activity Tracked This Week
 
 🔥 Editors: 
-Claude Code              1 hr 20 mins        ███████████████████████░░   91.41 % 
-VS Code                  7 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   08.59 % 
+No Activity Tracked This Week
 
 🐱‍💻 Projects: 
-Quran-website            1 hr 27 mins        █████████████████████████   100.00 % 
+No Activity Tracked This Week
 
 💻 Operating System: 
-Windows                  1 hr 27 mins        █████████████████████████   100.00 % 
+No Activity Tracked This Week
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 1 hr 24 mins (96.28%)
-
-✍️ 983 lines written by AI, 0 lines written by hand (100.0% AI-written)
-
-🔤 572,737 Input Tokens, 37,881 Output Tokens
-
-💵 $5.53 Estimated AI Cost This Week
-
-🧠 1 AI Sessions, 10 AI Prompts
-
-Opus                     986 lines           █████████████████████████   100.00 % 
-
-🔎 AI Coding Insights:
-🤖 AI-Driven — 100.0% of written lines came from AI
-📚 Verbose Prompter — average 65,809 characters per prompt
-🔁 Iterative Prompter — average 10 prompts per session
-🚀 High AI Trust — 0.0% of changed lines were hand-edited
+No AI Coding Activity Tracked This Week
 ```
 
 **I Mostly Code in JavaScript** 
@@ -240,7 +220,7 @@ Astro                    1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 09/09/2026 04:20:22 UTC
+ Last Updated on 11/09/2026 04:17:37 UTC
 <!--END_SECTION:waka-->
 
 
