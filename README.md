@@ -152,7 +152,7 @@ Here are some ideas to get you started:
 
 **🐱 My GitHub Data** 
 
-> 📦 128.3 kB Used in GitHub's Storage 
+> 📦 128.4 kB Used in GitHub's Storage 
  > 
 > 🏆 413 Contributions in the Year 2026
  > 
@@ -189,22 +189,38 @@ Sunday                   276 commits         ██████░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-No Activity Tracked This Week
+JSON                     31 mins             █████████████████████░░░░   84.51 % 
+Other                    5 mins              ████░░░░░░░░░░░░░░░░░░░░░   15.49 % 
 
 🔥 Editors: 
-No Activity Tracked This Week
+VS Code                  36 mins             █████████████████████████   100.00 % 
 
 🐱‍💻 Projects: 
-No Activity Tracked This Week
+Quran-website            31 mins             █████████████████████░░░░   84.51 % 
+freemoviesuggestion      5 mins              ████░░░░░░░░░░░░░░░░░░░░░   15.49 % 
 
 💻 Operating System: 
-No Activity Tracked This Week
+Windows                  36 mins             █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-No AI Coding Activity Tracked This Week
+⏱ AI Coding Time: 18 mins (49.15%)
+
+✍️ 0 lines written by AI, 0 lines written by hand (0% AI-written)
+
+🔤 0 Input Tokens, 0 Output Tokens
+
+💵 $0.00 Estimated AI Cost This Week
+
+🧠 1 AI Sessions, 6 AI Prompts
+
+🔎 AI Coding Insights:
+🧑‍💻 Mostly Hands-On — 0% of written lines came from AI
+📝 Concise Prompter — average 33 characters per prompt
+🔁 Iterative Prompter — average 6 prompts per session
+🚀 High AI Trust — 0% of changed lines were hand-edited
 ```
 
 **I Mostly Code in JavaScript** 
@@ -220,7 +236,7 @@ Astro                    1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 11/09/2026 04:17:37 UTC
+ Last Updated on 12/09/2026 04:15:57 UTC
 <!--END_SECTION:waka-->
 
 
