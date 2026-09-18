@@ -189,38 +189,40 @@ Sunday                   276 commits         ██████░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-JSON                     31 mins             █████████████████████░░░░   84.51 % 
-Other                    5 mins              ████░░░░░░░░░░░░░░░░░░░░░   15.49 % 
+JSON                     45 mins             ██████████████████████░░░   88.83 % 
+Other                    5 mins              ███░░░░░░░░░░░░░░░░░░░░░░   11.17 % 
 
 🔥 Editors: 
-VS Code                  36 mins             █████████████████████████   100.00 % 
+VS Code                  41 mins             ████████████████████░░░░░   81.94 % 
+Opencode Cli             8 mins              ████░░░░░░░░░░░░░░░░░░░░░   17.26 % 
+Claude Code              0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.80 % 
 
 🐱‍💻 Projects: 
-Quran-website            31 mins             █████████████████████░░░░   84.51 % 
-freemoviesuggestion      5 mins              ████░░░░░░░░░░░░░░░░░░░░░   15.49 % 
+Quran-website            45 mins             ██████████████████████░░░   88.83 % 
+freemoviesuggestion      5 mins              ███░░░░░░░░░░░░░░░░░░░░░░   11.17 % 
 
 💻 Operating System: 
-Windows                  36 mins             █████████████████████████   100.00 % 
+Windows                  51 mins             █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 18 mins (49.15%)
+⏱ AI Coding Time: 27 mins (53.53%)
 
-✍️ 0 lines written by AI, 0 lines written by hand (0% AI-written)
+✍️ 0 lines written by AI, 42 lines written by hand (0.0% AI-written)
 
 🔤 0 Input Tokens, 0 Output Tokens
 
 💵 $0.00 Estimated AI Cost This Week
 
-🧠 1 AI Sessions, 6 AI Prompts
+🧠 4 AI Sessions, 9 AI Prompts
 
 🔎 AI Coding Insights:
-🧑‍💻 Mostly Hands-On — 0% of written lines came from AI
-📝 Concise Prompter — average 33 characters per prompt
-🔁 Iterative Prompter — average 6 prompts per session
-🚀 High AI Trust — 0% of changed lines were hand-edited
+🧑‍💻 Mostly Hands-On — 0.0% of written lines came from AI
+📝 Concise Prompter — average 40 characters per prompt
+🔁 Iterative Prompter — average 2 prompts per session
+🔍 Hands-On Reviewer — 100.0% of changed lines were hand-edited
 ```
 
 **I Mostly Code in JavaScript** 
@@ -236,7 +238,7 @@ Astro                    1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 17/09/2026 04:36:33 UTC
+ Last Updated on 18/09/2026 04:21:34 UTC
 <!--END_SECTION:waka-->
 
 
