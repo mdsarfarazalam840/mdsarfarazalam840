@@ -144,9 +144,9 @@ Here are some ideas to get you started:
 
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-256%20hrs%2051%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-257%20hrs%206%20mins-blue?style=flat)
 
-![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-184%20hrs%2019%20mins-blue?style=flat)
+![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-184%20hrs%2028%20mins-blue?style=flat)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-3.29%20million%20lines%20of%20code-blue?style=flat)
 
@@ -189,39 +189,40 @@ Sunday                   276 commits         ██████░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-JSON                     45 mins             ██████████████████████░░░   88.83 % 
-Other                    5 mins              ███░░░░░░░░░░░░░░░░░░░░░░   11.17 % 
+JSON                     14 mins             █████████████████████░░░░   82.08 % 
+Markdown                 3 mins              ████░░░░░░░░░░░░░░░░░░░░░   17.92 % 
 
 🔥 Editors: 
-VS Code                  41 mins             ████████████████████░░░░░   81.94 % 
-Opencode Cli             8 mins              ████░░░░░░░░░░░░░░░░░░░░░   17.26 % 
-Claude Code              0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.80 % 
+Opencode Cli             8 mins              █████████████░░░░░░░░░░░░   50.74 % 
+VS Code                  5 mins              ███████░░░░░░░░░░░░░░░░░░   28.98 % 
+Claude Code              3 mins              █████░░░░░░░░░░░░░░░░░░░░   20.28 % 
 
 🐱‍💻 Projects: 
-Quran-website            45 mins             ██████████████████████░░░   88.83 % 
-freemoviesuggestion      5 mins              ███░░░░░░░░░░░░░░░░░░░░░░   11.17 % 
+Quran-website            17 mins             █████████████████████████   100.00 % 
 
 💻 Operating System: 
-Windows                  51 mins             █████████████████████████   100.00 % 
+Windows                  17 mins             █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 27 mins (53.53%)
+⏱ AI Coding Time: 12 mins (71.13%)
 
 ✍️ 0 lines written by AI, 42 lines written by hand (0.0% AI-written)
 
-🔤 0 Input Tokens, 0 Output Tokens
+🔤 144,078 Input Tokens, 3,216 Output Tokens
 
-💵 $0.00 Estimated AI Cost This Week
+💵 $0.43 Estimated AI Cost This Week
 
-🧠 4 AI Sessions, 9 AI Prompts
+🧠 4 AI Sessions, 4 AI Prompts
+
+Opus                     0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 
 🔎 AI Coding Insights:
 🧑‍💻 Mostly Hands-On — 0.0% of written lines came from AI
-📝 Concise Prompter — average 40 characters per prompt
-🔁 Iterative Prompter — average 2 prompts per session
+📝 Concise Prompter — average 51 characters per prompt
+🎯 One-Shot Prompter — average 1 prompts per session
 🔍 Hands-On Reviewer — 100.0% of changed lines were hand-edited
 ```
 
@@ -238,7 +239,7 @@ Astro                    1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 18/09/2026 04:21:34 UTC
+ Last Updated on 19/09/2026 04:18:10 UTC
 <!--END_SECTION:waka-->
 
 
