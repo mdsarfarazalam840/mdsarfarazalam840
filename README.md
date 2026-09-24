@@ -259,7 +259,7 @@ Astro                    1 repo              █░░░░░░░░░░�
 
 - Username: mdsarfarazalam840
 - Public repos: 146
-- Recent repos: mdsarfarazalam840, Islamic-website, freemoviesuggestion, Azure_GCP_AWS_Knowledgebase, 3D-portfolio
+- Recent repos: mdsarfarazalam840, freemoviesuggestion, Islamic-website, Azure_GCP_AWS_Knowledgebase, 3D-portfolio
 
 AI provider did not respond in time. Basic health of this function is OK, and GitHub profile fetch worked.
 <!-- AI_SUGGESTIONS_END -->
@@ -270,7 +270,7 @@ AI provider did not respond in time. Basic health of this function is OK, and Gi
 
 - Username: mdsarfarazalam840
 - Public repos: 146
-- Recent repos: mdsarfarazalam840, Islamic-website, freemoviesuggestion, Azure_GCP_AWS_Knowledgebase, 3D-portfolio
+- Recent repos: mdsarfarazalam840, freemoviesuggestion, Islamic-website, Azure_GCP_AWS_Knowledgebase, 3D-portfolio
 
 AI provider did not respond in time. Basic health of this function is OK, and GitHub profile fetch worked.
 <!-- AI_IMPROVEMENTS_END -->
