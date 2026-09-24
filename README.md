@@ -148,13 +148,13 @@ Here are some ideas to get you started:
 
 ![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-185%20hrs%2016%20mins-blue?style=flat)
 
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-3.29%20million%20lines%20of%20code-blue?style=flat)
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-3.31%20million%20lines%20of%20code-blue?style=flat)
 
 **🐱 My GitHub Data** 
 
-> 📦 128.5 kB Used in GitHub's Storage 
+> 📦 129.3 kB Used in GitHub's Storage 
  > 
-> 🏆 415 Contributions in the Year 2026
+> 🏆 419 Contributions in the Year 2026
  > 
 > 💼 Opted to Hire
  > 
@@ -165,21 +165,21 @@ Here are some ideas to get you started:
 **I'm an Early 🐤** 
 
 ```text
-🌞 Morning                302 commits         ██████░░░░░░░░░░░░░░░░░░░   24.30 % 
-🌆 Daytime                392 commits         ████████░░░░░░░░░░░░░░░░░   31.54 % 
-🌃 Evening                459 commits         █████████░░░░░░░░░░░░░░░░   36.93 % 
-🌙 Night                  90 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   07.24 % 
+🌞 Morning                302 commits         ██████░░░░░░░░░░░░░░░░░░░   24.26 % 
+🌆 Daytime                394 commits         ████████░░░░░░░░░░░░░░░░░   31.65 % 
+🌃 Evening                459 commits         █████████░░░░░░░░░░░░░░░░   36.87 % 
+🌙 Night                  90 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   07.23 % 
 ```
 📅 **I'm Most Productive on Sunday** 
 
 ```text
-Monday                   147 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.83 % 
-Tuesday                  210 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.89 % 
-Wednesday                231 commits         █████░░░░░░░░░░░░░░░░░░░░   18.58 % 
+Monday                   147 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.81 % 
+Tuesday                  210 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.87 % 
+Wednesday                233 commits         █████░░░░░░░░░░░░░░░░░░░░   18.71 % 
 Thursday                 50 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   04.02 % 
-Friday                   128 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.30 % 
-Saturday                 201 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.17 % 
-Sunday                   276 commits         ██████░░░░░░░░░░░░░░░░░░░   22.20 % 
+Friday                   128 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.28 % 
+Saturday                 201 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.14 % 
+Sunday                   276 commits         ██████░░░░░░░░░░░░░░░░░░░   22.17 % 
 ```
 
 
@@ -189,53 +189,53 @@ Sunday                   276 commits         ██████░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-Astro                    25 mins             ██████████░░░░░░░░░░░░░░░   41.86 % 
-Markdown                 15 mins             ██████░░░░░░░░░░░░░░░░░░░   24.70 % 
-JSON                     14 mins             ██████░░░░░░░░░░░░░░░░░░░   23.51 % 
-YAML                     5 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   08.14 % 
-TypeScript               1 min               ░░░░░░░░░░░░░░░░░░░░░░░░░   01.80 % 
+TypeScript               1 hr 43 mins        ███████████░░░░░░░░░░░░░░   42.32 % 
+Markdown                 41 mins             ████░░░░░░░░░░░░░░░░░░░░░   16.96 % 
+Astro                    27 mins             ███░░░░░░░░░░░░░░░░░░░░░░   11.20 % 
+JavaScript               22 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   09.09 % 
+YAML                     18 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   07.61 % 
 
 🔥 Editors: 
-Claude Code              35 mins             ██████████████░░░░░░░░░░░   56.79 % 
-VS Code                  17 mins             ███████░░░░░░░░░░░░░░░░░░   28.90 % 
-Opencode Cli             8 mins              ████░░░░░░░░░░░░░░░░░░░░░   14.31 % 
+Claude Code              3 hrs 17 mins       ████████████████████░░░░░   80.85 % 
+VS Code                  37 mins             ████░░░░░░░░░░░░░░░░░░░░░   15.53 % 
+Opencode Cli             8 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   03.62 % 
 
 🐱‍💻 Projects: 
-Quran-website            35 mins             ███████████████░░░░░░░░░░   58.14 % 
-freemoviesuggestion      25 mins             ██████████░░░░░░░░░░░░░░░   41.86 % 
+Quran-website            3 hrs 28 mins       █████████████████████░░░░   85.55 % 
+freemoviesuggestion      35 mins             ████░░░░░░░░░░░░░░░░░░░░░   14.45 % 
 
 💻 Operating System: 
-Windows                  1 hr 1 min          █████████████████████████   100.00 % 
+Windows                  4 hrs 3 mins        █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 56 mins (91.86%)
+⏱ AI Coding Time: 3 hrs 47 mins (93.35%)
 
-✍️ 16 lines written by AI, 42 lines written by hand (27.59% AI-written)
+✍️ 2,375 lines written by AI, 95 lines written by hand (96.15% AI-written)
 
-🔤 876,088 Input Tokens, 7,182 Output Tokens
+🔤 4,829,065 Input Tokens, 116,335 Output Tokens
 
-💵 $4.31 Estimated AI Cost This Week
+💵 $36.57 Estimated AI Cost This Week
 
-🧠 6 AI Sessions, 15 AI Prompts
+🧠 9 AI Sessions, 46 AI Prompts
 
-Opus                     16 lines            █████████████████████████   100.00 % 
+Opus                     2,376 lines         █████████████████████████   100.00 % 
 
 🔎 AI Coding Insights:
-🧑‍💻 Mostly Hands-On — 27.59% of written lines came from AI
-📚 Verbose Prompter — average 41,728 characters per prompt
-🔁 Iterative Prompter — average 2 prompts per session
-🔍 Hands-On Reviewer — 72.41% of changed lines were hand-edited
+🤖 AI-Driven — 96.15% of written lines came from AI
+📚 Verbose Prompter — average 13,701 characters per prompt
+🔁 Iterative Prompter — average 5 prompts per session
+🚀 High AI Trust — 3.92% of changed lines were hand-edited
 ```
 
 **I Mostly Code in JavaScript** 
 
 ```text
 JavaScript               15 repos            ████████░░░░░░░░░░░░░░░░░   32.61 % 
-TypeScript               7 repos             ████░░░░░░░░░░░░░░░░░░░░░   15.22 % 
-HTML                     4 repos             ██░░░░░░░░░░░░░░░░░░░░░░░   08.70 % 
+TypeScript               8 repos             ████░░░░░░░░░░░░░░░░░░░░░   17.39 % 
+HTML                     3 repos             ██░░░░░░░░░░░░░░░░░░░░░░░   06.52 % 
 MDX                      1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   02.17 % 
 Astro                    1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   02.17 % 
 ```
@@ -243,7 +243,7 @@ Astro                    1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 23/09/2026 04:27:57 UTC
+ Last Updated on 24/09/2026 04:25:15 UTC
 <!--END_SECTION:waka-->
 
 
