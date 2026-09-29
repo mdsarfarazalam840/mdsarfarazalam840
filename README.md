@@ -189,44 +189,43 @@ Sunday                   279 commits         █████░░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-TypeScript               1 hr 47 mins        ███████████░░░░░░░░░░░░░░   45.67 % 
-Markdown                 32 mins             ███░░░░░░░░░░░░░░░░░░░░░░   13.92 % 
-YAML                     29 mins             ███░░░░░░░░░░░░░░░░░░░░░░   12.32 % 
-Astro                    27 mins             ███░░░░░░░░░░░░░░░░░░░░░░   11.60 % 
-JavaScript               22 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   09.41 % 
+TypeScript               1 hr 36 mins        ██████████████░░░░░░░░░░░   56.24 % 
+YAML                     23 mins             ███░░░░░░░░░░░░░░░░░░░░░░   13.94 % 
+JavaScript               22 mins             ███░░░░░░░░░░░░░░░░░░░░░░   12.87 % 
+Markdown                 16 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   09.32 % 
+Git Config               9 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   05.31 % 
 
 🔥 Editors: 
-Claude Code              3 hrs 20 mins       █████████████████████░░░░   85.04 % 
-VS Code                  35 mins             ████░░░░░░░░░░░░░░░░░░░░░   14.96 % 
+Claude Code              2 hrs 37 mins       ███████████████████████░░   91.57 % 
+VS Code                  14 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.43 % 
 
 🐱‍💻 Projects: 
-Quran-website            3 hrs 20 mins       █████████████████████░░░░   85.03 % 
-freemoviesuggestion      35 mins             ████░░░░░░░░░░░░░░░░░░░░░   14.97 % 
+Quran-website            2 hrs 52 mins       █████████████████████████   100.00 % 
 
 💻 Operating System: 
-Windows                  3 hrs 55 mins       █████████████████████████   100.00 % 
+Windows                  2 hrs 52 mins       █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 3 hrs 44 mins (95.25%)
+⏱ AI Coding Time: 2 hrs 41 mins (93.62%)
 
-✍️ 2,494 lines written by AI, 53 lines written by hand (97.92% AI-written)
+✍️ 2,478 lines written by AI, 50 lines written by hand (98.02% AI-written)
 
-🔤 5,321,276 Input Tokens, 126,593 Output Tokens
+🔤 3,981,712 Input Tokens, 121,919 Output Tokens
 
-💵 $42.53 Estimated AI Cost This Week
+💵 $35.57 Estimated AI Cost This Week
 
-🧠 5 AI Sessions, 44 AI Prompts
+🧠 3 AI Sessions, 32 AI Prompts
 
-Opus                     2,499 lines         █████████████████████████   100.00 % 
+Opus                     2,483 lines         █████████████████████████   100.00 % 
 
 🔎 AI Coding Insights:
-🤖 AI-Driven — 97.92% of written lines came from AI
-📚 Verbose Prompter — average 14,353 characters per prompt
-🔁 Iterative Prompter — average 9 prompts per session
-🚀 High AI Trust — 2.15% of changed lines were hand-edited
+🤖 AI-Driven — 98.02% of written lines came from AI
+📝 Concise Prompter — average 176 characters per prompt
+🔁 Iterative Prompter — average 11 prompts per session
+🚀 High AI Trust — 2.05% of changed lines were hand-edited
 ```
 
 **I Mostly Code in JavaScript** 
@@ -242,7 +241,7 @@ Astro                    1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 28/09/2026 05:01:35 UTC
+ Last Updated on 29/09/2026 05:26:33 UTC
 <!--END_SECTION:waka-->
 
 
