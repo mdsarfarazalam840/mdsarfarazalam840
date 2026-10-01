@@ -152,7 +152,7 @@ Here are some ideas to get you started:
 
 **🐱 My GitHub Data** 
 
-> 📦 129.3 kB Used in GitHub's Storage 
+> 📦 129.4 kB Used in GitHub's Storage 
  > 
 > 🏆 423 Contributions in the Year 2026
  > 
@@ -189,43 +189,41 @@ Sunday                   279 commits         █████░░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-TypeScript               56 mins             ██████████████░░░░░░░░░░░   54.73 % 
-YAML                     16 mins             ████░░░░░░░░░░░░░░░░░░░░░   16.39 % 
-Markdown                 16 mins             ████░░░░░░░░░░░░░░░░░░░░░   15.67 % 
-JavaScript               5 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   04.91 % 
-Git Config               4 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   04.81 % 
+YAML                     10 mins             █████████████░░░░░░░░░░░░   51.49 % 
+Markdown                 5 mins              ███████░░░░░░░░░░░░░░░░░░   27.32 % 
+TypeScript               4 mins              █████░░░░░░░░░░░░░░░░░░░░   21.19 % 
 
 🔥 Editors: 
-Claude Code              1 hr 27 mins        █████████████████████░░░░   85.84 % 
-VS Code                  14 mins             ████░░░░░░░░░░░░░░░░░░░░░   14.16 % 
+Claude Code              17 mins             ██████████████████████░░░   86.48 % 
+VS Code                  2 mins              ███░░░░░░░░░░░░░░░░░░░░░░   13.52 % 
 
 🐱‍💻 Projects: 
-Quran-website            1 hr 42 mins        █████████████████████████   100.00 % 
+Quran-website            20 mins             █████████████████████████   100.00 % 
 
 💻 Operating System: 
-Windows                  1 hr 42 mins        █████████████████████████   100.00 % 
+Windows                  20 mins             █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 1 hr 31 mins (89.28%)
+⏱ AI Coding Time: 20 mins (100.0%)
 
-✍️ 977 lines written by AI, 50 lines written by hand (95.13% AI-written)
+✍️ 138 lines written by AI, 0 lines written by hand (100.0% AI-written)
 
-🔤 3,831,938 Input Tokens, 90,767 Output Tokens
+🔤 648,837 Input Tokens, 18,834 Output Tokens
 
-💵 $32.24 Estimated AI Cost This Week
+💵 $7.45 Estimated AI Cost This Week
 
-🧠 2 AI Sessions, 31 AI Prompts
+🧠 1 AI Sessions, 4 AI Prompts
 
-Opus                     981 lines           █████████████████████████   100.00 % 
+Opus                     142 lines           █████████████████████████   100.00 % 
 
 🔎 AI Coding Insights:
-🤖 AI-Driven — 95.13% of written lines came from AI
-📝 Concise Prompter — average 180 characters per prompt
-🔁 Iterative Prompter — average 16 prompts per session
-🚀 High AI Trust — 5.03% of changed lines were hand-edited
+🤖 AI-Driven — 100.0% of written lines came from AI
+📝 Concise Prompter — average 421 characters per prompt
+🔁 Iterative Prompter — average 4 prompts per session
+🚀 High AI Trust — 0.0% of changed lines were hand-edited
 ```
 
 **I Mostly Code in JavaScript** 
@@ -241,7 +239,7 @@ Astro                    1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 30/09/2026 05:14:17 UTC
+ Last Updated on 01/10/2026 05:29:48 UTC
 <!--END_SECTION:waka-->
 
 
