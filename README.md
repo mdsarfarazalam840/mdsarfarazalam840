@@ -15,9 +15,9 @@
 
 <!-- YEAR_PROGRESS_START -->
 ```
-[ ☣️ Year Progress | 2026-08-28 09:25:03 ]
-[ ⡿⡿⡿⡿⡿⡿⡿⡿⡿⡿⠇⠀⠀⠀⠀⠀ ] 65.59%
-<Injecting code...>
+[ ☣️ Year Progress | 2026-10-05 03:58:16 ]
+[ ⡿⡿⡿⡿⡿⡿⡿⡿⡿⡿⡿⡿⠂⠀⠀⠀ ] 75.94%
+<Deploying bar...>
 ```
 
 [![GitHub](https://img.shields.io/badge/GitHub-151515?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mdsarfarazalam840)
@@ -144,17 +144,17 @@ Here are some ideas to get you started:
 
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-246%20hrs%2024%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-259%20hrs%2035%20mins-blue?style=flat)
 
-![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-174%20hrs%2033%20mins-blue?style=flat)
+![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-186%20hrs%2047%20mins-blue?style=flat)
 
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-3.09%20million%20lines%20of%20code-blue?style=flat)
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-3.74%20million%20lines%20of%20code-blue?style=flat)
 
 **🐱 My GitHub Data** 
 
-> 📦 127.1 kB Used in GitHub's Storage 
+> 📦 129.4 kB Used in GitHub's Storage 
  > 
-> 🏆 411 Contributions in the Year 2026
+> 🏆 425 Contributions in the Year 2026
  > 
 > 💼 Opted to Hire
  > 
@@ -165,21 +165,21 @@ Here are some ideas to get you started:
 **I'm an Early 🐤** 
 
 ```text
-🌞 Morning                291 commits         ███████░░░░░░░░░░░░░░░░░░   26.17 % 
-🌆 Daytime                344 commits         ████████░░░░░░░░░░░░░░░░░   30.94 % 
-🌃 Evening                402 commits         █████████░░░░░░░░░░░░░░░░   36.15 % 
-🌙 Night                  75 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   06.74 % 
+🌞 Morning                316 commits         ██████░░░░░░░░░░░░░░░░░░░   24.69 % 
+🌆 Daytime                409 commits         ████████░░░░░░░░░░░░░░░░░   31.95 % 
+🌃 Evening                471 commits         █████████░░░░░░░░░░░░░░░░   36.80 % 
+🌙 Night                  84 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   06.56 % 
 ```
 📅 **I'm Most Productive on Sunday** 
 
 ```text
-Monday                   137 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.32 % 
-Tuesday                  179 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.10 % 
-Wednesday                204 commits         █████░░░░░░░░░░░░░░░░░░░░   18.35 % 
-Thursday                 50 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   04.50 % 
-Friday                   122 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.97 % 
-Saturday                 168 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.11 % 
-Sunday                   252 commits         ██████░░░░░░░░░░░░░░░░░░░   22.66 % 
+Monday                   150 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.72 % 
+Tuesday                  215 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.80 % 
+Wednesday                245 commits         █████░░░░░░░░░░░░░░░░░░░░   19.14 % 
+Thursday                 65 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   05.08 % 
+Friday                   125 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   09.77 % 
+Saturday                 201 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.70 % 
+Sunday                   279 commits         █████░░░░░░░░░░░░░░░░░░░░   21.80 % 
 ```
 
 
@@ -189,66 +189,38 @@ Sunday                   252 commits         ██████░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-TypeScript               9 hrs 47 mins       ██████████░░░░░░░░░░░░░░░   40.50 % 
-JSON                     5 hrs 3 mins        █████░░░░░░░░░░░░░░░░░░░░   20.91 % 
-Markdown                 3 hrs 39 mins       ████░░░░░░░░░░░░░░░░░░░░░   15.14 % 
-MDX                      2 hrs 58 mins       ███░░░░░░░░░░░░░░░░░░░░░░   12.29 % 
-JavaScript               1 hr 8 mins         █░░░░░░░░░░░░░░░░░░░░░░░░   04.75 % 
+No Activity Tracked This Week
 
 🔥 Editors: 
-Claude Code              17 hrs 28 mins      ██████████████████░░░░░░░   72.24 % 
-Opencode Cli             3 hrs 27 mins       ████░░░░░░░░░░░░░░░░░░░░░   14.31 % 
-VS Code                  3 hrs 15 mins       ███░░░░░░░░░░░░░░░░░░░░░░   13.45 % 
+No Activity Tracked This Week
 
 🐱‍💻 Projects: 
-Quran-website            18 hrs 59 mins      ████████████████████░░░░░   78.51 % 
-Azure_GCP_AWS_Knowledge  5 hrs 11 mins       █████░░░░░░░░░░░░░░░░░░░░   21.48 % 
-freemoviesuggestion      0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.01 % 
+No Activity Tracked This Week
 
 💻 Operating System: 
-Windows                  24 hrs 11 mins      █████████████████████████   100.00 % 
+No Activity Tracked This Week
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 23 hrs 27 mins (96.93%)
-
-✍️ 40,575 lines written by AI, 174 lines written by hand (99.57% AI-written)
-
-🔤 29,034,667 Input Tokens, 992,860 Output Tokens
-
-💵 $205.57 Estimated AI Cost This Week
-
-🧠 52 AI Sessions, 134 AI Prompts
-
-Opus                     40,679 lines        █████████████████████████   99.85 % 
-Opencode-Cli             30 lines            ░░░░░░░░░░░░░░░░░░░░░░░░░   00.07 % 
-Qwen                     30 lines            ░░░░░░░░░░░░░░░░░░░░░░░░░   00.07 % 
-Claude-Code              0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
-Nemotron                 0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
-
-🔎 AI Coding Insights:
-🤖 AI-Driven — 99.57% of written lines came from AI
-📚 Verbose Prompter — average 4,642 characters per prompt
-🔁 Iterative Prompter — average 3 prompts per session
-🚀 High AI Trust — 0.54% of changed lines were hand-edited
+No AI Coding Activity Tracked This Week
 ```
 
 **I Mostly Code in JavaScript** 
 
 ```text
-JavaScript               16 repos            █████████░░░░░░░░░░░░░░░░   34.04 % 
-Python                   11 repos            ██████░░░░░░░░░░░░░░░░░░░   23.40 % 
-TypeScript               8 repos             ████░░░░░░░░░░░░░░░░░░░░░   17.02 % 
-HTML                     3 repos             ██░░░░░░░░░░░░░░░░░░░░░░░   06.38 % 
-Astro                    1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   02.13 % 
+JavaScript               15 repos            ████████░░░░░░░░░░░░░░░░░   32.61 % 
+TypeScript               8 repos             ████░░░░░░░░░░░░░░░░░░░░░   17.39 % 
+HTML                     3 repos             ██░░░░░░░░░░░░░░░░░░░░░░░   06.52 % 
+MDX                      1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   02.17 % 
+Astro                    1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   02.17 % 
 ```
 
 
 
 
- Last Updated on 28/08/2026 11:05:19 UTC
+ Last Updated on 05/10/2026 05:15:37 UTC
 <!--END_SECTION:waka-->
 
 
@@ -264,7 +236,7 @@ Astro                    1 repo              █░░░░░░░░░░�
 
 - Username: mdsarfarazalam840
 - Public repos: 146
-- Recent repos: Azure_GCP_AWS_Knowledgebase, mdsarfarazalam840, Islamic-website, freemoviesuggestion, 3D-portfolio
+- Recent repos: mdsarfarazalam840, Islamic-website, freemoviesuggestion, Azure_GCP_AWS_Knowledgebase, 3D-portfolio
 
 AI provider did not respond in time. Basic health of this function is OK, and GitHub profile fetch worked.
 <!-- AI_SUGGESTIONS_END -->
@@ -275,7 +247,7 @@ AI provider did not respond in time. Basic health of this function is OK, and Gi
 
 - Username: mdsarfarazalam840
 - Public repos: 146
-- Recent repos: Azure_GCP_AWS_Knowledgebase, mdsarfarazalam840, Islamic-website, freemoviesuggestion, 3D-portfolio
+- Recent repos: mdsarfarazalam840, Islamic-website, freemoviesuggestion, Azure_GCP_AWS_Knowledgebase, 3D-portfolio
 
 AI provider did not respond in time. Basic health of this function is OK, and GitHub profile fetch worked.
 <!-- AI_IMPROVEMENTS_END -->
@@ -284,20 +256,7 @@ AI provider did not respond in time. Basic health of this function is OK, and Gi
 ## 📊 Weekly AI Report
 
 <!-- WEEKLY_REPORT_START -->
-## 📊 Weekly GitHub Engineering Report
 
-| Repository | Commits (7d) | PRs | Issues | Stars | Language | Last Push |
-|------------|--------------|-----|--------|-------|----------|-----------|
-| Islamic-website | 6 | 25 | 0 | 0 | TypeScript | 2026-08-22 |
-| 3D-portfolio | 0 | 28 | 0 | 0 | HTML | 2026-08-10 |
-| gd-mi-index | 0 | 0 | 0 | 0 | TypeScript | 2026-07-29 |
-| freemoviesuggestion | 0 | 15 | 0 | 0 | Astro | 2026-07-15 |
-| StreamHub | 0 | 1 | 0 | 0 | TypeScript | 2026-06-27 |
-| hacktoberfestfineanmol | 0 | 0 | 0 | 0 | HTML | 2026-06-05 |
-| EcomWithAI | 0 | 0 | 0 | 0 | JavaScript | 2026-05-31 |
-| Neural_cloud | 0 | 1 | 0 | 0 | JavaScript | 2026-05-27 |
-| keepalive | 0 | 0 | 0 | 0 | JavaScript | 2026-05-23 |
-| mdsarfarazalam840 | 30 | 1 | 0 | 1 | JavaScript | 2026
 <!-- WEEKLY_REPORT_END -->
 
 
