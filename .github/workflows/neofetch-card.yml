@@ -19,6 +19,9 @@ permissions:
 jobs:
   build-card:
     runs-on: ubuntu-latest
+    # A first run with no cache walks every repository, but anything past this is
+    # a hang, not slow progress.
+    timeout-minutes: 90
 
     env:
       GIT_USER_NAME: "github-actions[bot]"
@@ -53,14 +56,28 @@ jobs:
         run: python neofetch_stats.py
 
       - name: Commit & push changes
+        # always(): if the stats step died anyway, the partial lines-of-code cache
+        # it saved is still worth committing, so the next run resumes from there.
+        if: always()
         run: |
           git config user.name "$GIT_USER_NAME"
           git config user.email "$GIT_USER_EMAIL"
           git add dark_mode.svg light_mode.svg cache/
-          if ! git diff --cached --quiet; then
-            git commit -m "🖥️ refresh neofetch profile card"
-            git push
-            echo "⟩ Card updated and pushed."
-          else
+          if git diff --cached --quiet; then
             echo "⟩ No changes detected; skipping commit."
+            exit 0
           fi
+          git commit -m "🖥️ refresh neofetch profile card"
+          # Other scheduled workflows push to main too, so a rejected push only
+          # means one of them got there first: rebase onto it and try again.
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              echo "⟩ Card updated and pushed."
+              exit 0
+            fi
+            echo "⟩ Push rejected (attempt $attempt); rebasing onto origin/main."
+            sleep $((attempt * 5))
+            git pull --rebase --autostash origin main || exit 1
+          done
+          echo "⟩ Could not push after 5 attempts." >&2
+          exit 1

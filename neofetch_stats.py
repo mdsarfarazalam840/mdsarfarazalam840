@@ -12,6 +12,13 @@ repo), so cache/<sha256 of username>.txt remembers the per-repo totals and only
 re-walks a repository when its commit count changes. That cache file is meant to
 be committed.
 
+GitHub fails these queries routinely -- HTTP 502 on a heavy history page, 403
+from the secondary rate limiter, or a 200 carrying a "timedout" GraphQL error.
+Every request is retried with backoff and shrinking page sizes; a repository
+that still will not answer keeps its cached numbers and is retried tomorrow,
+and a stat query that still will not answer leaves that one line of the card
+untouched. The script does not fail the build over any of it.
+
 Environment:
     ACCESS_TOKEN   required. Classic or fine-grained PAT with read access to
                    Followers, Starring, Commit statuses, Contents and Metadata.
@@ -49,10 +56,25 @@ IGNORED_REPOS = set()
 # by you are counted. Set SKIP_FORKS=0 if you do land real work in your forks.
 SKIP_FORKS = os.environ.get('SKIP_FORKS', '1') not in ('0', 'false', 'False')
 
-# GitHub answers 502 (and occasionally 403) when a history query is too heavy or
-# arrives too fast. Both are transient, so back off and try again before giving up.
-MAX_RETRIES = 4
-RETRY_BACKOFF = 8  # seconds, doubled per attempt
+# GitHub answers 502/503 (and occasionally 403) when a history query is too heavy
+# or arrives too fast, and sometimes answers 200 with a "timedout" error in the
+# body instead. All of it is transient, so back off and retry before giving up.
+MAX_RETRIES = 6
+RETRY_BACKOFF = 4  # seconds, doubled per attempt
+REQUEST_TIMEOUT = 60  # seconds per HTTP request, so a hung socket cannot stall the job
+
+# Commit history pages shrink after a server-side failure: a repository that 502s
+# at 100 commits per page usually answers fine at 25, because the smaller page is
+# cheaper for GitHub to assemble.
+HISTORY_PAGE_SIZES = (100, 50, 25, 10)
+# Fewer retries per page than MAX_RETRIES: shrinking the page is the better
+# remedy here, and four page sizes times six retries would spend 15 minutes on a
+# single hopeless repository.
+HISTORY_RETRIES = 3
+
+# Repositories that still fail after all of that are skipped for this run instead
+# of killing the job. They keep yesterday's numbers and are retried tomorrow.
+SKIPPED_REPOS = []
 
 # Number of comment lines at the top of the cache file.
 COMMENT_SIZE = 7
@@ -97,13 +119,99 @@ def uptime(start):
         ' 🎂' if (diff.months == 0 and diff.days == 0) else '')
 
 
+SESSION = requests.Session()
+SESSION.headers.update(HEADERS)
+
+# Status codes worth another attempt. Everything else (401, 404, 422) means the
+# query itself is wrong, and retrying only wastes rate limit.
+TRANSIENT_STATUS = (403, 408, 429, 500, 502, 503, 504)
+# GitHub returns HTTP 200 with one of these in `errors` when a query is too slow
+# to execute or the secondary rate limiter kicks in. Both clear up on their own.
+TRANSIENT_ERRORS = ('timedout', 'timeout', 'rate_limited', 'service_unavailable',
+                    'something went wrong')
+
+
+def transient_body(payload):
+    """True if an HTTP 200 is really a retryable server-side failure."""
+    if not isinstance(payload, dict):
+        return True
+    errors = payload.get('errors')
+    if not errors:
+        return False
+    text = json.dumps(errors).lower()
+    return any(marker in text for marker in TRANSIENT_ERRORS)
+
+
+def retry_delay(response, attempt):
+    """How long to wait: whatever GitHub asks for, else exponential backoff."""
+    if response is not None:
+        header = response.headers.get('retry-after')
+        if header:
+            try:
+                return min(120, max(1, int(float(header))))
+            except ValueError:
+                pass
+        # A spent rate limit only recovers at the reset timestamp, so backing off
+        # for a few seconds would just burn the remaining attempts.
+        if response.headers.get('x-ratelimit-remaining') == '0':
+            reset = response.headers.get('x-ratelimit-reset', '')
+            if reset.isdigit():
+                return min(300, max(1, int(reset) - int(time.time()) + 5))
+    return RETRY_BACKOFF * (2 ** attempt)
+
+
+def post_graphql(label, query, variables, retries=MAX_RETRIES):
+    """POST a GraphQL query, retrying every transient failure GitHub throws.
+
+    Returns (payload, None) on success and (None, reason) once the retries are
+    spent. Never raises, so each caller decides whether its own failure is fatal.
+    """
+    reason = 'unknown error'
+    for attempt in range(retries):
+        response = None
+        try:
+            response = SESSION.post('https://api.github.com/graphql',
+                                    json={'query': query, 'variables': variables},
+                                    timeout=REQUEST_TIMEOUT)
+        except requests.exceptions.RequestException as error:
+            reason = f'{type(error).__name__}: {error}'[:200]
+        else:
+            if response.status_code == 200:
+                try:
+                    payload = response.json()
+                except ValueError:
+                    reason = 'unparseable JSON body'
+                else:
+                    if not transient_body(payload):
+                        return payload, None
+                    reason = 'GraphQL error ' + json.dumps(payload.get('errors'))[:200]
+            else:
+                reason = f'HTTP {response.status_code}'
+                if response.status_code not in TRANSIENT_STATUS:
+                    return None, f'{reason} {response.text[:200]}'
+        if attempt == retries - 1:
+            break
+        wait = retry_delay(response, attempt)
+        print(f'   {label}: {reason}, retrying in {wait}s'
+              f' (attempt {attempt + 2} of {retries})', flush=True)
+        time.sleep(wait)
+    return None, reason
+
+
 def simple_request(func_name, query, variables):
     """POST a GraphQL query, or raise with enough context to debug the failure."""
-    request = requests.post('https://api.github.com/graphql',
-                            json={'query': query, 'variables': variables}, headers=HEADERS)
-    if request.status_code == 200:
-        return request
-    raise Exception(func_name, 'has failed with a', request.status_code, request.text, QUERY_COUNT)
+    payload, reason = post_graphql(func_name, query, variables)
+    if payload is None:
+        raise Exception(func_name, 'has failed with', reason, QUERY_COUNT)
+    return payload
+
+
+def user_field(func_name, payload):
+    """The `user` object out of a successful response, or a clear failure."""
+    user = (payload.get('data') or {}).get('user')
+    if user is None:
+        raise Exception(func_name, 'returned no data for', USER_NAME, payload.get('errors'))
+    return user
 
 
 def user_getter(username):
@@ -117,7 +225,7 @@ def user_getter(username):
         }
     }'''
     request = simple_request(user_getter.__name__, query, {'login': username})
-    data = request.json()['data']['user']
+    data = user_field(user_getter.__name__, request)
     return {'id': data['id']}, data['createdAt']
 
 
@@ -132,7 +240,7 @@ def follower_getter(username):
         }
     }'''
     request = simple_request(follower_getter.__name__, query, {'login': username})
-    return int(request.json()['data']['user']['followers']['totalCount'])
+    return int(user_field(follower_getter.__name__, request)['followers']['totalCount'])
 
 
 def graph_repos_stars(count_type, owner_affiliation, cursor=None, total=0):
@@ -161,7 +269,8 @@ def graph_repos_stars(count_type, owner_affiliation, cursor=None, total=0):
         }
     }'''
     variables = {'owner_affiliation': owner_affiliation, 'login': USER_NAME, 'cursor': cursor}
-    repositories = simple_request(graph_repos_stars.__name__, query, variables).json()['data']['user']['repositories']
+    payload = simple_request(graph_repos_stars.__name__, query, variables)
+    repositories = user_field(graph_repos_stars.__name__, payload)['repositories']
     if count_type == 'repos':
         return repositories['totalCount']
     total += sum(edge['node']['stargazers']['totalCount'] for edge in repositories['edges'])
@@ -207,7 +316,8 @@ def loc_query(owner_affiliation, cursor=None, edges=None):
         }
     }'''
     variables = {'owner_affiliation': owner_affiliation, 'login': USER_NAME, 'cursor': cursor}
-    repositories = simple_request(loc_query.__name__, query, variables).json()['data']['user']['repositories']
+    payload = simple_request(loc_query.__name__, query, variables)
+    repositories = user_field(loc_query.__name__, payload)['repositories']
     edges += repositories['edges']
     if repositories['pageInfo']['hasNextPage']:
         return loc_query(owner_affiliation, repositories['pageInfo']['endCursor'], edges)
@@ -219,16 +329,20 @@ def loc_query(owner_affiliation, cursor=None, edges=None):
     return cache_builder(kept)
 
 
-def history_request(owner, repo_name, cursor):
-    """One page of commit history, retrying the transient failures GitHub throws."""
+def history_request(owner, repo_name, cursor, page_size):
+    """One page of commit history. Returns (payload, None) or (None, reason).
+
+    Not simple_request(): a failure here must not raise, because the caller has
+    to keep the partially updated cache intact instead of throwing away real work.
+    """
     query_count('recursive_loc')
     query = '''
-    query ($repo_name: String!, $owner: String!, $cursor: String) {
+    query ($repo_name: String!, $owner: String!, $cursor: String, $page_size: Int!) {
         repository(name: $repo_name, owner: $owner) {
             defaultBranchRef {
                 target {
                     ... on Commit {
-                        history(first: 100, after: $cursor) {
+                        history(first: $page_size, after: $cursor) {
                             totalCount
                             edges {
                                 node {
@@ -254,50 +368,57 @@ def history_request(owner, repo_name, cursor):
             }
         }
     }'''
-    variables = {'repo_name': repo_name, 'owner': owner, 'cursor': cursor}
-    for attempt in range(MAX_RETRIES):
-        # Not simple_request(): a failure here has to leave the partially updated
-        # cache intact, otherwise a crash halfway through throws away real work.
-        request = requests.post('https://api.github.com/graphql',
-                                json={'query': query, 'variables': variables}, headers=HEADERS)
-        if request.status_code == 200:
-            return request
-        if request.status_code not in (403, 429, 500, 502, 503) or attempt == MAX_RETRIES - 1:
-            return request
-        wait = RETRY_BACKOFF * (2 ** attempt)
-        print(f'   {owner}/{repo_name}: HTTP {request.status_code}, retrying in {wait}s', flush=True)
-        time.sleep(wait)
-    return request
+    variables = {'repo_name': repo_name, 'owner': owner,
+                 'cursor': cursor, 'page_size': page_size}
+    return post_graphql(f'{owner}/{repo_name}', query, variables, HISTORY_RETRIES)
 
 
-def recursive_loc(owner, repo_name, data):
+def recursive_loc(owner, repo_name):
     """Walk a repository's default branch, counting only commits authored by me.
+
+    Returns (additions, deletions, my commits, complete). `complete` is False when
+    GitHub never served part of the history: the caller then keeps the previous
+    numbers for that repository rather than writing a short count to the cache.
 
     Named for the upstream function, but paged with a loop: a repository with
     100k commits would blow the recursion limit long before it ran out of pages.
     """
     addition_total, deletion_total, my_commits, cursor = 0, 0, 0, None
+    size_index = 0
     while True:
-        request = history_request(owner, repo_name, cursor)
-        if request.status_code != 200:
-            force_close_file(data)  # save what we have before the crash
-            if request.status_code == 403:
-                raise Exception('Too many requests in a short amount of time!\n'
-                                "You've hit the undocumented anti-abuse limit!")
-            raise Exception('recursive_loc() has failed with a', request.status_code,
-                            request.text, QUERY_COUNT)
+        payload, reason = history_request(owner, repo_name, cursor, HISTORY_PAGE_SIZES[size_index])
+        if payload is None:
+            # Retry the same cursor with a smaller page before writing the
+            # repository off: half the 502s are just a too-expensive page.
+            if size_index + 1 < len(HISTORY_PAGE_SIZES):
+                size_index += 1
+                print(f'   {owner}/{repo_name}: {reason}, dropping to '
+                      f'{HISTORY_PAGE_SIZES[size_index]} commits per page', flush=True)
+                continue
+            print(f'   {owner}/{repo_name}: {reason}, skipped for this run', flush=True)
+            return addition_total, deletion_total, my_commits, False
 
-        branch = request.json()['data']['repository']['defaultBranchRef']
+        repository = (payload.get('data') or {}).get('repository')
+        if repository is None:  # renamed or deleted since the repository listing
+            print(f'   {owner}/{repo_name}: no repository data, skipped for this run', flush=True)
+            return addition_total, deletion_total, my_commits, False
+        branch = repository.get('defaultBranchRef')
         if branch is None:  # empty repository
-            return 0, 0, 0
-        history = branch['target']['history']
+            return 0, 0, 0, True
+        history = (branch.get('target') or {}).get('history')
+        if history is None:  # default branch points at a tag or an annotated object
+            return 0, 0, 0, True
+
         for node in history['edges']:
-            if node['node']['author']['user'] == OWNER_ID:
+            # `author` is null on commits written by a tool that set no author,
+            # and `author.user` is null when the email matches no GitHub account.
+            author = node['node']['author']
+            if author and author['user'] == OWNER_ID:
                 my_commits += 1
                 addition_total += node['node']['additions']
                 deletion_total += node['node']['deletions']
         if not history['edges'] or not history['pageInfo']['hasNextPage']:
-            return addition_total, deletion_total, my_commits
+            return addition_total, deletion_total, my_commits, True
         cursor = history['pageInfo']['endCursor']
 
 
@@ -310,26 +431,37 @@ def cache_builder(edges, loc_add=0, loc_del=0):
     """
     entries = read_cache()
     scanned = 0
-    for edge in edges:
-        name = edge['node']['nameWithOwner']
-        repo_hash = hashlib.sha256(name.encode('utf-8')).hexdigest()
-        try:
-            total_commits = edge['node']['defaultBranchRef']['target']['history']['totalCount']
-        except TypeError:  # empty repository
-            entries[repo_hash] = (0, 0, 0, 0)
-            continue
-        if entries.get(repo_hash, (None,))[0] == total_commits:
-            continue
-        owner, repo_name = name.split('/')
-        added, deleted, mine = recursive_loc(owner, repo_name, entries)
-        entries[repo_hash] = (total_commits, mine, added, deleted)
-        scanned += 1
-        # The first run walks every repository and can take half an hour, so
-        # checkpoint along the way. If the job is cancelled or times out, the
-        # next run picks up where this one stopped instead of starting over.
-        if scanned % CHECKPOINT_EVERY == 0:
-            write_cache(entries)
-            print(f'   checkpoint: {scanned} repositories re-scanned', flush=True)
+    try:
+        for edge in edges:
+            name = edge['node']['nameWithOwner']
+            repo_hash = hashlib.sha256(name.encode('utf-8')).hexdigest()
+            try:
+                total_commits = edge['node']['defaultBranchRef']['target']['history']['totalCount']
+            except TypeError:  # empty repository
+                entries[repo_hash] = (0, 0, 0, 0)
+                continue
+            if entries.get(repo_hash, (None,))[0] == total_commits:
+                continue
+            owner, repo_name = name.split('/')
+            added, deleted, mine, complete = recursive_loc(owner, repo_name)
+            if complete:
+                entries[repo_hash] = (total_commits, mine, added, deleted)
+            else:
+                # GitHub gave up on this repository. Keep the previous numbers if
+                # there are any; otherwise bank the partial walk under commit
+                # count 0, which makes the next run re-scan it from scratch.
+                SKIPPED_REPOS.append(name)
+                entries.setdefault(repo_hash, (0, mine, added, deleted))
+            scanned += 1
+            # The first run walks every repository and can take half an hour, so
+            # checkpoint along the way. If the job is cancelled or times out, the
+            # next run picks up where this one stopped instead of starting over.
+            if scanned % CHECKPOINT_EVERY == 0:
+                write_cache(entries)
+                print(f'   checkpoint: {scanned} repositories re-scanned', flush=True)
+    except BaseException:
+        force_close_file(entries)  # save what we have before the crash
+        raise
 
     # Forget repositories that are no longer counted, so deleted or newly
     # ignored repositories stop inflating the totals.
@@ -416,6 +548,21 @@ def perf_counter(funct, *args):
     return result, time.perf_counter() - start
 
 
+def try_counter(label, funct, *args):
+    """Run one stat query, returning None instead of raising when it fails.
+
+    One dead query should not cost the whole card. The SVG keeps whatever value
+    that line already had, and tomorrow's run fills in the fresh number.
+    """
+    try:
+        result, duration = perf_counter(funct, *args)
+    except Exception as error:
+        print(f'   {label}: skipped, {error}', flush=True)
+        return None
+    formatter(label, duration)
+    return result
+
+
 def formatter(label, difference):
     print('{:<23}'.format('   ' + label + ':'), end='')
     if difference > 1:
@@ -429,6 +576,8 @@ if __name__ == '__main__':
     with open(LAYOUT_FILE, 'r', encoding='utf-8') as handle:
         layout = json.load(handle)
 
+    # The only hard requirement: without the account id no commit can be
+    # attributed, so let this one raise if GitHub is truly down.
     (OWNER_ID, acc_date), user_time = perf_counter(user_getter, USER_NAME)
     formatter('account data', user_time)
 
@@ -437,33 +586,34 @@ if __name__ == '__main__':
     age_data, age_time = perf_counter(uptime, start_date)
     formatter('uptime', age_time)
 
-    total_loc, loc_time = perf_counter(loc_query, ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'])
-    formatter('LOC (cached)' if total_loc[-1] else 'LOC (no cache)', loc_time)
+    # Every value below is optional: anything missing is simply left out of the
+    # SVG rewrite, so that line keeps its previous number instead of going blank.
+    values = {'age_data': age_data}
 
-    commit_data, commit_time = perf_counter(commit_counter)
-    formatter('commit counter', commit_time)
-    star_data, star_time = perf_counter(graph_repos_stars, 'stars', ['OWNER'])
-    formatter('star counter', star_time)
-    repo_data, repo_time = perf_counter(graph_repos_stars, 'repos', ['OWNER'])
-    formatter('repo counter', repo_time)
-    contrib_data, contrib_time = perf_counter(graph_repos_stars, 'repos',
-                                              ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'])
-    formatter('contrib counter', contrib_time)
-    follower_data, follower_time = perf_counter(follower_getter, USER_NAME)
-    formatter('follower counter', follower_time)
+    total_loc = try_counter('LOC', loc_query, ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'])
+    if total_loc is not None:
+        values.update(loc_add=total_loc[0], loc_del=total_loc[1], loc_data=total_loc[2])
+        print('   LOC source:', 'cache' if total_loc[3] else 'rescan')
+
+    for key, label, funct, args in (
+            ('commit_data', 'commit counter', commit_counter, ()),
+            ('star_data', 'star counter', graph_repos_stars, ('stars', ['OWNER'])),
+            ('repo_data', 'repo counter', graph_repos_stars, ('repos', ['OWNER'])),
+            ('contrib_data', 'contrib counter', graph_repos_stars,
+             ('repos', ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'])),
+            ('follower_data', 'follower counter', follower_getter, (USER_NAME,))):
+        result = try_counter(label, funct, *args)
+        if result is not None:
+            values[key] = result
 
     for filename in SVG_FILES:
-        svg_overwrite(filename, layout,
-                      age_data=age_data,
-                      commit_data=commit_data,
-                      star_data=star_data,
-                      repo_data=repo_data,
-                      contrib_data=contrib_data,
-                      follower_data=follower_data,
-                      loc_data=total_loc[2],
-                      loc_add=total_loc[0],
-                      loc_del=total_loc[1])
+        svg_overwrite(filename, layout, **values)
         print('updated', filename)
+
+    if SKIPPED_REPOS:
+        print(f'{len(SKIPPED_REPOS)} repositories kept their previous line counts '
+              'after repeated GitHub errors:', ', '.join(SKIPPED_REPOS))
+        print('They are re-scanned on the next run; the card is still up to date.')
 
     print('Total GitHub GraphQL API calls:', '{:>3}'.format(sum(QUERY_COUNT.values())))
     for funct_name, count in QUERY_COUNT.items():
