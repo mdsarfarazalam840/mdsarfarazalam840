@@ -152,9 +152,9 @@ Here are some ideas to get you started:
 
 **🐱 My GitHub Data** 
 
-> 📦 129.4 kB Used in GitHub's Storage 
+> 📦 131.1 kB Used in GitHub's Storage 
  > 
-> 🏆 425 Contributions in the Year 2026
+> 🏆 427 Contributions in the Year 2026
  > 
 > 💼 Opted to Hire
  > 
@@ -165,21 +165,21 @@ Here are some ideas to get you started:
 **I'm an Early 🐤** 
 
 ```text
-🌞 Morning                316 commits         ██████░░░░░░░░░░░░░░░░░░░   24.69 % 
-🌆 Daytime                409 commits         ████████░░░░░░░░░░░░░░░░░   31.95 % 
-🌃 Evening                471 commits         █████████░░░░░░░░░░░░░░░░   36.80 % 
+🌞 Morning                316 commits         ██████░░░░░░░░░░░░░░░░░░░   24.67 % 
+🌆 Daytime                410 commits         ████████░░░░░░░░░░░░░░░░░   32.01 % 
+🌃 Evening                471 commits         █████████░░░░░░░░░░░░░░░░   36.77 % 
 🌙 Night                  84 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   06.56 % 
 ```
 📅 **I'm Most Productive on Sunday** 
 
 ```text
-Monday                   150 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.72 % 
-Tuesday                  215 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.80 % 
-Wednesday                245 commits         █████░░░░░░░░░░░░░░░░░░░░   19.14 % 
-Thursday                 65 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   05.08 % 
-Friday                   125 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   09.77 % 
-Saturday                 201 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.70 % 
-Sunday                   279 commits         █████░░░░░░░░░░░░░░░░░░░░   21.80 % 
+Monday                   151 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.79 % 
+Tuesday                  215 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.78 % 
+Wednesday                245 commits         █████░░░░░░░░░░░░░░░░░░░░   19.13 % 
+Thursday                 65 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   05.07 % 
+Friday                   125 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   09.76 % 
+Saturday                 201 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.69 % 
+Sunday                   279 commits         █████░░░░░░░░░░░░░░░░░░░░   21.78 % 
 ```
 
 
@@ -189,22 +189,46 @@ Sunday                   279 commits         █████░░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-No Activity Tracked This Week
+TypeScript               42 mins             ████████████░░░░░░░░░░░░░   48.20 % 
+YAML                     16 mins             █████░░░░░░░░░░░░░░░░░░░░   18.70 % 
+Text                     13 mins             ████░░░░░░░░░░░░░░░░░░░░░   15.32 % 
+Python                   9 mins              ███░░░░░░░░░░░░░░░░░░░░░░   11.06 % 
+Markdown                 5 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   06.35 % 
 
 🔥 Editors: 
-No Activity Tracked This Week
+Claude Code              58 mins             █████████████████░░░░░░░░   66.18 % 
+VS Code                  29 mins             ████████░░░░░░░░░░░░░░░░░   33.82 % 
 
 🐱‍💻 Projects: 
-No Activity Tracked This Week
+Quran-website            49 mins             ██████████████░░░░░░░░░░░   55.88 % 
+freemoviesuggestion      19 mins             ██████░░░░░░░░░░░░░░░░░░░   22.19 % 
+mdsarfarazalam840        19 mins             █████░░░░░░░░░░░░░░░░░░░░   21.93 % 
 
 💻 Operating System: 
-No Activity Tracked This Week
+Windows                  1 hr 28 mins        █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-No AI Coding Activity Tracked This Week
+⏱ AI Coding Time: 1 hr 5 mins (73.93%)
+
+✍️ 1,160 lines written by AI, 3 lines written by hand (99.74% AI-written)
+
+🔤 3,316,290 Input Tokens, 101,255 Output Tokens
+
+💵 $26.01 Estimated AI Cost This Week
+
+🧠 3 AI Sessions, 6 AI Prompts
+
+Opus                     1,175 lines         █████████████████████████   100.00 % 
+Claude-Code              0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
+
+🔎 AI Coding Insights:
+🤖 AI-Driven — 99.74% of written lines came from AI
+📄 Detailed Prompter — average 947 characters per prompt
+🔁 Iterative Prompter — average 2 prompts per session
+🚀 High AI Trust — 0.25% of changed lines were hand-edited
 ```
 
 **I Mostly Code in JavaScript** 
@@ -220,7 +244,7 @@ Astro                    1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 05/10/2026 05:15:37 UTC
+ Last Updated on 06/10/2026 06:01:28 UTC
 <!--END_SECTION:waka-->
 
 
