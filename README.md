@@ -144,15 +144,15 @@ Here are some ideas to get you started:
 
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-266%20hrs%2027%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-270%20hrs%204%20mins-blue?style=flat)
 
-![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-192%20hrs%2052%20mins-blue?style=flat)
+![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-196%20hrs%2028%20mins-blue?style=flat)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-3.75%20million%20lines%20of%20code-blue?style=flat)
 
 **🐱 My GitHub Data** 
 
-> 📦 131.3 kB Used in GitHub's Storage 
+> 📦 131.4 kB Used in GitHub's Storage 
  > 
 > 🏆 431 Contributions in the Year 2026
  > 
@@ -189,47 +189,47 @@ Sunday                   279 commits         █████░░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-Markdown                 2 hrs 46 mins       ████████░░░░░░░░░░░░░░░░░   30.37 % 
-TypeScript               2 hrs 28 mins       ███████░░░░░░░░░░░░░░░░░░   27.10 % 
-JSON                     1 hr 44 mins        █████░░░░░░░░░░░░░░░░░░░░   18.95 % 
-HTML                     45 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.20 % 
-Text                     38 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   07.06 % 
+Markdown                 2 hrs 50 mins       ████████░░░░░░░░░░░░░░░░░   30.76 % 
+TypeScript               2 hrs 28 mins       ███████░░░░░░░░░░░░░░░░░░   26.90 % 
+JSON                     1 hr 44 mins        █████░░░░░░░░░░░░░░░░░░░░   18.84 % 
+HTML                     45 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.14 % 
+Text                     38 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   07.00 % 
 
 🔥 Editors: 
-Claude Code              4 hrs 24 mins       ████████████░░░░░░░░░░░░░   48.08 % 
-Opencode Cli             2 hrs 52 mins       ████████░░░░░░░░░░░░░░░░░   31.38 % 
-VS Code                  1 hr 52 mins        █████░░░░░░░░░░░░░░░░░░░░   20.53 % 
+Claude Code              4 hrs 24 mins       ████████████░░░░░░░░░░░░░   47.73 % 
+Opencode Cli             2 hrs 54 mins       ████████░░░░░░░░░░░░░░░░░   31.44 % 
+VS Code                  1 hr 55 mins        █████░░░░░░░░░░░░░░░░░░░░   20.82 % 
 
 🐱‍💻 Projects: 
-freemoviesuggestion      5 hrs 51 mins       ████████████████░░░░░░░░░   63.86 % 
-Quran-website            2 hrs 59 mins       ████████░░░░░░░░░░░░░░░░░   32.60 % 
-mdsarfarazalam840        19 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.54 % 
+freemoviesuggestion      5 hrs 55 mins       ████████████████░░░░░░░░░   64.13 % 
+Quran-website            2 hrs 59 mins       ████████░░░░░░░░░░░░░░░░░   32.36 % 
+mdsarfarazalam840        19 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.51 % 
 
 💻 Operating System: 
-Windows                  9 hrs 9 mins        █████████████████████████   100.00 % 
+Windows                  9 hrs 13 mins       █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 8 hrs 21 mins (91.23%)
+⏱ AI Coding Time: 8 hrs 23 mins (90.94%)
 
-✍️ 4,887 lines written by AI, 30 lines written by hand (99.39% AI-written)
+✍️ 4,891 lines written by AI, 30 lines written by hand (99.39% AI-written)
 
-🔤 17,726,517 Input Tokens, 669,188 Output Tokens
+🔤 17,776,196 Input Tokens, 671,654 Output Tokens
 
-💵 $201.43 Estimated AI Cost This Week
+💵 $202.40 Estimated AI Cost This Week
 
-🧠 10 AI Sessions, 41 AI Prompts
+🧠 11 AI Sessions, 42 AI Prompts
 
-Opus                     4,442 lines         ███████████████████████░░   90.58 % 
-MiMo                     462 lines           ██░░░░░░░░░░░░░░░░░░░░░░░   09.42 % 
+Opus                     4,442 lines         ███████████████████████░░   90.51 % 
+MiMo                     466 lines           ██░░░░░░░░░░░░░░░░░░░░░░░   09.49 % 
 Opencode-Cli             0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 Claude-Code              0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 
 🔎 AI Coding Insights:
 🤖 AI-Driven — 99.39% of written lines came from AI
-📄 Detailed Prompter — average 1,498 characters per prompt
+📄 Detailed Prompter — average 1,465 characters per prompt
 🔁 Iterative Prompter — average 4 prompts per session
 🚀 High AI Trust — 0.85% of changed lines were hand-edited
 ```
@@ -247,7 +247,7 @@ MDX                      1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 10/10/2026 05:30:32 UTC
+ Last Updated on 11/10/2026 05:25:38 UTC
 <!--END_SECTION:waka-->
 
 
