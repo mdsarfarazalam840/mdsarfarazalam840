@@ -260,24 +260,12 @@ MDX                      1 repo              █░░░░░░░░░░�
 
 ## 🧠 AI Suggestions
 <!-- AI_SUGGESTIONS_START -->
-## GitHub profile snapshot
 
-- Username: mdsarfarazalam840
-- Public repos: 147
-- Recent repos: mdsarfarazalam840, freemoviesuggestion, appwrite-keepalive, Islamic-website, Azure_GCP_AWS_Knowledgebase
-
-AI provider did not respond in time. Basic health of this function is OK, and GitHub profile fetch worked.
 <!-- AI_SUGGESTIONS_END -->
 
 ## 🚀 AI Improvements
 <!-- AI_IMPROVEMENTS_START -->
-## GitHub profile snapshot
 
-- Username: mdsarfarazalam840
-- Public repos: 147
-- Recent repos: mdsarfarazalam840, freemoviesuggestion, appwrite-keepalive, Islamic-website, Azure_GCP_AWS_Knowledgebase
-
-AI provider did not respond in time. Basic health of this function is OK, and GitHub profile fetch worked.
 <!-- AI_IMPROVEMENTS_END -->
 
 
