@@ -144,15 +144,15 @@ Here are some ideas to get you started:
 
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-281%20hrs%2038%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-281%20hrs%2046%20mins-blue?style=flat)
 
 ![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-205%20hrs%2013%20mins-blue?style=flat)
 
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-4.19%20million%20lines%20of%20code-blue?style=flat)
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-4.24%20million%20lines%20of%20code-blue?style=flat)
 
 **🐱 My GitHub Data** 
 
-> 📦 142.2 kB Used in GitHub's Storage 
+> 📦 142.3 kB Used in GitHub's Storage 
  > 
 > 🏆 447 Contributions in the Year 2026
  > 
@@ -165,21 +165,21 @@ Here are some ideas to get you started:
 **I'm an Early 🐤** 
 
 ```text
-🌞 Morning                343 commits         ██████░░░░░░░░░░░░░░░░░░░   24.50 % 
-🌆 Daytime                427 commits         ████████░░░░░░░░░░░░░░░░░   30.50 % 
-🌃 Evening                541 commits         ██████████░░░░░░░░░░░░░░░   38.64 % 
-🌙 Night                  89 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   06.36 % 
+🌞 Morning                346 commits         ██████░░░░░░░░░░░░░░░░░░░   23.98 % 
+🌆 Daytime                443 commits         ████████░░░░░░░░░░░░░░░░░   30.70 % 
+🌃 Evening                560 commits         ██████████░░░░░░░░░░░░░░░   38.81 % 
+🌙 Night                  94 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   06.51 % 
 ```
 📅 **I'm Most Productive on Sunday** 
 
 ```text
-Monday                   155 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.07 % 
-Tuesday                  230 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.43 % 
-Wednesday                280 commits         █████░░░░░░░░░░░░░░░░░░░░   20.00 % 
-Thursday                 67 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   04.79 % 
-Friday                   145 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.36 % 
-Saturday                 215 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.36 % 
-Sunday                   308 commits         ██████░░░░░░░░░░░░░░░░░░░   22.00 % 
+Monday                   158 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.95 % 
+Tuesday                  240 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.63 % 
+Wednesday                289 commits         █████░░░░░░░░░░░░░░░░░░░░   20.03 % 
+Thursday                 67 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   04.64 % 
+Friday                   147 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.19 % 
+Saturday                 226 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.66 % 
+Sunday                   316 commits         █████░░░░░░░░░░░░░░░░░░░░   21.90 % 
 ```
 
 
@@ -189,49 +189,51 @@ Sunday                   308 commits         ██████░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-TypeScript               2 hrs 42 mins       ██████░░░░░░░░░░░░░░░░░░░   24.17 % 
-Other                    2 hrs 23 mins       █████░░░░░░░░░░░░░░░░░░░░   21.35 % 
-Bash                     2 hrs 14 mins       █████░░░░░░░░░░░░░░░░░░░░   20.03 % 
-JSON                     1 hr 24 mins        ███░░░░░░░░░░░░░░░░░░░░░░   12.58 % 
-JavaScript               1 hr 4 mins         ██░░░░░░░░░░░░░░░░░░░░░░░   09.65 % 
+TypeScript               2 hrs 25 mins       ██████░░░░░░░░░░░░░░░░░░░   23.50 % 
+Bash                     2 hrs 14 mins       █████░░░░░░░░░░░░░░░░░░░░   21.75 % 
+Other                    2 hrs               █████░░░░░░░░░░░░░░░░░░░░   19.51 % 
+JSON                     1 hr 11 mins        ███░░░░░░░░░░░░░░░░░░░░░░   11.49 % 
+JavaScript               1 hr 4 mins         ███░░░░░░░░░░░░░░░░░░░░░░   10.48 % 
 
 🔥 Editors: 
-Claude Code              5 hrs 9 mins        ████████████░░░░░░░░░░░░░   46.12 % 
-VS Code                  4 hrs 20 mins       ██████████░░░░░░░░░░░░░░░   38.86 % 
-Opencode Cli             1 hr 40 mins        ████░░░░░░░░░░░░░░░░░░░░░   15.02 % 
+Claude Code              4 hrs 47 mins       ████████████░░░░░░░░░░░░░   46.57 % 
+VS Code                  3 hrs 43 mins       █████████░░░░░░░░░░░░░░░░   36.20 % 
+Opencode Cli             1 hr 42 mins        ████░░░░░░░░░░░░░░░░░░░░░   16.60 % 
+OpenCode                 3 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.62 % 
 
 🐱‍💻 Projects: 
-Quran-website            7 hrs 30 mins       █████████████████░░░░░░░░   67.16 % 
-ai-agentrouter           2 hrs 35 mins       ██████░░░░░░░░░░░░░░░░░░░   23.24 % 
-freemoviesuggestion      48 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   07.28 % 
-Watch_online_everything  15 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.32 % 
+Quran-website            7 hrs 8 mins        █████████████████░░░░░░░░   69.25 % 
+ai-agentrouter           2 hrs 35 mins       ██████░░░░░░░░░░░░░░░░░░░   25.24 % 
+Azure_GCP_AWS_Knowledge  18 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.00 % 
+Watch_online_everything  15 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.52 % 
 
 💻 Operating System: 
-Windows                  11 hrs 11 mins      █████████████████████████   100.00 % 
+Windows                  10 hrs 18 mins      █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 7 hrs 37 mins (68.21%)
+⏱ AI Coding Time: 7 hrs 32 mins (73.29%)
 
-✍️ 509 lines written by AI, 401 lines written by hand (55.93% AI-written)
+✍️ 509 lines written by AI, 379 lines written by hand (57.32% AI-written)
 
-🔤 11,076,505 Input Tokens, 319,764 Output Tokens
+🔤 13,048,596 Input Tokens, 313,558 Output Tokens
 
-💵 $63.88 Estimated AI Cost This Week
+💵 $58.41 Estimated AI Cost This Week
 
-🧠 17 AI Sessions, 51 AI Prompts
+🧠 20 AI Sessions, 53 AI Prompts
 
 Opus                     529 lines           █████████████████████████   100.00 % 
 Claude-Code              0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
+GPT                      0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 Fable                    0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 
 🔎 AI Coding Insights:
-⚖️ Balanced with AI — 55.93% of written lines came from AI
-📚 Verbose Prompter — average 13,001 characters per prompt
+⚖️ Balanced with AI — 57.32% of written lines came from AI
+📚 Verbose Prompter — average 12,528 characters per prompt
 🔁 Iterative Prompter — average 3 prompts per session
-🔍 Hands-On Reviewer — 50.7% of changed lines were hand-edited
+🚀 High AI Trust — 49.62% of changed lines were hand-edited
 ```
 
 **I Mostly Code in JavaScript** 
@@ -247,7 +249,7 @@ MDX                      1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 20/10/2026 04:30:55 UTC
+ Last Updated on 21/10/2026 04:22:15 UTC
 <!--END_SECTION:waka-->
 
 
