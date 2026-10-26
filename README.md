@@ -165,21 +165,21 @@ Here are some ideas to get you started:
 **I'm an Early 🐤** 
 
 ```text
-🌞 Morning                385 commits         ██████░░░░░░░░░░░░░░░░░░░   24.92 % 
-🌆 Daytime                444 commits         ███████░░░░░░░░░░░░░░░░░░   28.74 % 
-🌃 Evening                622 commits         ██████████░░░░░░░░░░░░░░░   40.26 % 
-🌙 Night                  94 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   06.08 % 
+🌞 Morning                385 commits         ██████░░░░░░░░░░░░░░░░░░░   24.89 % 
+🌆 Daytime                444 commits         ███████░░░░░░░░░░░░░░░░░░   28.70 % 
+🌃 Evening                623 commits         ██████████░░░░░░░░░░░░░░░   40.27 % 
+🌙 Night                  95 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   06.14 % 
 ```
 📅 **I'm Most Productive on Sunday** 
 
 ```text
-Monday                   158 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.23 % 
-Tuesday                  246 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.92 % 
-Wednesday                327 commits         █████░░░░░░░░░░░░░░░░░░░░   21.17 % 
-Thursday                 70 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   04.53 % 
-Friday                   172 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.13 % 
-Saturday                 226 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.63 % 
-Sunday                   346 commits         ██████░░░░░░░░░░░░░░░░░░░   22.39 % 
+Monday                   158 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.21 % 
+Tuesday                  246 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.90 % 
+Wednesday                328 commits         █████░░░░░░░░░░░░░░░░░░░░   21.20 % 
+Thursday                 70 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   04.52 % 
+Friday                   173 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.18 % 
+Saturday                 226 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.61 % 
+Sunday                   346 commits         ██████░░░░░░░░░░░░░░░░░░░   22.37 % 
 ```
 
 
@@ -189,50 +189,50 @@ Sunday                   346 commits         ██████░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-Other                    26 mins             ███████░░░░░░░░░░░░░░░░░░   26.75 % 
-Bash                     21 mins             █████░░░░░░░░░░░░░░░░░░░░   21.61 % 
-JSON                     18 mins             █████░░░░░░░░░░░░░░░░░░░░   18.82 % 
-Markdown                 15 mins             ████░░░░░░░░░░░░░░░░░░░░░   15.95 % 
-Git Config               7 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   07.45 % 
+Rust                     1 hr 53 mins        █████████░░░░░░░░░░░░░░░░   36.25 % 
+JSON                     1 hr 20 mins        ██████░░░░░░░░░░░░░░░░░░░   25.61 % 
+Other                    58 mins             █████░░░░░░░░░░░░░░░░░░░░   18.78 % 
+Markdown                 22 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   07.20 % 
+Bash                     21 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   06.79 % 
 
 🔥 Editors: 
-VS Code                  47 mins             ████████████░░░░░░░░░░░░░   48.50 % 
-Claude Code              45 mins             ███████████░░░░░░░░░░░░░░   45.74 % 
-OpenCode                 3 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   03.92 % 
-Opencode Cli             1 min               ░░░░░░░░░░░░░░░░░░░░░░░░░   01.85 % 
+Opencode Cli             3 hrs 32 mins       █████████████████░░░░░░░░   67.65 % 
+VS Code                  1 hr 7 mins         █████░░░░░░░░░░░░░░░░░░░░   21.45 % 
+Claude Code              26 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.40 % 
+OpenCode                 7 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   02.50 % 
 
 🐱‍💻 Projects: 
-ExpensesApp              26 mins             ███████░░░░░░░░░░░░░░░░░░   26.75 % 
-ai-agentrouter           21 mins             █████░░░░░░░░░░░░░░░░░░░░   21.61 % 
-Azure_GCP_AWS_Knowledge  18 mins             █████░░░░░░░░░░░░░░░░░░░░   18.82 % 
-Watch_online_everything  15 mins             ████░░░░░░░░░░░░░░░░░░░░░   15.79 % 
-Quran-website            10 mins             ███░░░░░░░░░░░░░░░░░░░░░░   11.11 % 
+CloneYourUninstaller     3 hrs 13 mins       ███████████████░░░░░░░░░░   61.84 % 
+Azure_GCP_AWS_Knowledge  1 hr 6 mins         █████░░░░░░░░░░░░░░░░░░░░   21.11 % 
+ExpensesApp              26 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.40 % 
+ai-agentrouter           21 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   06.79 % 
+HdHub4uAutomation        5 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.86 % 
 
 💻 Operating System: 
-Windows                  1 hr 38 mins        █████████████████████████   100.00 % 
+Windows                  5 hrs 13 mins       █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 1 hr 2 mins (63.94%)
+⏱ AI Coding Time: 4 hrs 38 mins (88.96%)
 
-✍️ 1 lines written by AI, 12 lines written by hand (7.69% AI-written)
+✍️ 16,661 lines written by AI, 76 lines written by hand (99.55% AI-written)
 
-🔤 3,354,835 Input Tokens, 24,209 Output Tokens
+🔤 8,426,359 Input Tokens, 731,124 Output Tokens
 
-💵 $2.29 Estimated AI Cost This Week
+💵 $248.31 Estimated AI Cost This Week
 
-🧠 11 AI Sessions, 16 AI Prompts
+🧠 19 AI Sessions, 33 AI Prompts
 
-Opus                     1 lines             █████████████████████████   100.00 % 
+DeepSeek                 16,757 lines        █████████████████████████   100.00 % 
 GPT                      0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 
 🔎 AI Coding Insights:
-🧑‍💻 Mostly Hands-On — 7.69% of written lines came from AI
-📚 Verbose Prompter — average 1,752 characters per prompt
-🎯 One-Shot Prompter — average 1 prompts per session
-🔍 Hands-On Reviewer — 93.75% of changed lines were hand-edited
+🤖 AI-Driven — 99.55% of written lines came from AI
+📝 Concise Prompter — average 207 characters per prompt
+🔁 Iterative Prompter — average 2 prompts per session
+🚀 High AI Trust — 0.58% of changed lines were hand-edited
 ```
 
 **I Mostly Code in JavaScript** 
@@ -248,7 +248,7 @@ MDX                      1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 25/10/2026 04:19:46 UTC
+ Last Updated on 26/10/2026 04:23:45 UTC
 <!--END_SECTION:waka-->
 
 
