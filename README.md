@@ -144,15 +144,15 @@ Here are some ideas to get you started:
 
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-287%20hrs%2043%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-292%20hrs%2019%20mins-blue?style=flat)
 
-![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-209%20hrs%205%20mins-blue?style=flat)
+![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-213%20hrs%2039%20mins-blue?style=flat)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-4.28%20million%20lines%20of%20code-blue?style=flat)
 
 **🐱 My GitHub Data** 
 
-> 📦 147.5 kB Used in GitHub's Storage 
+> 📦 148.6 kB Used in GitHub's Storage 
  > 
 > 🏆 452 Contributions in the Year 2026
  > 
@@ -189,50 +189,50 @@ Sunday                   346 commits         ██████░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-Python                   2 hrs 59 mins       ███████░░░░░░░░░░░░░░░░░░   27.91 % 
-Rust                     1 hr 53 mins        ████░░░░░░░░░░░░░░░░░░░░░   17.70 % 
-JavaScript               1 hr 23 mins        ███░░░░░░░░░░░░░░░░░░░░░░   13.07 % 
-Markdown                 1 hr 12 mins        ███░░░░░░░░░░░░░░░░░░░░░░   11.28 % 
-JSON                     1 hr 11 mins        ███░░░░░░░░░░░░░░░░░░░░░░   11.17 % 
+Python                   3 hrs 23 mins       ██████░░░░░░░░░░░░░░░░░░░   24.81 % 
+JavaScript               2 hrs 38 mins       █████░░░░░░░░░░░░░░░░░░░░   19.32 % 
+Markdown                 1 hr 55 mins        ████░░░░░░░░░░░░░░░░░░░░░   14.03 % 
+Rust                     1 hr 53 mins        ███░░░░░░░░░░░░░░░░░░░░░░   13.84 % 
+JSON                     1 hr 19 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   09.69 % 
 
 🔥 Editors: 
-VS Code                  5 hrs 51 mins       ██████████████░░░░░░░░░░░   54.75 % 
-Opencode Cli             3 hrs 59 mins       █████████░░░░░░░░░░░░░░░░   37.30 % 
-Claude Code              26 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   04.10 % 
-OpenCode                 24 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.85 % 
+VS Code                  6 hrs 43 mins       ████████████░░░░░░░░░░░░░   49.22 % 
+Opencode Cli             6 hrs               ███████████░░░░░░░░░░░░░░   43.94 % 
+OpenCode                 29 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.63 % 
+Claude Code              26 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.21 % 
 
 🐱‍💻 Projects: 
-energy_realtime          4 hrs 53 mins       ███████████░░░░░░░░░░░░░░   45.67 % 
-CloneYourUninstaller     3 hrs 13 mins       ████████░░░░░░░░░░░░░░░░░   30.19 % 
-DABActionEnergyPrices    1 hr 15 mins        ███░░░░░░░░░░░░░░░░░░░░░░   11.75 % 
-telegram_copier          33 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.25 % 
-ExpensesApp              26 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   04.10 % 
+energy_realtime          7 hrs 23 mins       ██████████████░░░░░░░░░░░   54.05 % 
+CloneYourUninstaller     3 hrs 13 mins       ██████░░░░░░░░░░░░░░░░░░░   23.61 % 
+DABActionEnergyPrices    1 hr 43 mins        ███░░░░░░░░░░░░░░░░░░░░░░   12.64 % 
+telegram_copier          33 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   04.10 % 
+ExpensesApp              26 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.21 % 
 
 💻 Operating System: 
-Windows                  10 hrs 42 mins      █████████████████████████   100.00 % 
+Windows                  13 hrs 40 mins      █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 8 hrs 8 mins (76.02%)
+⏱ AI Coding Time: 11 hrs 2 mins (80.68%)
 
-✍️ 28,697 lines written by AI, 516 lines written by hand (98.23% AI-written)
+✍️ 32,956 lines written by AI, 518 lines written by hand (98.45% AI-written)
 
-🔤 5,331,974 Input Tokens, 880,576 Output Tokens
+🔤 6,419,719 Input Tokens, 1,161,821 Output Tokens
 
-💵 $485.68 Estimated AI Cost This Week
+💵 $670.39 Estimated AI Cost This Week
 
-🧠 19 AI Sessions, 44 AI Prompts
+🧠 25 AI Sessions, 52 AI Prompts
 
-DeepSeek                 28,830 lines        █████████████████████████   100.00 % 
+DeepSeek                 33,127 lines        █████████████████████████   100.00 % 
 GPT                      0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 
 🔎 AI Coding Insights:
-🤖 AI-Driven — 98.23% of written lines came from AI
-📝 Concise Prompter — average 362 characters per prompt
+🤖 AI-Driven — 98.45% of written lines came from AI
+📝 Concise Prompter — average 336 characters per prompt
 🔁 Iterative Prompter — average 2 prompts per session
-🚀 High AI Trust — 2.43% of changed lines were hand-edited
+🚀 High AI Trust — 2.13% of changed lines were hand-edited
 ```
 
 **I Mostly Code in JavaScript** 
@@ -248,7 +248,7 @@ MDX                      1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 29/10/2026 05:27:47 UTC
+ Last Updated on 30/10/2026 05:27:35 UTC
 <!--END_SECTION:waka-->
 
 
