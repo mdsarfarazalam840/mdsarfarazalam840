@@ -144,15 +144,15 @@ Here are some ideas to get you started:
 
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-312%20hrs%205%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-315%20hrs%2040%20mins-blue?style=flat)
 
-![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-232%20hrs%208%20mins-blue?style=flat)
+![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-235%20hrs%2038%20mins-blue?style=flat)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-4.56%20million%20lines%20of%20code-blue?style=flat)
 
 **🐱 My GitHub Data** 
 
-> 📦 182.2 kB Used in GitHub's Storage 
+> 📦 183.3 kB Used in GitHub's Storage 
  > 
 > 🏆 535 Contributions in the Year 2026
  > 
@@ -189,50 +189,50 @@ Sunday                   379 commits         ██████░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-JavaScript               3 hrs 49 mins       ████████░░░░░░░░░░░░░░░░░   31.96 % 
-TypeScript               2 hrs 16 mins       █████░░░░░░░░░░░░░░░░░░░░   19.06 % 
-YAML                     1 hr 20 mins        ███░░░░░░░░░░░░░░░░░░░░░░   11.29 % 
-Python                   1 hr 15 mins        ███░░░░░░░░░░░░░░░░░░░░░░   10.49 % 
-JSON                     1 hr 5 mins         ██░░░░░░░░░░░░░░░░░░░░░░░   09.08 % 
+JavaScript               3 hrs 30 mins       ██████████░░░░░░░░░░░░░░░   38.69 % 
+YAML                     1 hr 20 mins        ████░░░░░░░░░░░░░░░░░░░░░   14.88 % 
+TypeScript               1 hr 7 mins         ███░░░░░░░░░░░░░░░░░░░░░░   12.46 % 
+Python                   46 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.49 % 
+Markdown                 34 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   06.37 % 
 
 🔥 Editors: 
-VS Code                  5 hrs 46 mins       ████████████░░░░░░░░░░░░░   48.32 % 
-Opencode Cli             5 hrs 27 mins       ███████████░░░░░░░░░░░░░░   45.58 % 
-OpenCode                 43 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   06.10 % 
+VS Code                  4 hrs 30 mins       ████████████░░░░░░░░░░░░░   49.71 % 
+Opencode Cli             3 hrs 50 mins       ███████████░░░░░░░░░░░░░░   42.26 % 
+OpenCode                 43 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.03 % 
 
 🐱‍💻 Projects: 
-Quran-website            3 hrs 58 mins       ████████░░░░░░░░░░░░░░░░░   33.27 % 
-energy_realtime          3 hrs 56 mins       ████████░░░░░░░░░░░░░░░░░   32.91 % 
-gd-index                 1 hr 34 mins        ███░░░░░░░░░░░░░░░░░░░░░░   13.22 % 
-what-if                  55 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   07.70 % 
-telegram_copier          41 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.77 % 
+Quran-website            3 hrs 58 mins       ███████████░░░░░░░░░░░░░░   43.84 % 
+energy_realtime          3 hrs 56 mins       ███████████░░░░░░░░░░░░░░   43.36 % 
+DABActionEnergyPrices    32 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.96 % 
+what-if                  10 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.89 % 
+HermesViaOmni            8 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.56 % 
 
 💻 Operating System: 
-Windows                  11 hrs 57 mins      █████████████████████████   100.00 % 
+Windows                  9 hrs 4 mins        █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 10 hrs 32 mins (88.16%)
+⏱ AI Coding Time: 8 hrs (88.34%)
 
-✍️ 17,263 lines written by AI, 174 lines written by hand (99.0% AI-written)
+✍️ 14,265 lines written by AI, 162 lines written by hand (98.88% AI-written)
 
-🔤 5,613,954 Input Tokens, 719,828 Output Tokens
+🔤 3,325,916 Input Tokens, 577,221 Output Tokens
 
-💵 $345.94 Estimated AI Cost This Week
+💵 $274.40 Estimated AI Cost This Week
 
-🧠 18 AI Sessions, 51 AI Prompts
+🧠 16 AI Sessions, 44 AI Prompts
 
-DeepSeek                 10,291 lines        ███████████████░░░░░░░░░░   59.42 % 
-Nemotron                 6,651 lines         ██████████░░░░░░░░░░░░░░░   38.41 % 
-GLM                      376 lines           █░░░░░░░░░░░░░░░░░░░░░░░░   02.17 % 
+DeepSeek                 7,364 lines         █████████████░░░░░░░░░░░░   51.43 % 
+Nemotron                 6,651 lines         ████████████░░░░░░░░░░░░░   46.45 % 
+GLM                      303 lines           █░░░░░░░░░░░░░░░░░░░░░░░░   02.12 % 
 
 🔎 AI Coding Insights:
-🤖 AI-Driven — 99.0% of written lines came from AI
-📄 Detailed Prompter — average 525 characters per prompt
+🤖 AI-Driven — 98.88% of written lines came from AI
+📄 Detailed Prompter — average 599 characters per prompt
 🔁 Iterative Prompter — average 3 prompts per session
-🚀 High AI Trust — 1.14% of changed lines were hand-edited
+🚀 High AI Trust — 1.23% of changed lines were hand-edited
 ```
 
 **I Mostly Code in JavaScript** 
@@ -248,7 +248,7 @@ MDX                      1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 12/11/2026 06:55:04 UTC
+ Last Updated on 13/11/2026 06:14:21 UTC
 <!--END_SECTION:waka-->
 
 
