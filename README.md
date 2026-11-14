@@ -152,7 +152,7 @@ Here are some ideas to get you started:
 
 **🐱 My GitHub Data** 
 
-> 📦 183.3 kB Used in GitHub's Storage 
+> 📦 183.1 kB Used in GitHub's Storage 
  > 
 > 🏆 535 Contributions in the Year 2026
  > 
@@ -189,50 +189,50 @@ Sunday                   379 commits         ██████░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-JavaScript               3 hrs 30 mins       ██████████░░░░░░░░░░░░░░░   38.69 % 
-YAML                     1 hr 20 mins        ████░░░░░░░░░░░░░░░░░░░░░   14.88 % 
-TypeScript               1 hr 7 mins         ███░░░░░░░░░░░░░░░░░░░░░░   12.46 % 
-Python                   46 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.49 % 
-Markdown                 34 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   06.37 % 
+JavaScript               3 hrs 26 mins       ██████████░░░░░░░░░░░░░░░   38.43 % 
+TypeScript               1 hr 25 mins        ████░░░░░░░░░░░░░░░░░░░░░   15.82 % 
+YAML                     1 hr 20 mins        ████░░░░░░░░░░░░░░░░░░░░░   15.07 % 
+Python                   43 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.08 % 
+Markdown                 28 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.35 % 
 
 🔥 Editors: 
-VS Code                  4 hrs 30 mins       ████████████░░░░░░░░░░░░░   49.71 % 
-Opencode Cli             3 hrs 50 mins       ███████████░░░░░░░░░░░░░░   42.26 % 
-OpenCode                 43 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.03 % 
+VS Code                  4 hrs 35 mins       █████████████░░░░░░░░░░░░   51.22 % 
+Opencode Cli             3 hrs 41 mins       ██████████░░░░░░░░░░░░░░░   41.29 % 
+OpenCode                 40 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   07.49 % 
 
 🐱‍💻 Projects: 
-Quran-website            3 hrs 58 mins       ███████████░░░░░░░░░░░░░░   43.84 % 
-energy_realtime          3 hrs 56 mins       ███████████░░░░░░░░░░░░░░   43.36 % 
-DABActionEnergyPrices    32 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.96 % 
-what-if                  10 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.89 % 
-HermesViaOmni            8 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.56 % 
+energy_realtime          3 hrs 44 mins       ██████████░░░░░░░░░░░░░░░   41.84 % 
+Quran-website            3 hrs 34 mins       ██████████░░░░░░░░░░░░░░░   39.88 % 
+what-if                  37 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   06.90 % 
+DABActionEnergyPrices    29 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.52 % 
+telegram-cp              12 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.28 % 
 
 💻 Operating System: 
-Windows                  9 hrs 4 mins        █████████████████████████   100.00 % 
+Windows                  8 hrs 57 mins       █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 8 hrs (88.34%)
+⏱ AI Coding Time: 8 hrs 10 mins (91.26%)
 
-✍️ 14,265 lines written by AI, 162 lines written by hand (98.88% AI-written)
+✍️ 15,056 lines written by AI, 145 lines written by hand (99.05% AI-written)
 
-🔤 3,325,916 Input Tokens, 577,221 Output Tokens
+🔤 3,601,801 Input Tokens, 587,264 Output Tokens
 
-💵 $274.40 Estimated AI Cost This Week
+💵 $281.61 Estimated AI Cost This Week
 
-🧠 16 AI Sessions, 44 AI Prompts
+🧠 14 AI Sessions, 41 AI Prompts
 
-DeepSeek                 7,364 lines         █████████████░░░░░░░░░░░░   51.43 % 
-Nemotron                 6,651 lines         ████████████░░░░░░░░░░░░░   46.45 % 
-GLM                      303 lines           █░░░░░░░░░░░░░░░░░░░░░░░░   02.12 % 
+DeepSeek                 6,859 lines         ███████████░░░░░░░░░░░░░░   45.39 % 
+Nemotron                 6,651 lines         ███████████░░░░░░░░░░░░░░   44.02 % 
+GLM                      1,600 lines         ███░░░░░░░░░░░░░░░░░░░░░░   10.59 % 
 
 🔎 AI Coding Insights:
-🤖 AI-Driven — 98.88% of written lines came from AI
-📄 Detailed Prompter — average 599 characters per prompt
+🤖 AI-Driven — 99.05% of written lines came from AI
+📄 Detailed Prompter — average 628 characters per prompt
 🔁 Iterative Prompter — average 3 prompts per session
-🚀 High AI Trust — 1.23% of changed lines were hand-edited
+🚀 High AI Trust — 1.04% of changed lines were hand-edited
 ```
 
 **I Mostly Code in JavaScript** 
@@ -248,7 +248,7 @@ MDX                      1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 13/11/2026 06:14:21 UTC
+ Last Updated on 14/11/2026 05:59:24 UTC
 <!--END_SECTION:waka-->
 
 
