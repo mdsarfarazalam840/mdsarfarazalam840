@@ -152,7 +152,7 @@ Here are some ideas to get you started:
 
 **🐱 My GitHub Data** 
 
-> 📦 185.1 kB Used in GitHub's Storage 
+> 📦 184.8 kB Used in GitHub's Storage 
  > 
 > 🏆 545 Contributions in the Year 2026
  > 
@@ -189,50 +189,50 @@ Sunday                   379 commits         ██████░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-JavaScript               1 hr 39 mins        ████████░░░░░░░░░░░░░░░░░   32.98 % 
-YAML                     1 hr 13 mins        ██████░░░░░░░░░░░░░░░░░░░   24.29 % 
-Python                   36 mins             ███░░░░░░░░░░░░░░░░░░░░░░   12.16 % 
-TypeScript               21 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   07.18 % 
-CSS                      18 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   06.02 % 
+JavaScript               1 hr 39 mins        ██████████░░░░░░░░░░░░░░░   38.39 % 
+YAML                     39 mins             ████░░░░░░░░░░░░░░░░░░░░░   15.18 % 
+Python                   36 mins             ████░░░░░░░░░░░░░░░░░░░░░   14.16 % 
+TypeScript               21 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.36 % 
+CSS                      18 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   07.01 % 
 
 🔥 Editors: 
-VS Code                  2 hrs 58 mins       ███████████████░░░░░░░░░░   59.38 % 
-Opencode Cli             1 hr 49 mins        █████████░░░░░░░░░░░░░░░░   36.56 % 
-OpenCode                 12 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   04.06 % 
+VS Code                  2 hrs 24 mins       ██████████████░░░░░░░░░░░   56.00 % 
+Opencode Cli             1 hr 41 mins        ██████████░░░░░░░░░░░░░░░   39.27 % 
+OpenCode                 12 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   04.73 % 
 
 🐱‍💻 Projects: 
-energy_realtime          3 hrs 44 mins       ███████████████████░░░░░░   74.80 % 
-DABActionEnergyPrices    29 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   09.87 % 
-what-if                  26 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.91 % 
-HermesViaOmni            8 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   02.83 % 
-telegram-cp              8 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   02.78 % 
+energy_realtime          3 hrs 10 mins       ██████████████████░░░░░░░   73.95 % 
+DABActionEnergyPrices    29 mins             ███░░░░░░░░░░░░░░░░░░░░░░   11.49 % 
+what-if                  26 mins             ███░░░░░░░░░░░░░░░░░░░░░░   10.38 % 
+telegram-cp              8 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   03.24 % 
+telegram_copier          2 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.94 % 
 
 💻 Operating System: 
-Windows                  5 hrs               █████████████████████████   100.00 % 
+Windows                  4 hrs 18 mins       █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 4 hrs 13 mins (84.34%)
+⏱ AI Coding Time: 4 hrs 5 mins (94.91%)
 
-✍️ 11,955 lines written by AI, 205 lines written by hand (98.31% AI-written)
+✍️ 11,955 lines written by AI, 60 lines written by hand (99.5% AI-written)
 
-🔤 2,343,106 Input Tokens, 371,064 Output Tokens
+🔤 2,283,034 Input Tokens, 360,675 Output Tokens
 
-💵 $157.69 Estimated AI Cost This Week
+💵 $154.74 Estimated AI Cost This Week
 
-🧠 9 AI Sessions, 22 AI Prompts
+🧠 8 AI Sessions, 21 AI Prompts
 
 Nemotron                 5,731 lines         ████████████░░░░░░░░░░░░░   47.86 % 
 DeepSeek                 4,947 lines         ██████████░░░░░░░░░░░░░░░   41.31 % 
 GLM                      1,297 lines         ███░░░░░░░░░░░░░░░░░░░░░░   10.83 % 
 
 🔎 AI Coding Insights:
-🤖 AI-Driven — 98.31% of written lines came from AI
-📝 Concise Prompter — average 353 characters per prompt
-🔁 Iterative Prompter — average 2 prompts per session
-🚀 High AI Trust — 1.8% of changed lines were hand-edited
+🤖 AI-Driven — 99.5% of written lines came from AI
+📝 Concise Prompter — average 368 characters per prompt
+🔁 Iterative Prompter — average 3 prompts per session
+🚀 High AI Trust — 0.5% of changed lines were hand-edited
 ```
 
 **I Mostly Code in JavaScript** 
@@ -248,7 +248,7 @@ MDX                      1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 17/11/2026 07:38:08 UTC
+ Last Updated on 18/11/2026 07:01:11 UTC
 <!--END_SECTION:waka-->
 
 
