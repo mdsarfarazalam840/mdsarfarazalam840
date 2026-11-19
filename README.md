@@ -152,9 +152,9 @@ Here are some ideas to get you started:
 
 **🐱 My GitHub Data** 
 
-> 📦 184.8 kB Used in GitHub's Storage 
+> 📦 186.5 kB Used in GitHub's Storage 
  > 
-> 🏆 545 Contributions in the Year 2026
+> 🏆 547 Contributions in the Year 2026
  > 
 > 💼 Opted to Hire
  > 
@@ -165,21 +165,21 @@ Here are some ideas to get you started:
 **I'm an Early 🐤** 
 
 ```text
-🌞 Morning                424 commits         ██████░░░░░░░░░░░░░░░░░░░   24.82 % 
-🌆 Daytime                464 commits         ███████░░░░░░░░░░░░░░░░░░   27.17 % 
-🌃 Evening                720 commits         ███████████░░░░░░░░░░░░░░   42.15 % 
+🌞 Morning                424 commits         ██████░░░░░░░░░░░░░░░░░░░   24.81 % 
+🌆 Daytime                464 commits         ███████░░░░░░░░░░░░░░░░░░   27.15 % 
+🌃 Evening                721 commits         ███████████░░░░░░░░░░░░░░   42.19 % 
 🌙 Night                  100 commits         █░░░░░░░░░░░░░░░░░░░░░░░░   05.85 % 
 ```
 📅 **I'm Most Productive on Sunday** 
 
 ```text
-Monday                   175 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.25 % 
-Tuesday                  258 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.11 % 
-Wednesday                365 commits         █████░░░░░░░░░░░░░░░░░░░░   21.37 % 
-Thursday                 72 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   04.22 % 
+Monday                   175 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.24 % 
+Tuesday                  258 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.10 % 
+Wednesday                366 commits         █████░░░░░░░░░░░░░░░░░░░░   21.42 % 
+Thursday                 72 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   04.21 % 
 Friday                   197 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.53 % 
-Saturday                 262 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.34 % 
-Sunday                   379 commits         ██████░░░░░░░░░░░░░░░░░░░   22.19 % 
+Saturday                 262 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.33 % 
+Sunday                   379 commits         ██████░░░░░░░░░░░░░░░░░░░   22.18 % 
 ```
 
 
@@ -189,50 +189,47 @@ Sunday                   379 commits         ██████░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-JavaScript               1 hr 39 mins        ██████████░░░░░░░░░░░░░░░   38.39 % 
-YAML                     39 mins             ████░░░░░░░░░░░░░░░░░░░░░   15.18 % 
-Python                   36 mins             ████░░░░░░░░░░░░░░░░░░░░░   14.16 % 
-TypeScript               21 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.36 % 
-CSS                      18 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   07.01 % 
+JSON                     50 mins             ██████████████░░░░░░░░░░░   54.12 % 
+TypeScript               27 mins             ███████░░░░░░░░░░░░░░░░░░   29.72 % 
+Git Config               8 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   08.80 % 
+Text                     6 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   07.36 % 
 
 🔥 Editors: 
-VS Code                  2 hrs 24 mins       ██████████████░░░░░░░░░░░   56.00 % 
-Opencode Cli             1 hr 41 mins        ██████████░░░░░░░░░░░░░░░   39.27 % 
-OpenCode                 12 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   04.73 % 
+VS Code                  1 hr 17 mins        █████████████████████░░░░   82.14 % 
+Opencode Cli             16 mins             ████░░░░░░░░░░░░░░░░░░░░░   17.85 % 
+OpenCode                 0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 
 🐱‍💻 Projects: 
-energy_realtime          3 hrs 10 mins       ██████████████████░░░░░░░   73.95 % 
-DABActionEnergyPrices    29 mins             ███░░░░░░░░░░░░░░░░░░░░░░   11.49 % 
-what-if                  26 mins             ███░░░░░░░░░░░░░░░░░░░░░░   10.38 % 
-telegram-cp              8 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   03.24 % 
-telegram_copier          2 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.94 % 
+Quran-website            56 mins             ███████████████░░░░░░░░░░   60.06 % 
+what-if                  26 mins             ███████░░░░░░░░░░░░░░░░░░   28.46 % 
+telegram-cp              8 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   08.89 % 
+telegram_copier          2 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   02.59 % 
 
 💻 Operating System: 
-Windows                  4 hrs 18 mins       █████████████████████████   100.00 % 
+Windows                  1 hr 34 mins        █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 4 hrs 5 mins (94.91%)
+⏱ AI Coding Time: 1 hr 19 mins (84.48%)
 
-✍️ 11,955 lines written by AI, 60 lines written by hand (99.5% AI-written)
+✍️ 1,316 lines written by AI, 61 lines written by hand (95.57% AI-written)
 
-🔤 2,283,034 Input Tokens, 360,675 Output Tokens
+🔤 506,349 Input Tokens, 56,199 Output Tokens
 
-💵 $154.74 Estimated AI Cost This Week
+💵 $25.32 Estimated AI Cost This Week
 
-🧠 8 AI Sessions, 21 AI Prompts
+🧠 2 AI Sessions, 4 AI Prompts
 
-Nemotron                 5,731 lines         ████████████░░░░░░░░░░░░░   47.86 % 
-DeepSeek                 4,947 lines         ██████████░░░░░░░░░░░░░░░   41.31 % 
-GLM                      1,297 lines         ███░░░░░░░░░░░░░░░░░░░░░░   10.83 % 
+GLM                      1,297 lines         █████████████████████████   98.48 % 
+DeepSeek                 20 lines            ░░░░░░░░░░░░░░░░░░░░░░░░░   01.52 % 
 
 🔎 AI Coding Insights:
-🤖 AI-Driven — 99.5% of written lines came from AI
-📝 Concise Prompter — average 368 characters per prompt
-🔁 Iterative Prompter — average 3 prompts per session
-🚀 High AI Trust — 0.5% of changed lines were hand-edited
+🤖 AI-Driven — 95.57% of written lines came from AI
+📄 Detailed Prompter — average 676 characters per prompt
+🔁 Iterative Prompter — average 2 prompts per session
+🚀 High AI Trust — 4.5% of changed lines were hand-edited
 ```
 
 **I Mostly Code in JavaScript** 
@@ -248,7 +245,7 @@ MDX                      1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 18/11/2026 07:01:11 UTC
+ Last Updated on 19/11/2026 07:01:51 UTC
 <!--END_SECTION:waka-->
 
 
