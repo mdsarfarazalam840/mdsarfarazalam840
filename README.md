@@ -144,15 +144,15 @@ Here are some ideas to get you started:
 
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-316%20hrs%2018%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-317%20hrs%2025%20mins-blue?style=flat)
 
-![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-236%20hrs%2013%20mins-blue?style=flat)
+![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-237%20hrs%207%20mins-blue?style=flat)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-4.70%20million%20lines%20of%20code-blue?style=flat)
 
 **🐱 My GitHub Data** 
 
-> 📦 186.5 kB Used in GitHub's Storage 
+> 📦 187.8 kB Used in GitHub's Storage 
  > 
 > 🏆 547 Contributions in the Year 2026
  > 
@@ -189,30 +189,32 @@ Sunday                   379 commits         ██████░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-JSON                     50 mins             ██████████████░░░░░░░░░░░   54.12 % 
-TypeScript               27 mins             ███████░░░░░░░░░░░░░░░░░░   29.72 % 
-Git Config               8 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   08.80 % 
-Text                     6 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   07.36 % 
+JSON                     50 mins             ████████████░░░░░░░░░░░░░   48.55 % 
+TypeScript               27 mins             ███████░░░░░░░░░░░░░░░░░░   26.66 % 
+Bash                     8 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   08.49 % 
+Git Config               8 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   07.90 % 
+Text                     6 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   06.61 % 
 
 🔥 Editors: 
-VS Code                  1 hr 17 mins        █████████████████████░░░░   82.14 % 
-Opencode Cli             16 mins             ████░░░░░░░░░░░░░░░░░░░░░   17.85 % 
+VS Code                  1 hr 28 mins        █████████████████████░░░░   83.98 % 
+Opencode Cli             16 mins             ████░░░░░░░░░░░░░░░░░░░░░   16.02 % 
 OpenCode                 0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 
 🐱‍💻 Projects: 
-Quran-website            56 mins             ███████████████░░░░░░░░░░   60.06 % 
-what-if                  26 mins             ███████░░░░░░░░░░░░░░░░░░   28.46 % 
-telegram-cp              8 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   08.89 % 
-telegram_copier          2 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   02.59 % 
+Quran-website            56 mins             █████████████░░░░░░░░░░░░   53.88 % 
+what-if                  26 mins             ██████░░░░░░░░░░░░░░░░░░░   25.53 % 
+checkin-agentrouter      10 mins             ███░░░░░░░░░░░░░░░░░░░░░░   10.29 % 
+telegram-cp              8 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   07.98 % 
+telegram_copier          2 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   02.32 % 
 
 💻 Operating System: 
-Windows                  1 hr 34 mins        █████████████████████████   100.00 % 
+Windows                  1 hr 44 mins        █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 1 hr 19 mins (84.48%)
+⏱ AI Coding Time: 1 hr 19 mins (75.79%)
 
 ✍️ 1,316 lines written by AI, 61 lines written by hand (95.57% AI-written)
 
@@ -245,7 +247,7 @@ MDX                      1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 19/11/2026 07:01:51 UTC
+ Last Updated on 20/11/2026 06:54:24 UTC
 <!--END_SECTION:waka-->
 
 
