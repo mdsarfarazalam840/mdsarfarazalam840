@@ -144,7 +144,7 @@ Here are some ideas to get you started:
 
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-317%20hrs%2025%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-317%20hrs%2035%20mins-blue?style=flat)
 
 ![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-237%20hrs%207%20mins-blue?style=flat)
 
@@ -152,7 +152,7 @@ Here are some ideas to get you started:
 
 **🐱 My GitHub Data** 
 
-> 📦 187.8 kB Used in GitHub's Storage 
+> 📦 187.5 kB Used in GitHub's Storage 
  > 
 > 🏆 547 Contributions in the Year 2026
  > 
@@ -189,49 +189,46 @@ Sunday                   379 commits         ██████░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-JSON                     50 mins             ████████████░░░░░░░░░░░░░   48.55 % 
-TypeScript               27 mins             ███████░░░░░░░░░░░░░░░░░░   26.66 % 
-Bash                     8 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   08.49 % 
-Git Config               8 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   07.90 % 
-Text                     6 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   06.61 % 
+JSON                     1 hr 10 mins        ████████████░░░░░░░░░░░░░   47.22 % 
+TypeScript               53 mins             █████████░░░░░░░░░░░░░░░░   36.02 % 
+Bash                     8 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   06.00 % 
+Text                     6 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   04.67 % 
+Git Config               5 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   03.99 % 
 
 🔥 Editors: 
-VS Code                  1 hr 28 mins        █████████████████████░░░░   83.98 % 
-Opencode Cli             16 mins             ████░░░░░░░░░░░░░░░░░░░░░   16.02 % 
-OpenCode                 0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
+Opencode Cli             1 hr 37 mins        ████████████████░░░░░░░░░   65.76 % 
+VS Code                  50 mins             █████████░░░░░░░░░░░░░░░░   34.24 % 
 
 🐱‍💻 Projects: 
-Quran-website            56 mins             █████████████░░░░░░░░░░░░   53.88 % 
-what-if                  26 mins             ██████░░░░░░░░░░░░░░░░░░░   25.53 % 
-checkin-agentrouter      10 mins             ███░░░░░░░░░░░░░░░░░░░░░░   10.29 % 
-telegram-cp              8 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   07.98 % 
-telegram_copier          2 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   02.32 % 
+what-if                  1 hr 15 mins        █████████████░░░░░░░░░░░░   50.81 % 
+Quran-website            57 mins             ██████████░░░░░░░░░░░░░░░   38.92 % 
+checkin-agentrouter      15 mins             ███░░░░░░░░░░░░░░░░░░░░░░   10.22 % 
+telegram_copier          0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.05 % 
 
 💻 Operating System: 
-Windows                  1 hr 44 mins        █████████████████████████   100.00 % 
+Windows                  2 hrs 28 mins       █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 1 hr 19 mins (75.79%)
+⏱ AI Coding Time: 2 hrs 5 mins (84.47%)
 
-✍️ 1,316 lines written by AI, 61 lines written by hand (95.57% AI-written)
+✍️ 1,531 lines written by AI, 61 lines written by hand (96.17% AI-written)
 
-🔤 506,349 Input Tokens, 56,199 Output Tokens
+🔤 1,015,020 Input Tokens, 195,800 Output Tokens
 
-💵 $25.32 Estimated AI Cost This Week
+💵 $62.57 Estimated AI Cost This Week
 
-🧠 2 AI Sessions, 4 AI Prompts
+🧠 4 AI Sessions, 11 AI Prompts
 
-GLM                      1,297 lines         █████████████████████████   98.48 % 
-DeepSeek                 20 lines            ░░░░░░░░░░░░░░░░░░░░░░░░░   01.52 % 
+DeepSeek                 1,657 lines         █████████████████████████   100.00 % 
 
 🔎 AI Coding Insights:
-🤖 AI-Driven — 95.57% of written lines came from AI
-📄 Detailed Prompter — average 676 characters per prompt
-🔁 Iterative Prompter — average 2 prompts per session
-🚀 High AI Trust — 4.5% of changed lines were hand-edited
+🤖 AI-Driven — 96.17% of written lines came from AI
+📄 Detailed Prompter — average 1,472 characters per prompt
+🔁 Iterative Prompter — average 3 prompts per session
+🚀 High AI Trust — 3.61% of changed lines were hand-edited
 ```
 
 **I Mostly Code in JavaScript** 
@@ -247,7 +244,7 @@ MDX                      1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 20/11/2026 06:54:24 UTC
+ Last Updated on 21/11/2026 06:48:52 UTC
 <!--END_SECTION:waka-->
 
 
