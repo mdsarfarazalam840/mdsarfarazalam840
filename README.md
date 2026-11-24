@@ -152,9 +152,9 @@ Here are some ideas to get you started:
 
 **🐱 My GitHub Data** 
 
-> 📦 192.5 kB Used in GitHub's Storage 
+> 📦 193.4 kB Used in GitHub's Storage 
  > 
-> 🏆 552 Contributions in the Year 2026
+> 🏆 556 Contributions in the Year 2026
  > 
 > 💼 Opted to Hire
  > 
@@ -165,21 +165,21 @@ Here are some ideas to get you started:
 **I'm an Early 🐤** 
 
 ```text
-🌞 Morning                440 commits         ██████░░░░░░░░░░░░░░░░░░░   24.77 % 
-🌆 Daytime                488 commits         ███████░░░░░░░░░░░░░░░░░░   27.48 % 
-🌃 Evening                748 commits         ███████████░░░░░░░░░░░░░░   42.12 % 
-🌙 Night                  100 commits         █░░░░░░░░░░░░░░░░░░░░░░░░   05.63 % 
+🌞 Morning                440 commits         ██████░░░░░░░░░░░░░░░░░░░   24.75 % 
+🌆 Daytime                490 commits         ███████░░░░░░░░░░░░░░░░░░   27.56 % 
+🌃 Evening                748 commits         ███████████░░░░░░░░░░░░░░   42.07 % 
+🌙 Night                  100 commits         █░░░░░░░░░░░░░░░░░░░░░░░░   05.62 % 
 ```
 📅 **I'm Most Productive on Sunday** 
 
 ```text
-Monday                   178 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.02 % 
-Tuesday                  268 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.09 % 
-Wednesday                383 commits         █████░░░░░░░░░░░░░░░░░░░░   21.57 % 
+Monday                   180 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.12 % 
+Tuesday                  268 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.07 % 
+Wednesday                383 commits         █████░░░░░░░░░░░░░░░░░░░░   21.54 % 
 Thursday                 72 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   04.05 % 
-Friday                   197 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.09 % 
-Saturday                 284 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.99 % 
-Sunday                   394 commits         ██████░░░░░░░░░░░░░░░░░░░   22.18 % 
+Friday                   197 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.08 % 
+Saturday                 284 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.97 % 
+Sunday                   394 commits         ██████░░░░░░░░░░░░░░░░░░░   22.16 % 
 ```
 
 
@@ -189,48 +189,50 @@ Sunday                   394 commits         ██████░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-JSON                     1 hr 10 mins        █████████░░░░░░░░░░░░░░░░   35.11 % 
-TypeScript               53 mins             ███████░░░░░░░░░░░░░░░░░░   26.81 % 
-Python                   34 mins             ████░░░░░░░░░░░░░░░░░░░░░   17.40 % 
-Markdown                 11 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.73 % 
-Bash                     8 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   04.47 % 
+TypeScript               2 hrs 3 mins        █████████░░░░░░░░░░░░░░░░   35.48 % 
+JSON                     1 hr 19 mins        ██████░░░░░░░░░░░░░░░░░░░   23.02 % 
+Markdown                 45 mins             ███░░░░░░░░░░░░░░░░░░░░░░   13.09 % 
+Python                   34 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   09.99 % 
+Other                    22 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   06.37 % 
 
 🔥 Editors: 
-Opencode Cli             2 hrs 12 mins       █████████████████░░░░░░░░   66.35 % 
-VS Code                  1 hr 7 mins         ████████░░░░░░░░░░░░░░░░░   33.65 % 
-OpenCode                 0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
+VS Code                  2 hrs 31 mins       ███████████░░░░░░░░░░░░░░   43.54 % 
+Opencode Cli             2 hrs 27 mins       ███████████░░░░░░░░░░░░░░   42.35 % 
+Claude Code              43 mins             ███░░░░░░░░░░░░░░░░░░░░░░   12.39 % 
+OpenCode                 5 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.72 % 
 
 🐱‍💻 Projects: 
-what-if                  1 hr 15 mins        █████████░░░░░░░░░░░░░░░░   37.82 % 
-Quran-website            57 mins             ███████░░░░░░░░░░░░░░░░░░   28.97 % 
-telegram_copier          44 mins             ██████░░░░░░░░░░░░░░░░░░░   22.19 % 
-checkin-agentrouter      15 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   07.61 % 
-telegram-cp              6 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   03.41 % 
+Quran-website            3 hrs 25 mins       ███████████████░░░░░░░░░░   59.23 % 
+what-if                  1 hr 15 mins        █████░░░░░░░░░░░░░░░░░░░░   21.71 % 
+telegram_copier          44 mins             ███░░░░░░░░░░░░░░░░░░░░░░   12.74 % 
+checkin-agentrouter      15 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   04.37 % 
+telegram-cp              6 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.96 % 
 
 💻 Operating System: 
-Windows                  3 hrs 19 mins       █████████████████████████   100.00 % 
+Windows                  5 hrs 47 mins       █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 2 hrs 46 mins (83.69%)
+⏱ AI Coding Time: 4 hrs 37 mins (79.84%)
 
-✍️ 2,316 lines written by AI, 1 lines written by hand (99.96% AI-written)
+✍️ 3,971 lines written by AI, 3 lines written by hand (99.92% AI-written)
 
-🔤 1,172,055 Input Tokens, 280,789 Output Tokens
+🔤 1,689,348 Input Tokens, 337,369 Output Tokens
 
-💵 $83.63 Estimated AI Cost This Week
+💵 $107.05 Estimated AI Cost This Week
 
-🧠 6 AI Sessions, 15 AI Prompts
+🧠 16 AI Sessions, 35 AI Prompts
 
-DeepSeek                 2,442 lines         █████████████████████████   100.00 % 
+DeepSeek                 4,104 lines         █████████████████████████   100.00 % 
+Opus                     0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 
 🔎 AI Coding Insights:
-🤖 AI-Driven — 99.96% of written lines came from AI
-📄 Detailed Prompter — average 1,354 characters per prompt
+🤖 AI-Driven — 99.92% of written lines came from AI
+📄 Detailed Prompter — average 1,016 characters per prompt
 🔁 Iterative Prompter — average 2 prompts per session
-🚀 High AI Trust — 0.08% of changed lines were hand-edited
+🚀 High AI Trust — 0.1% of changed lines were hand-edited
 ```
 
 **I Mostly Code in JavaScript** 
@@ -246,7 +248,7 @@ MDX                      1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 23/11/2026 07:10:04 UTC
+ Last Updated on 24/11/2026 09:34:41 UTC
 <!--END_SECTION:waka-->
 
 
