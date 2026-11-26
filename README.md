@@ -152,7 +152,7 @@ Here are some ideas to get you started:
 
 **🐱 My GitHub Data** 
 
-> 📦 194.2 kB Used in GitHub's Storage 
+> 📦 193.2 kB Used in GitHub's Storage 
  > 
 > 🏆 562 Contributions in the Year 2026
  > 
@@ -189,50 +189,50 @@ Sunday                   394 commits         ██████░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-TypeScript               2 hrs 3 mins        █████████░░░░░░░░░░░░░░░░   35.48 % 
-JSON                     1 hr 19 mins        ██████░░░░░░░░░░░░░░░░░░░   23.02 % 
-Markdown                 45 mins             ███░░░░░░░░░░░░░░░░░░░░░░   13.09 % 
-Python                   34 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   09.99 % 
-Other                    22 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   06.37 % 
+TypeScript               1 hr 56 mins        ██████████░░░░░░░░░░░░░░░   40.72 % 
+Markdown                 45 mins             ████░░░░░░░░░░░░░░░░░░░░░   15.88 % 
+Python                   34 mins             ███░░░░░░░░░░░░░░░░░░░░░░   12.09 % 
+JSON                     32 mins             ███░░░░░░░░░░░░░░░░░░░░░░   11.47 % 
+Other                    22 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   07.72 % 
 
 🔥 Editors: 
-VS Code                  2 hrs 31 mins       ███████████░░░░░░░░░░░░░░   43.54 % 
-Opencode Cli             2 hrs 27 mins       ███████████░░░░░░░░░░░░░░   42.35 % 
-Claude Code              43 mins             ███░░░░░░░░░░░░░░░░░░░░░░   12.39 % 
-OpenCode                 5 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.72 % 
+Opencode Cli             2 hrs 6 mins        ███████████░░░░░░░░░░░░░░   44.14 % 
+VS Code                  1 hr 51 mins        ██████████░░░░░░░░░░░░░░░   38.78 % 
+Claude Code              43 mins             ████░░░░░░░░░░░░░░░░░░░░░   15.00 % 
+OpenCode                 5 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   02.08 % 
 
 🐱‍💻 Projects: 
-Quran-website            3 hrs 25 mins       ███████████████░░░░░░░░░░   59.23 % 
-what-if                  1 hr 15 mins        █████░░░░░░░░░░░░░░░░░░░░   21.71 % 
-telegram_copier          44 mins             ███░░░░░░░░░░░░░░░░░░░░░░   12.74 % 
-checkin-agentrouter      15 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   04.37 % 
-telegram-cp              6 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.96 % 
+Quran-website            2 hrs 23 mins       ████████████░░░░░░░░░░░░░   50.00 % 
+what-if                  1 hr 15 mins        ███████░░░░░░░░░░░░░░░░░░   26.28 % 
+telegram_copier          44 mins             ████░░░░░░░░░░░░░░░░░░░░░   15.42 % 
+checkin-agentrouter      15 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.29 % 
+telegram-cp              6 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   02.37 % 
 
 💻 Operating System: 
-Windows                  5 hrs 47 mins       █████████████████████████   100.00 % 
+Windows                  4 hrs 46 mins       █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 4 hrs 37 mins (79.84%)
+⏱ AI Coding Time: 3 hrs 47 mins (79.2%)
 
-✍️ 3,971 lines written by AI, 3 lines written by hand (99.92% AI-written)
+✍️ 3,951 lines written by AI, 18 lines written by hand (99.55% AI-written)
 
-🔤 1,689,348 Input Tokens, 337,369 Output Tokens
+🔤 1,617,091 Input Tokens, 323,523 Output Tokens
 
-💵 $107.05 Estimated AI Cost This Week
+💵 $101.84 Estimated AI Cost This Week
 
-🧠 16 AI Sessions, 35 AI Prompts
+🧠 15 AI Sessions, 44 AI Prompts
 
-DeepSeek                 4,104 lines         █████████████████████████   100.00 % 
+DeepSeek                 4,084 lines         █████████████████████████   100.00 % 
 Opus                     0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 
 🔎 AI Coding Insights:
-🤖 AI-Driven — 99.92% of written lines came from AI
-📄 Detailed Prompter — average 1,016 characters per prompt
-🔁 Iterative Prompter — average 2 prompts per session
-🚀 High AI Trust — 0.1% of changed lines were hand-edited
+🤖 AI-Driven — 99.55% of written lines came from AI
+📄 Detailed Prompter — average 915 characters per prompt
+🔁 Iterative Prompter — average 3 prompts per session
+🚀 High AI Trust — 0.46% of changed lines were hand-edited
 ```
 
 **I Mostly Code in JavaScript** 
@@ -248,7 +248,7 @@ MDX                      1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 25/11/2026 08:06:05 UTC
+ Last Updated on 26/11/2026 07:56:41 UTC
 <!--END_SECTION:waka-->
 
 
