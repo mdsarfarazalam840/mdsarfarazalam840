@@ -144,15 +144,15 @@ Here are some ideas to get you started:
 
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-321%20hrs%2043%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-321%20hrs%2049%20mins-blue?style=flat)
 
-![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-240%20hrs%2050%20mins-blue?style=flat)
+![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-240%20hrs%2054%20mins-blue?style=flat)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-4.79%20million%20lines%20of%20code-blue?style=flat)
 
 **🐱 My GitHub Data** 
 
-> 📦 193.2 kB Used in GitHub's Storage 
+> 📦 193.6 kB Used in GitHub's Storage 
  > 
 > 🏆 562 Contributions in the Year 2026
  > 
@@ -189,33 +189,33 @@ Sunday                   394 commits         ██████░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-TypeScript               1 hr 56 mins        ██████████░░░░░░░░░░░░░░░   40.72 % 
-Markdown                 45 mins             ████░░░░░░░░░░░░░░░░░░░░░   15.88 % 
-Python                   34 mins             ███░░░░░░░░░░░░░░░░░░░░░░   12.09 % 
-JSON                     32 mins             ███░░░░░░░░░░░░░░░░░░░░░░   11.47 % 
-Other                    22 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   07.72 % 
+TypeScript               1 hr 56 mins        ███████████░░░░░░░░░░░░░░   42.32 % 
+Markdown                 43 mins             ████░░░░░░░░░░░░░░░░░░░░░   15.81 % 
+Python                   34 mins             ███░░░░░░░░░░░░░░░░░░░░░░   12.57 % 
+JSON                     32 mins             ███░░░░░░░░░░░░░░░░░░░░░░   11.92 % 
+Other                    22 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.02 % 
 
 🔥 Editors: 
-Opencode Cli             2 hrs 6 mins        ███████████░░░░░░░░░░░░░░   44.14 % 
-VS Code                  1 hr 51 mins        ██████████░░░░░░░░░░░░░░░   38.78 % 
-Claude Code              43 mins             ████░░░░░░░░░░░░░░░░░░░░░   15.00 % 
-OpenCode                 5 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   02.08 % 
+Opencode Cli             2 hrs 6 mins        ███████████░░░░░░░░░░░░░░   45.87 % 
+VS Code                  1 hr 40 mins        █████████░░░░░░░░░░░░░░░░   36.39 % 
+Claude Code              43 mins             ████░░░░░░░░░░░░░░░░░░░░░   15.58 % 
+OpenCode                 5 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   02.16 % 
 
 🐱‍💻 Projects: 
-Quran-website            2 hrs 23 mins       ████████████░░░░░░░░░░░░░   50.00 % 
-what-if                  1 hr 15 mins        ███████░░░░░░░░░░░░░░░░░░   26.28 % 
-telegram_copier          44 mins             ████░░░░░░░░░░░░░░░░░░░░░   15.42 % 
-checkin-agentrouter      15 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.29 % 
-telegram-cp              6 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   02.37 % 
+Quran-website            2 hrs 23 mins       █████████████░░░░░░░░░░░░   51.96 % 
+what-if                  1 hr 15 mins        ███████░░░░░░░░░░░░░░░░░░   27.31 % 
+telegram_copier          44 mins             ████░░░░░░░░░░░░░░░░░░░░░   16.02 % 
+telegram-cp              6 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   02.46 % 
+checkin-agentrouter      4 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.59 % 
 
 💻 Operating System: 
-Windows                  4 hrs 46 mins       █████████████████████████   100.00 % 
+Windows                  4 hrs 36 mins       █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 3 hrs 47 mins (79.2%)
+⏱ AI Coding Time: 3 hrs 47 mins (82.3%)
 
 ✍️ 3,951 lines written by AI, 18 lines written by hand (99.55% AI-written)
 
@@ -248,7 +248,7 @@ MDX                      1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 26/11/2026 07:56:41 UTC
+ Last Updated on 27/11/2026 07:57:22 UTC
 <!--END_SECTION:waka-->
 
 
