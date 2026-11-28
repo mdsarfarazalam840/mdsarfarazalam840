@@ -152,7 +152,7 @@ Here are some ideas to get you started:
 
 **🐱 My GitHub Data** 
 
-> 📦 193.6 kB Used in GitHub's Storage 
+> 📦 194.1 kB Used in GitHub's Storage 
  > 
 > 🏆 562 Contributions in the Year 2026
  > 
@@ -189,50 +189,49 @@ Sunday                   394 commits         ██████░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-TypeScript               1 hr 56 mins        ███████████░░░░░░░░░░░░░░   42.32 % 
-Markdown                 43 mins             ████░░░░░░░░░░░░░░░░░░░░░   15.81 % 
-Python                   34 mins             ███░░░░░░░░░░░░░░░░░░░░░░   12.57 % 
-JSON                     32 mins             ███░░░░░░░░░░░░░░░░░░░░░░   11.92 % 
-Other                    22 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.02 % 
+TypeScript               1 hr 9 mins         █████████░░░░░░░░░░░░░░░░   35.76 % 
+Markdown                 43 mins             ██████░░░░░░░░░░░░░░░░░░░   22.38 % 
+Python                   34 mins             ████░░░░░░░░░░░░░░░░░░░░░   17.78 % 
+Other                    20 mins             ███░░░░░░░░░░░░░░░░░░░░░░   10.72 % 
+JavaScript               9 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   04.71 % 
 
 🔥 Editors: 
-Opencode Cli             2 hrs 6 mins        ███████████░░░░░░░░░░░░░░   45.87 % 
-VS Code                  1 hr 40 mins        █████████░░░░░░░░░░░░░░░░   36.39 % 
-Claude Code              43 mins             ████░░░░░░░░░░░░░░░░░░░░░   15.58 % 
-OpenCode                 5 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   02.16 % 
+VS Code                  1 hr 40 mins        █████████████░░░░░░░░░░░░   51.38 % 
+Opencode Cli             45 mins             ██████░░░░░░░░░░░░░░░░░░░   23.50 % 
+Claude Code              43 mins             ██████░░░░░░░░░░░░░░░░░░░   22.05 % 
+OpenCode                 5 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   03.06 % 
 
 🐱‍💻 Projects: 
-Quran-website            2 hrs 23 mins       █████████████░░░░░░░░░░░░   51.96 % 
-what-if                  1 hr 15 mins        ███████░░░░░░░░░░░░░░░░░░   27.31 % 
-telegram_copier          44 mins             ████░░░░░░░░░░░░░░░░░░░░░   16.02 % 
-telegram-cp              6 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   02.46 % 
-checkin-agentrouter      4 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.59 % 
+Quran-website            2 hrs 22 mins       ██████████████████░░░░░░░   72.90 % 
+telegram_copier          44 mins             ██████░░░░░░░░░░░░░░░░░░░   22.68 % 
+telegram-cp              6 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   03.49 % 
+freemoviesuggestion      1 min               ░░░░░░░░░░░░░░░░░░░░░░░░░   00.93 % 
 
 💻 Operating System: 
-Windows                  4 hrs 36 mins       █████████████████████████   100.00 % 
+Windows                  3 hrs 15 mins       █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 3 hrs 47 mins (82.3%)
+⏱ AI Coding Time: 2 hrs 26 mins (74.95%)
 
-✍️ 3,951 lines written by AI, 18 lines written by hand (99.55% AI-written)
+✍️ 2,440 lines written by AI, 18 lines written by hand (99.27% AI-written)
 
-🔤 1,617,091 Input Tokens, 323,523 Output Tokens
+🔤 652,848 Input Tokens, 137,173 Output Tokens
 
-💵 $101.84 Estimated AI Cost This Week
+💵 $43.59 Estimated AI Cost This Week
 
-🧠 15 AI Sessions, 44 AI Prompts
+🧠 12 AI Sessions, 34 AI Prompts
 
-DeepSeek                 4,084 lines         █████████████████████████   100.00 % 
+DeepSeek                 2,447 lines         █████████████████████████   100.00 % 
 Opus                     0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 
 🔎 AI Coding Insights:
-🤖 AI-Driven — 99.55% of written lines came from AI
-📄 Detailed Prompter — average 915 characters per prompt
+🤖 AI-Driven — 99.27% of written lines came from AI
+📄 Detailed Prompter — average 672 characters per prompt
 🔁 Iterative Prompter — average 3 prompts per session
-🚀 High AI Trust — 0.46% of changed lines were hand-edited
+🚀 High AI Trust — 0.77% of changed lines were hand-edited
 ```
 
 **I Mostly Code in JavaScript** 
@@ -248,7 +247,7 @@ MDX                      1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 27/11/2026 07:57:22 UTC
+ Last Updated on 28/11/2026 07:27:09 UTC
 <!--END_SECTION:waka-->
 
 
